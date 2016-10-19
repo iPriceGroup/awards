@@ -1,0 +1,505 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+
+html, body {
+    padding:0;
+    margin:0;
+    -webkit-font-smoothing: antialiased;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#main-container {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+
+#main-container > #header {
+    width: 100%;
+    margin: 0 auto 36px auto;
+}
+
+#main-container > #header > div {
+    margin: 0 auto;
+    width:100%;
+    background: rgba(255,255,255,0.8);
+}
+.fixed {
+    position: fixed;
+    top:0;
+}
+
+#main-container > #header > .head-info {
+    height:171px;
+    /*background: #dddddd;*/
+}
+#main-container > #header > .head-info > img {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    display: block;
+}
+
+#main-container > #header > .head-info > div {
+    position: absolute;
+    top: 0;
+    left: 700px;
+    padding: 20px;
+    background: #333;
+    width:170px;
+}
+
+#main-container > #header > .head-info > div > p {
+    color: #fff;
+    font-size: 25px;
+    font-weight:900;
+    margin:0;
+}
+
+#main-container > #header > .head-info > div > p > span {
+    color: red;
+}
+
+#main-container > #header > .nav-menu > .wrapper {
+    display: table;
+    height:40px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#main-container > #header > .nav-menu > .wrapper > div {
+    float: left;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 30px;
+}
+
+#main-container > #header > .nav-menu > .wrapper > div > a {
+    text-decoration: none;
+    color: #30cccd;
+    font-size:16px;
+    font-weight:900;
+    display: block;
+}
+
+
+#main-container > #content {
+    margin:0 auto;
+    padding: 0;
+    width:100%;
+    max-width: 1024px;
+}
+#main-container > #content > div {
+    padding:80px 0 0 0;
+    display: table;
+    margin:0 auto;
+    width:100%;
+}
+
+/*//========== Vote ==========//*/
+
+#main-container > #content > #vote > .box > p {
+    font-size: 24px;
+    line-height:33px;
+    font-weight:900;
+    color: #30cccd;
+    margin:0 0 23px 0;
+}
+#main-container > #content > #vote > .box {
+    width: 548px;
+    margin: 0 48px 0 0;
+    float: left;
+}
+
+.box > .top {
+    border:1px solid #dddddd;
+    height:388px;
+}
+.box > .top > .inner {
+    padding: 20px 0 0 0;
+}
+.box > .top > .inner > img {
+    width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: block;
+}
+.box > .top > .inner > div {
+    margin: 0 auto;
+    width: 55%;
+    text-align: center;
+}
+.box > .top > .inner > div > span {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    line-height:24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.box > .top > .inner > div > .rating {
+    margin:15px auto;
+}
+.rating > span {
+    color: #dddddd;
+    font-size:50px;
+}
+.box > .top > .inner > div > p {
+    font-size:16px;
+    color: #dddddd;
+    font-weight: 900;
+}
+
+
+#main-container > #content > #vote > .side-content {
+    width: 428px;
+    float: left;
+    margin-top:50px;
+}
+.side-content > div {
+    padding:0 0 0 10px;
+}
+.side-content > div > p {
+    font-size: 13px;
+    font-weight: 300;
+    color: #333;
+    margin:0;
+}
+.side-content > div > p > span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #30cccd;
+    margin: 0 0 10px 0;
+}
+.side-content > div > p > strong {
+    float: left;
+    margin: 0 0 10px 0;
+    width:88%;
+}
+.side-content > div > p > strong > strong {
+    float: left;
+    font-weight: 300;
+}
+.side-content > div > p > strong > strong > a {
+    color: #ff6633;
+}
+.side-content > div > p > small {
+    width: 60%;
+    float: left;
+    font-size: 13px;
+}
+.side-content > div > p > img {
+    float: left;
+}
+
+/*//========== About ==========//*/
+
+#about > div > div {
+    float: left;
+    width:548px;
+}
+#about > div > div > div > p {
+    font-size: 24px;
+    line-height:33px;
+    font-weight:900;
+    color: #30cccd;
+    margin:0 0 16px 0;
+}
+#about > div > div > div > span {
+    font-size: 14px;
+    color: #333;
+}
+#about > div > .contact-us > div > span {
+    font-size:18px;
+    font-weight: 900;
+    color: #30cccd;
+
+}
+#about > div > .about-ema {
+    margin:0 56px 30px 0;
+}
+#about > div > .about-ema > div {
+    margin-bottom:20px;
+}
+#about > div > .about-ema > .s1 > p {
+    font-size:18px;
+    line-height:26px;
+}
+#about > div > .contact-us {
+    width:363px;
+}
+#about > div > .contact-us > div{
+    margin-bottom:20px;
+}
+#about > div > .contact-us > div > div {
+    margin-bottom:20px;
+}
+#about > div > .contact-us > div > div > p {
+    font-size: 18px;
+    font-weight: 900;
+    color: #30cccd;
+    margin:0;
+}
+.contact-us > div > strong, .contact-us > div > small, .contact-us > div > div > strong, .contact-us > div > div > small {
+    font-size:14px;
+}
+.contact-us > div > div > small > a {
+    color: #ff6633;
+}
+.contact-us > div > div > strong {
+    font-weight: 400;
+}
+
+/*//========== Rules ==========//*/
+
+#rules > div > div {
+    float: left;
+    width:548px;
+    margin-bottom:20px;
+}
+#rules > div > div > p {
+    font-size: 24px;
+    line-height:33px;
+    font-weight:900;
+    color: #30cccd;
+    margin:0 0 12px 0;
+}
+#rules > div > div > span {
+    font-size: 14px;
+    color: #333;
+    margin:0 0 15px 0;
+    display: table;
+}
+#rules > div > .r-r {
+    margin-right:56px;
+}
+#rules > div > .side-regulation {
+    width: 363px;
+    margin:40px 0 0 0;
+}
+#rules > div > .side-regulation > p {
+    font-size:18px;
+    margin-bottom: 7px;
+}
+#rules > div > .read-more {
+    width: 100%;
+    height: 150px;
+    margin-top: -107px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1) );
+}
+#rules > div > .read-more > p {
+    font-size:18px;
+    margin-top:80px;
+}
+
+/*//========== Awards ==========//*/
+
+#main-container > #content > #awards {
+    width:100%;
+    margin:0;
+}
+#awards > div {
+    padding:40px 30px;
+    display: table;
+    background: #30cccd;
+}
+#awards > .banner {
+    margin-bottom:20px;
+}
+#awards > div > div {
+    color: #fff;
+    float: left;
+}
+#awards > div > .title, #awards > div > .subject  {
+    width:20%;
+    font-size:24px;
+    font-weight: 900;
+}
+#awards > div > .description {
+    width:60%;
+    font-size: 14px;
+    font-weight: 400;
+}
+#awards > .nomi-form {
+    background: none;
+    padding:0;
+    width:100%;
+    margin: 0 0 30px 0;
+}
+.nomi-form > div {
+    margin:0 0 36px 0;
+}
+.nomi-form > div > p {
+    margin:0;
+    font-size:24px;
+    font-weight:900;
+    color: #30cccd;
+}
+.nomi-form > form {
+    margin:0;
+}
+.nomi-form > form > div {
+    width:100%;
+    display: table;
+}
+.nomi-form > form > div > .co-right {
+    width:50%;
+    float: left;
+}
+.nomi-form > form > div > .co-left {
+    width:40%;
+    float: left;
+    padding-right:10%;
+}
+.nomi-form > form > div > div > div {
+    margin-bottom:10px;
+    display: table;
+    width:100%;
+}
+.nomi-form > form > div > .details {
+    float: left;
+}
+#awards > .panel {
+    background: none;
+    padding:0;
+    width:100%;
+    margin: 0 0 100px 0;
+}
+.panel > div {
+    margin:0 0 30px 0;
+    float: left;
+    width:100%;
+}
+.panel > div > p {
+    margin:0;
+    font-size:24px;
+    font-weight:900;
+    color: #30cccd;
+}
+.panel > .cards > div {
+    width: 200px;
+    float: left;
+    border-right: 1px solid #999;
+    padding: 0 40px;
+}
+.panel > .cards > .no-border {
+    border:0;
+}
+.panel > .cards > .no-padding {
+    padding:0 40px 0 0;
+}
+.panel > .cards > div > img {
+    margin:0 auto;
+}
+.panel > .cards > div > p {
+    margin: 0 auto;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #474949;
+}
+.panel > .cards > div > span {
+    margin: 0 auto;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff6633;
+    display: table;
+}
+.panel > .cards > div > small {
+    margin: 0 auto;
+    font-size:14px;
+    text-align: center;
+    color: #474949;
+    display: table ;
+}
+
+/*//========== Partners ==========//*/
+
+#content > #partners {
+    width:100%;
+    margin:0;
+}
+#partners > div {
+    margin: 0 0 30px 0;
+    float: left;
+    width: 100%;
+}
+#partners > div > p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #30cccd;
+}
+#partners > div > div {
+    float:left;
+}
+#partners > .cards > div {
+    width: 200px;
+    float: left;
+    border-right: 1px solid #999;
+    padding: 0 40px;
+}
+#partners > .cards > .m1 {
+    padding: 0 40px 0 0;
+}
+#partners > .cards > .m3 {
+    border:0;
+}
+
+#partners> .cards > div > p {
+    margin: 0 auto;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 900;
+    text-align: center;
+    color: #474949;
+}
+#partners > .cards > div > span {
+    margin: 0 auto;
+    height: 30px;
+    font-size: 14px;
+    font-weight: 900;
+    text-align: center;
+    color: #ff6633;
+    display: table;
+}
+#partners > .cards > div > small {
+    margin: 0 auto;
+    font-size:14px;
+    text-align: center;
+    color: #474949;
+    display: table ;
+}
+
+/*//========== FAQ ==========//*/
+#content > #faq {
+    width:100%;
+    margin:0;
+}
+#faq > div {
+    width:100%;
+    margin:0 0 23px 0;
+}
+#faq > div > p {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    color: #30cccd;
+}
+#faq > div > span {
+    font-size: 18px;
+    font-weight: 900;
+    color: #30cccd;
+    margin:0 0 10px 0;
+    width:100%;
+    float: left;
+}
+#faq > div > small {
+    font-size: 14px;
+    color: #333;
+}
