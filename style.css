@@ -705,7 +705,7 @@ label {
     float: left;
     padding-left:10px;
 }
-#footer > div > div > .license > span {
+#footer > div > .license > span {
     font-size:14px;
     color: #333;
 }
