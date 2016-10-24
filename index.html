@@ -10,10 +10,10 @@
 </head>
 <body>
 <div id="main-container">
-    <div id="header">
-        <div class="head-info">
-            <!--<div><p>E-commerce Merchant Awards 2016 <span>Malaysia</span></p></div>-->
-            <img src="hd.png"/>
+    <div id="header" >
+        <div class="head-info" >
+            <div class="right-color"></div>
+            <i></i>
         </div>
         <div class="nav-menu">
             <div class="wrapper">
@@ -22,11 +22,13 @@
                 <div><a href="#rules">Rules</a></div>
                 <div><a href="#awards">iPrice Awards</a></div>
                 <div><a href="#partners">Partners</a></div>
+                <div><a href="#faq">FAQ</a></div>
             </div>
         </div>
     </div>
+    <div class="go-top"><a href="#header" >&uarr;</a></div>
     <div id="content">
-        <div id="vote">
+        <section id="vote">
             <div class="box">
                 <p>Vote now for your favourite shopping site</p>
                 <div class="top">
@@ -76,9 +78,9 @@
                     </p>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="about">
+        <section id="about">
             <div>
                 <div class="about-ema">
                     <div>
@@ -132,10 +134,10 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div id="rules">
-            <div>
+        <section id="rules">
+            <div id="child">
                 <div class="r-r">
                     <p>Rules and Regulations</p>
                     <span>
@@ -152,13 +154,16 @@
                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book,
                     </span>
                 </div>
-                <div class="read-more">
-                    <p>Read more</p>
-                </div>
             </div>
-        </div>
+            <div class="cover">
 
-        <div id="awards">
+            </div>
+            <div class="read-more">
+                <a onclick="$('.cover').slideToggle();"><p>Read more</p></a>
+            </div>
+        </section>
+
+        <section id="awards">
             <div class="banner">
                 <div class="title">
                     E-commerce
@@ -166,11 +171,7 @@
                     Merchant
                     Malaysia
                 </div>
-                <div class="subject">
-                    iPrice<br>
-                    Best of the<br>
-                    Best
-                </div>
+
                 <div class="description">
                     Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 </div>
@@ -180,19 +181,19 @@
                 <FORM action="#" method="post">
                     <div>
                         <div class="co-left">
-                            <div><LABEL for="name" style="font-size: 14px; color: #474949; float: left; margin-bottom: 23px;">Name of ecommerce merchant: </LABEL><INPUT type="text" id="name" style="border-bottom: 1px solid #999999; border-top: 0; border-left: 0; border-right: 0; float: left; clear: left;     width: 100%;"></div>
-                            <div><LABEL for="contact" style="font-size: 14px; color: #474949; float: left; margin-bottom: 23px;">Contact Person: </LABEL><INPUT type="text" id="contact" style="border-bottom: 1px solid #999999; border-top: 0; border-left: 0; border-right: 0; float: left; clear: left;     width: 100%;"></div>
-                            <div><LABEL for="contact-detail" style="font-size: 14px; color: #474949; float: left; margin-bottom: 23px;">Contact Details: </LABEL><INPUT type="text" id="contact-detail" style="border-bottom: 1px solid #999999; border-top: 0; border-left: 0; border-right: 0; float: left; clear: left;     width: 100%;"></div>
+                            <div><LABEL for="name" >Merchant: </LABEL><INPUT type="text" id="name" placeholder="Name"></div>
+                            <div><LABEL for="contact" >Web: </LABEL><INPUT type="text" id="contact" placeholder="http://"></div>
+                            <div><LABEL for="contact-detail" >Details: </LABEL><INPUT type="text" id="contact-detail" placeholder="Contact Details"></div>
                         </div>
                         <div class="co-right">
-                            <div class="details"><LABEL for="details" style="font-size: 14px; color: #474949; float: left; margin-bottom: 23px;">Story about ecommerce merchant: </LABEL><textarea type="text" id="details" style="border: 1px solid #999999; float: left; width: 100%; height: 153px;"></textarea></div>
+                            <div class="details"><LABEL for="details" >About ecommerce merchant: </LABEL><textarea type="text" id="details" style="border: 1px solid #999999; float: left; width: 100%; height: 153px;"></textarea></div>
                             <div><INPUT type="submit" value="SUBMIT" style="width: 120px; height: 30px; text-align: center; background: #33cccc; color: #fff; border: 0; float: right; font-size: 18px;"></div>
                         </div>
                     </div>
                 </FORM>
             </div>
             <div class="panel">
-                <div><p>Judge Panel</p></div>
+                <div><p>Expert Panel</p></div>
                 <div class="cards">
                     <div class="no-padding">
                         <img src="place-holder.png"/>
@@ -214,9 +215,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div id="partners">
+        <section id="partners">
             <div><p>Partner</p></div>
 
             <div class="cards">
@@ -240,62 +241,201 @@
                 </div>
             </div>
 
-        </div>
+        </section>
 
-        <div id="faq">
+        <section id="faq">
             <div><p>Frequently Ask Questions (FAQ)</p></div>
             <div>
-                <span>How do I sign up?</span>
-                <small>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.</small>
+                <p>How do I sign up?</p>
+                <small>
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </small>
             </div>
             <div>
-                <span>How long does it take to set up?</span>
-                <span>How does TrustedCompany.com work?</span>
-                <span>Is my data secure?</span>
-                <span>Where are you based?</span>
-                <span>How does TrustedCompany.com help me generate more sales?</span>
-                <span>How long am I bound to a plan for?</span>
-                <span>What if I get bad reviews?</span>
-                <span>What is the fastest way to collect reviews?</span>
+                <!--<span onclick="$('.details').slideToggle();">How long does it take to set up?</span>-->
+                <div class="clicked">How long does it take to set up?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+
+                <div class="clicked">How does TrustedCompany.com work?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">Is my data secure?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">Where are you based?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">How does TrustedCompany.com help me generate more sales?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">How long am I bound to a plan for?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">What if I get bad reviews?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
+                <div class="clicked">What is the fastest way to collect reviews?</div>
+                <div class="mr-details">
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                    <br>Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product,
+                    Simply start your free trial today! One of our friendly consultants will be glad to help you get the most out of our product.
+                </div>
             </div>
+        </section>
+    </div>
+    <div id="footer">
+        <div>
+            <div class="fo-info1">
+                <div class="pro-name"><p>E-commerce Merchant Awards 2016</p><span>March 2017</span></div>
+                <div class="bottom-menu">
+                    <div class="wrapper">
+                        <div><a href="#vote">Vote</a></div>
+                        <div><a href="#about">About</a></div>
+                        <div><a href="#rules">Rules</a></div>
+                        <div><a href="#awards">iPrice Awards</a></div>
+                        <div><a href="#partners">Partners</a></div>
+                        <div><a href="#faq">FAQ</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="fo-info2">
+                <div class="co-address">
+                    <p class="address">
+                        <strong>iPrice Group Sdn Bhd</strong>
+                        <small>
+                            Unit A-22-1, 22nd Floor, Northpoint Offices Suites, Mid Valley City,
+                            No. 1, Medan Syed Putra, 59200 Kuala Lumpur, Malaysia
+                        </small>
+                    </p>
+                    <p class="requirement">
+                        <strong>Information & Enquiries</strong>
+                        <small>info-ema@ipricegroup.com</small>
+                    </p>
+                </div>
+                <div class="co-judges">
+                    <div class="sharer">
+                        <div class="fb">
+                            <a id="fb-btn" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fiprice.my/awards/t= e-Commerce Merchant Awards" target="_blank"><img src="http://i.imgur.com/u9gLigk.png"/></a>
+                        </div>
+                        <div class="tw">
+                            <a class="tw-btn" href=" https://twitter.com/intent/tweet?url=https%3A%2F%2Fiprice.co.id/insights/iphone7%2F&text=Berapa+Harga+iPhone+7+di+negara-negara+Asia+Tenggara?=iPhone7,apple" target="_blank"><img src="http://i.imgur.com/QzPDsIB.png"/></a>
+                        </div>
+                    </div>
+                    <div class="judges">
+                        <a href="\\\" target="_blank"><img src="place-holder.png"></a>
+                        <a href="\\\" target="_blank"><img src="place-holder.png"></a>
+                        <a href="\\\" target="_blank"><img src="place-holder.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="license"><span>© 2016 iPrice Group Sdn Bhd (1113954 - D). All rights reserved.</span></div>
         </div>
-        <div id="footer"></div>
     </div>
 </div>
+
 <script>
-    // handle links with @href started with '#' only
-    $(document).on('click', 'a[href^="#"]', function(e) {
-        // target element id
-        var id = $(this).attr('href');
+    var sections = $('#content')
+            , nav = $('#header')
+            , nav_height = nav.outerHeight();
 
-        // target element
-        var $id = $(id);
-        if ($id.length === 0) {
-            return;
-        }
+    $(window).on('scroll', function () {
+        var cur_pos = $(this).scrollTop();
 
-        // prevent standard hash navigation (avoid blinking in IE)
-        e.preventDefault();
+        $("#content > section").each(function() {
+            var top = $(this).offset().top - nav_height,
+                    bottom = top + $(this).outerHeight();
 
-        // top position relative to the document
-        var pos = $(id).offset().top;
+            if (cur_pos >= top && cur_pos <= bottom) {
 
-        // animated top scrolling
-        $('body, html').animate({scrollTop: pos});
+                nav.find('a').removeClass('active');
+
+                $("#content > section").removeClass('active');
+
+                nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+
+            }
+        });
+    });
+
+    nav.find('a').on('click', function () {
+        var $el = $(this)
+                , id = $el.attr('href');
+
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+        }, 500);
+
+        return false;
     });
 
     $(document).ready(function() {
-        $(window).bind('scroll', function() {
-            if($(window).scrollTop() > 171){
-                $('.nav-menu').addClass('fixed');
-//                $('#content').css('padding-top', '90px');
-            }else{
-                $('.nav-menu').removeClass('fixed');
 
-//                $('#content').css('padding-top', '0px');
+        $(window).bind('scroll', function() {
+
+            if($(window).scrollTop() > 171){
+
+                $('.nav-menu').addClass('fixed');
+
+
+            }else{
+
+                $('.nav-menu').removeClass('fixed');
             }
-        })
+        });
+
     });
+
+    $(document).ready(function() {
+
+        $(document).ready(function(){
+            $('.clicked').click(function(){
+                $(this).next('.mr-details').slideToggle("fast");
+            });
+
+        });
+
+
+    });
+
+    $( document ).ready(function() {
+        $('.go-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 'slow');
+            return false;
+        });
+    });
+
 </script>
 </body>
 </html>

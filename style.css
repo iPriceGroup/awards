@@ -15,6 +15,23 @@ html, body {
     width: 100%;
 }
 
+#main-container > .go-top {
+    position: fixed;
+    top: 70%;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #066886;
+    border-radius: 50%;
+}
+#main-container > .go-top > a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
 #main-container > #header {
     width: 100%;
     margin: 0 auto 36px auto;
@@ -31,14 +48,20 @@ html, body {
 }
 
 #main-container > #header > .head-info {
+    background: #f1f3f2;
     height:171px;
-    /*background: #dddddd;*/
 }
-#main-container > #header > .head-info > img {
+#main-container > #header > .head-info > i {
     margin: 0 auto;
     max-width: 1024px;
-    width: 100%;
+    height: 171px;
     display: block;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-image: url(hd.png);
+    background-position: 10%;
 }
 
 #main-container > #header > .head-info > div {
@@ -49,6 +72,17 @@ html, body {
     background: #333;
     width:170px;
 }
+#main-container > #header > .head-info > .right-color {
+    position: absolute;
+    right: 0;
+    left: initial;
+    background: #30cccd;
+    display: none;
+    height: 130px;
+    z-index: 1;
+    width: 50%;
+}
+
 
 #main-container > #header > .head-info > div > p {
     color: #fff;
@@ -63,7 +97,7 @@ html, body {
 
 #main-container > #header > .nav-menu > .wrapper {
     display: table;
-    height:40px;
+    height:45px;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
@@ -71,27 +105,34 @@ html, body {
 
 #main-container > #header > .nav-menu > .wrapper > div {
     float: left;
-    padding: 10px 0;
+    padding: 0 8px;
     text-align: center;
-    margin-right: 30px;
 }
 
 #main-container > #header > .nav-menu > .wrapper > div > a {
     text-decoration: none;
+    padding:10px 0;
     color: #30cccd;
-    font-size:16px;
+    font-size:14px;
     font-weight:900;
     display: block;
+    transition: all .2s cubic-bezier(.25, .25, .25, 1.25);
+}
+#main-container > #header > .nav-menu > .wrapper > div > a:hover {
+    color: #ff6633;
+}
+.active {
+    border-bottom: 3px solid #ff6633;
 }
 
 
 #main-container > #content {
     margin:0 auto;
-    padding: 0;
-    width:100%;
+    padding: 0 10px;
+    width:90%;
     max-width: 1024px;
 }
-#main-container > #content > div {
+#main-container > #content > section {
     padding:80px 0 0 0;
     display: table;
     margin:0 auto;
@@ -108,9 +149,9 @@ html, body {
     margin:0 0 23px 0;
 }
 #main-container > #content > #vote > .box {
-    width: 548px;
-    margin: 0 48px 0 0;
-    float: left;
+    margin: 0 auto;
+    max-width:548px;
+    width:100%;
 }
 
 .box > .top {
@@ -154,15 +195,16 @@ html, body {
 
 
 #main-container > #content > #vote > .side-content {
-    width: 428px;
-    float: left;
-    margin-top:50px;
+    max-width: 548px;
+    width: 100%;
+    margin: 50px auto 0 auto;
+    display: table;
 }
 .side-content > div {
     padding:0 0 0 10px;
 }
 .side-content > div > p {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     color: #333;
     margin:0;
@@ -198,7 +240,7 @@ html, body {
 
 #about > div > div {
     float: left;
-    width:548px;
+    max-width:548px;
 }
 #about > div > div > div > p {
     font-size: 24px;
@@ -218,7 +260,10 @@ html, body {
 
 }
 #about > div > .about-ema {
-    margin:0 56px 30px 0;
+    margin:0 auto 20px auto;
+    float: none;
+    max-width:548px;
+    width:100%;
 }
 #about > div > .about-ema > div {
     margin-bottom:20px;
@@ -228,10 +273,13 @@ html, body {
     line-height:26px;
 }
 #about > div > .contact-us {
-    width:363px;
+    margin:0 auto;
+    float: none;
 }
 #about > div > .contact-us > div{
     margin-bottom:20px;
+    width:100%;
+    float: left;
 }
 #about > div > .contact-us > div > div {
     margin-bottom:20px;
@@ -256,7 +304,7 @@ html, body {
 
 #rules > div > div {
     float: left;
-    width:548px;
+    max-width:548px;
     margin-bottom:20px;
 }
 #rules > div > div > p {
@@ -273,25 +321,28 @@ html, body {
     display: table;
 }
 #rules > div > .r-r {
-    margin-right:56px;
+    margin:0 auto;
+    float: none;
 }
 #rules > div > .side-regulation {
-    width: 363px;
-    margin:40px 0 0 0;
+    margin:40px auto 0 auto;
+    float:none;
 }
 #rules > div > .side-regulation > p {
     font-size:18px;
     margin-bottom: 7px;
 }
-#rules > div > .read-more {
-    width: 100%;
-    height: 150px;
-    margin-top: -107px;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1),rgba(255, 255, 255, 1) );
+#rules > .read-more {
+    float: left;
+    display: none;
 }
-#rules > div > .read-more > p {
+
+#rules > .read-more > a > p {
     font-size:18px;
-    margin-top:80px;
+    font-weight:900;
+    color: #30cccd;
+    margin:0;
+    cursor: pointer;
 }
 
 /*//========== Awards ==========//*/
@@ -313,12 +364,13 @@ html, body {
     float: left;
 }
 #awards > div > .title, #awards > div > .subject  {
-    width:20%;
+    width:60%;
     font-size:24px;
     font-weight: 900;
 }
 #awards > div > .description {
-    width:60%;
+    width:100%;
+    margin-top:10px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -340,23 +392,53 @@ html, body {
 .nomi-form > form {
     margin:0;
 }
+input[type="text"] {
+    display: block;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 39px;
+    padding: 5px 0 0 10px;
+    box-shadow: none;
+    border:0;
+    float: left;
+    clear: left;
+}
+label {
+    font-size: 14px;
+    color: #474949;
+    float: left;
+    margin-bottom: 10px;
+}
 .nomi-form > form > div {
     width:100%;
     display: table;
 }
 .nomi-form > form > div > .co-right {
-    width:50%;
+    width:100%;
     float: left;
+    margin-top: 20px;
+}
+.nomi-form > form > div > .co-right > label {
+    font-size: 14px;
+    color: #474949;
+    float: left;
+    margin-bottom: 23px;
 }
 .nomi-form > form > div > .co-left {
-    width:40%;
+    width:100%;
     float: left;
-    padding-right:10%;
+    padding: 0;
+}
+.nomi-form > form > div > .co-left > div {
+    border-bottom: 1px solid #999999;
+
 }
 .nomi-form > form > div > div > div {
     margin-bottom:10px;
     display: table;
     width:100%;
+    height:39px;
 }
 .nomi-form > form > div > .details {
     float: left;
@@ -380,15 +462,17 @@ html, body {
 }
 .panel > .cards > div {
     width: 200px;
-    float: left;
-    border-right: 1px solid #999;
-    padding: 0 40px;
+    height: 365px;
+    float: none;
+    border-right: 0;
+    padding: 0 10px;
+    margin: 0 auto 40px auto;
 }
 .panel > .cards > .no-border {
     border:0;
 }
 .panel > .cards > .no-padding {
-    padding:0 40px 0 0;
+    padding:0 20px 0 0;
 }
 .panel > .cards > div > img {
     margin:0 auto;
@@ -440,12 +524,14 @@ html, body {
 }
 #partners > .cards > div {
     width: 200px;
-    float: left;
-    border-right: 1px solid #999;
-    padding: 0 40px;
+    height:365px;
+    float: none;
+    border:0;
+    padding: 0 10px;
+    margin:0 auto 40px auto;
 }
 #partners > .cards > .m1 {
-    padding: 0 40px 0 0;
+    padding: 0 20px 0 0;
 }
 #partners > .cards > .m3 {
     border:0;
@@ -477,13 +563,15 @@ html, body {
 }
 
 /*//========== FAQ ==========//*/
-#content > #faq {
-    width:100%;
-    margin:0;
+#main-container > #content > #faq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
 }
 #faq > div {
     width:100%;
     margin:0 0 23px 0;
+    overflow: hidden;
 }
 #faq > div > p {
     margin: 0;
@@ -491,15 +579,267 @@ html, body {
     font-weight: 900;
     color: #30cccd;
 }
-#faq > div > span {
+#faq > div > .clicked {
     font-size: 18px;
     font-weight: 900;
     color: #30cccd;
     margin:0 0 10px 0;
     width:100%;
     float: left;
+    cursor: pointer;
+}
+#faq > div > .mr-details {
+    font-size: 14px;
+    color: #333;
+    float: left;
+    margin-bottom: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
 }
 #faq > div > small {
     font-size: 14px;
     color: #333;
+}
+
+/*//========== Footer ==========//*/
+
+#main-container > #footer {
+    width:100%;
+    background: #f1f3f2;
+    padding: 20px 0;
+    display: table;
+}
+#footer > div {
+    max-width:1024px;
+    width:100%;
+    margin:0 auto;
+}
+#footer > div > .fo-info1 {
+    border-bottom: 1px solid #30cccd;
+    padding:20px 0;
+    width:100%;
+    display: table;
+}
+#footer > div > div > div {
+    width: 46%;
+    float: left;
+    padding: 0 2%;
+}
+#footer > div > .fo-info1 > div > p {
+    font-size: 24px;
+    font-weight: 900;
+    color: #30cccd;
+    width:100%;
+    margin:0;
+}
+#footer > div > .fo-info1 > div > span {
+    font-size: 24px;
+    color: #30cccd;
+    width:100%;
+}
+#footer > div > .fo-info1 > .bottom-menu > .wrapper {
+    padding:10px 0;
+    display: table;
+}
+#footer > div > .fo-info1 > .bottom-menu > .wrapper > div {
+    padding: 0 13px 5px 13px;
+    float: left;
+    clear: left;
+}
+#footer > div > .fo-info1 > .bottom-menu > .wrapper > div > a {
+    text-decoration: none;
+    color: #30cccd;
+    font-size: 16px;
+    font-weight: 900;
+}
+#footer > div > .fo-info2 > div > p {
+    font-size: 14px;
+    display: table;
+}
+#footer > div > .fo-info2 > div > p > strong, #footer > div > .fo-info2 > div > p > small {
+    width: 100%;
+    float: left;
+    font-size:14px;
+}
+#footer > div > .fo-info2 > .co-judges > div {
+    width:100%;
+    float: left;
+    padding: 10px 0;
+}
+#footer > div > .fo-info2 > .co-judges > .sharer > .fb {
+    width: 34px;
+    height: 34px;
+    float: right;
+    border-radius: 50%;
+    background: #3B5998;
+    display:block;
+}
+#footer > div > .fo-info2 > .co-judges > .sharer > .tw {
+    width: 34px;
+    height: 34px;
+    float: right;
+    border-radius: 50%;
+    background: #4099FF;
+    display:block;
+    margin-right: 10px;
+}
+.co-judges > .sharer > div > a {
+    display: block;
+    padding:6px;
+}
+.co-judges > .sharer > div > a > img {
+    width:100%;
+}
+#footer > div > .fo-info2 > .co-judges > .judges > a {
+    display: block;
+    float: right;
+    clear: right;
+    width:65px;
+    padding:10px;
+}
+.co-judges > .judges > a > img {
+    width:100%;
+}
+#footer > div > .license {
+    float: left;
+    padding-left:10px;
+}
+#footer > div > div > .license > span {
+    font-size:14px;
+    color: #333;
+}
+
+
+@media (min-width: 639px) {
+    #main-container > #header > .head-info > i {
+        background-position: 0;
+    }
+    #main-container > #header > .nav-menu > .wrapper {
+        width:90%;
+    }
+    #main-container > #header > .nav-menu > .wrapper > div {
+        padding: 0 6.6px;
+        margin-right:30px;
+    }
+    #main-container > #header > .nav-menu > .wrapper > div > a {
+        font-size: 16px;
+    }
+    #about > div > .contact-us > div{
+        width:50%;
+    }
+    #awards > div > .title, #awards > div > .subject {
+        width:50%;
+    }
+    .panel > .cards > div {
+        float: left;
+        border-right: 1px solid #999;
+        padding: 0 10px;
+    }
+    #partners > .cards > div {
+        float: left;
+        border-right: 1px solid #999;
+        padding: 0 10px;
+    }
+    #footer > div > .fo-info1 > .bottom-menu > .wrapper > div {
+        clear: none;
+    }
+    #footer > div > .fo-info2 > .co-judges > .judges > a {
+        clear: none;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #main-container > #header > .nav-menu > .wrapper {
+        width:100%;
+    }
+    #main-container > #header > .head-info > i{
+        width:100%;
+    }
+    #main-container > #header > .head-info > .right-color {
+        display: block;
+    }
+    #main-container > #content {
+        padding: 0;
+        width:100%;
+    }
+    #main-container > #header > .nav-menu > .wrapper > div {
+        padding:0;
+    }
+    #main-container > #content > #vote > .box {
+        margin: 0 48px 0 0;
+        max-width: 548px;
+        float: left;
+    }
+    #about > div > .about-ema {
+        margin:0 56px 30px 0;
+        width: 548px;
+        float: left;
+    }
+    #main-container > #content > #vote > .side-content {
+        width: 428px;
+        float: left;
+        margin:50px 0 0 0;
+    }
+    #rules > div > .r-r {
+        margin:0 56px 0 0;
+        float: left;
+    }
+    #rules > div > .side-regulation {
+        width: 363px;
+        margin:40px 0 0 0;
+        float: left;
+    }
+    #rules > .cover {
+        height: 150px;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) );
+        float: left;
+        display: table;
+        margin-top: -150px;
+    }
+    #about > div > .contact-us {
+        width:363px;
+        margin:0;
+        float: left;
+    }
+    #about > div > .contact-us > div{
+        width:auto;
+        float: none;
+    }
+    #awards > div > .title, #awards > div > .subject  {
+        width:20%;
+    }
+    #awards > div > .description {
+        width:77%;
+        margin:0;
+    }
+    .nomi-form > form > div > .co-left {
+        width:40%;
+        padding-right:10%;
+    }
+    .nomi-form > form > div > .co-right {
+        width:50%;
+        margin-top:0;
+    }
+    #rules > .read-more {
+        display: block;
+    }
+    .panel > .cards > .no-padding {
+        padding:0 40px 0 0;
+    }
+    #partners > .cards > .m1 {
+        padding: 0 40px 0 0;
+    }
+    #partners > .cards > div {
+        padding: 0 40px;
+    }
+    #footer > div > div > div {
+        width:50%;
+        padding:0;
+    }
+    #footer > div > .license {
+        padding:0;
+    }
 }
