@@ -185,6 +185,10 @@ p {
 
 /*//========== Vote ==========//*/
 
+#main-container > #content > #vote {
+    padding:50px 0 0 0;
+}
+
 #main-container > #content > #vote > .box > p {
     font-size: 24px;
     line-height:33px;
@@ -421,6 +425,9 @@ p {
     margin:0;
     cursor: pointer;
 }
+#rules > div > .read-more > a > p:hover {
+    text-decoration: underline;
+}
 #rules > div > .cover {
     height: 133px;
     width: 100%;
@@ -437,26 +444,23 @@ p {
     margin:0;
 }
 #awards > div {
-    padding:40px 30px;
+    padding:40px 0px;
     display: table;
-    background: #30cccd;
 }
 #awards > .banner {
     margin-bottom:20px;
-    /*width:75%;*/
 }
 #awards > div > div {
-    color: #fff;
+    color: #474949;
     float: left;
 }
-#awards > div > .title, #awards > div > .subject  {
-    width:60%;
+#awards > div > .title  {
     font-size:24px;
     font-weight: 900;
+    margin-bottom:20px;
+    color: #30cccd;
 }
 #awards > div > .description {
-    width:100%;
-    margin-top:10px;
     font-size: 14px;
     font-weight: 400;
 }
@@ -468,6 +472,13 @@ p {
 }
 .nomi-form > div {
     margin:0 0 36px 0;
+}
+.nomi-form > .holder {
+    display: table;
+    width:100%;
+}
+.nomi-form > .holder > img {
+    width:100%;
 }
 .nomi-form > div > p {
     margin:0;
@@ -685,12 +696,10 @@ label {
     font-size: 14px;
     color: #474949;
 }
-#faq > div > .bigger {
-    font-size:24px;
-}
+
 #faq > div > p {
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
     color: #30cccd;
 }
 #faq > div > strong {
@@ -791,9 +800,12 @@ label {
 }
 #footer > div > .fo-info1 {
     border-bottom: 1px solid #30cccd;
-    padding:20px 0;
+    padding: 20px 0 10px 0;
     width:100%;
     display: table;
+}
+#footer > div > .fo-info1 > .pro-name, #footer > div > .fo-info1 > .bottom-menu {
+    width:100%;
 }
 #footer > div > div > div {
     width: 46%;
@@ -816,9 +828,12 @@ label {
     display: table;
 }
 #footer > div > .fo-info1 > .bottom-menu > .wrapper > div {
-    padding: 0 13px 5px 13px;
+    padding: 0 6px 5px 6px;
     float: left;
     clear: left;
+}
+#footer > div > .fo-info1 > .bottom-menu > .wrapper > div:hover {
+    text-decoration: underline;
 }
 #footer > div > .fo-info1 > .bottom-menu > .wrapper > div > a {
     text-decoration: none;
@@ -891,6 +906,10 @@ label {
 
 @media (min-width: 639px) {
 
+    #main-container > #content > #vote {
+        padding:80px 0 0 0;
+    }
+
     #main-container > #header > .nav-menu > .wrapper > .go-top > a {
         font-size:32px;
     }
@@ -911,9 +930,7 @@ label {
     #about > div > .contact-us > div{
         width:50%;
     }
-    #awards > div > .title, #awards > div > .subject {
-        width:50%;
-    }
+
     .panel > .cards > div {
         float: left;
         border-right: 1px solid #999;
@@ -998,13 +1015,6 @@ label {
     #about > div > .contact-us > div{
         width:auto;
         float: none;
-    }
-    #awards > div > .title, #awards > div > .subject  {
-        width:20%;
-    }
-    #awards > div > .description {
-        width:77%;
-        margin:0;
     }
     #awards > .banner {
         width:100%;
