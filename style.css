@@ -7,40 +7,36 @@ html, body {
     text-decoration: none;
     font-family: 'Noto Sans', sans-serif;
 }
+a {  outline: none;
+    color: #ff6633;
+}
+p {
+    font-weight:bold;
+}
 
 #main-container {
     margin: 0;
     padding: 0;
     position: relative;
+    overflow-x: hidden;
     width: 100%;
 }
 
-#main-container > .go-top {
-    position: fixed;
-    top: 70%;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-    background: #066886;
-    border-radius: 50%;
-}
-#main-container > .go-top > a {
-    display: block;
-    font-size: 30px;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-}
 
 #main-container > #header {
     width: 100%;
     margin: 0 auto 36px auto;
+    position: relative;
 }
 
 #main-container > #header > div {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
     margin: 0 auto;
     width:100%;
     background: rgba(255,255,255,0.8);
+    z-index: 2;
 }
 .fixed {
     position: fixed;
@@ -49,19 +45,21 @@ html, body {
 
 #main-container > #header > .head-info {
     background: #f1f3f2;
-    height:171px;
+    height:169px;
+    position: relative;
+    overflow: hidden;
 }
 #main-container > #header > .head-info > i {
     margin: 0 auto;
-    max-width: 1024px;
+    width: 930px;
     height: 171px;
     display: block;
     z-index: 2;
-    left: 0;
+    top:0;
+    left: -52px;
     right: 0;
     position: absolute;
-    background-image: url(hd.png);
-    background-position: 10%;
+    background: url(header.svg)no-repeat;
 }
 
 #main-container > #header > .head-info > div {
@@ -87,37 +85,83 @@ html, body {
 #main-container > #header > .head-info > div > p {
     color: #fff;
     font-size: 25px;
-    font-weight:900;
     margin:0;
 }
 
 #main-container > #header > .head-info > div > p > span {
     color: red;
 }
-
+#main-container > #header > .nav-menu > .wrapper > .go-top {
+    display: none;
+}
+#main-container > #header > .nav-menu > .wrapper > .go-top.show {
+    width: 44px;
+    height: 42px;
+    right: 0;
+    background: #fff;
+    padding:0;
+    margin:0;
+    display: block;
+}
+#main-container > #header > .nav-menu > .wrapper > .go-top > a {
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 0 auto;
+    transform: rotate(-90deg);
+    width: 20px;
+}
+.show {
+    display: block;
+}
 #main-container > #header > .nav-menu > .wrapper {
-    display: table;
+    display: flex;
+    flex-wrap: nowrap;
     height:45px;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+    position: relative;
 }
-
+#main-container > #header > .nav-menu > .wrapper > .padding {
+    padding-right:60px;
+}
 #main-container > #header > .nav-menu > .wrapper > div {
     float: left;
-    padding: 0 8px;
+    padding: 0 6px;
     text-align: center;
+    height:42px;
+    display: table;
 }
 
 #main-container > #header > .nav-menu > .wrapper > div > a {
     text-decoration: none;
     padding:10px 0;
     color: #30cccd;
-    font-size:14px;
-    font-weight:900;
+    font-size:16px;
+    font-weight:bold;
     display: block;
     transition: all .2s cubic-bezier(.25, .25, .25, 1.25);
 }
+#main-container > #header > .nav-menu > .wrapper > .inner{
+    position: absolute;
+    display: none;
+    right:0;
+}
+#main-container > #header > .nav-menu > .wrapper > div > .fb, #main-container > #header > .nav-menu > .wrapper > div > .tw {
+    width:36px;
+    height:36px;
+    float: left;
+    margin:5px 10px 0 0;
+}
+#main-container > #header > .nav-menu > .wrapper > div > .fb > .fb-btn, #main-container > #header > .nav-menu > .wrapper > div > .tw > .tw-btn {
+    padding:6px;
+    display: block;
+}
+#main-container > #header > .nav-menu > .wrapper > div > div > a > img {
+    width:100%;
+}
+
 #main-container > #header > .nav-menu > .wrapper > div > a:hover {
     color: #ff6633;
 }
@@ -144,96 +188,92 @@ html, body {
 #main-container > #content > #vote > .box > p {
     font-size: 24px;
     line-height:33px;
-    font-weight:900;
     color: #30cccd;
     margin:0 0 23px 0;
 }
 #main-container > #content > #vote > .box {
-    margin: 0 auto;
-    max-width:548px;
+    /*margin: 0 auto;*/
+    /*max-width:548px;*/
     width:100%;
 }
-
-.box > .top {
-    border:1px solid #dddddd;
-    height:388px;
-}
-.box > .top > .inner {
-    padding: 20px 0 0 0;
-}
-.box > .top > .inner > img {
-    width: 100px;
-    margin: 0 auto;
-    padding: 20px;
-    display: block;
-}
-.box > .top > .inner > div {
-    margin: 0 auto;
-    width: 55%;
-    text-align: center;
-}
-.box > .top > .inner > div > span {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 900;
-    line-height:24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-.box > .top > .inner > div > .rating {
-    margin:15px auto;
-}
-.rating > span {
-    color: #dddddd;
-    font-size:50px;
-}
-.box > .top > .inner > div > p {
-    font-size:16px;
-    color: #dddddd;
-    font-weight: 900;
-}
-
-
-#main-container > #content > #vote > .side-content {
-    max-width: 548px;
+#vote > .box > .top > iframe {
     width: 100%;
-    margin: 50px auto 0 auto;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0;
+}
+.box > .top {
+    max-width: 500px;
+}
+.box > .top > img {
+    width: 100%;
+    height:100%;
+}
+#main-container > #content > #vote > .side-content {
+    /*max-width: 548px;*/
+    width: 100%;
+    margin: 50px 0;
     display: table;
 }
-.side-content > div {
-    padding:0 0 0 10px;
+.side-content > div, .side-content > div > div {
+    padding:0 0 15px 0;
+    float: left;
 }
-.side-content > div > p {
+.side-content > div > div > p {
     font-size: 14px;
     font-weight: 300;
     color: #333;
     margin:0;
 }
-.side-content > div > p > span {
+.side-content > div > div > p > span {
     font-size: 18px;
     font-weight: 600;
     color: #30cccd;
     margin: 0 0 10px 0;
 }
-.side-content > div > p > strong {
+.side-content > div > div > p > strong {
     float: left;
     margin: 0 0 10px 0;
     width:88%;
 }
-.side-content > div > p > strong > strong {
+.side-content > div > div > p > strong > small {
     float: left;
-    font-weight: 300;
+    font-weight: 900;
+    font-size:14px;
 }
-.side-content > div > p > strong > strong > a {
+.side-content > div > div > ol {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    padding-left: 18px;
+}
+.side-content > div > div > small {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+.side-content > div > div > small > a {
     color: #ff6633;
 }
-.side-content > div > p > small {
-    width: 60%;
-    float: left;
-    font-size: 13px;
+.side-content > div > div > ol > li {
+    font-size: 14px;
 }
-.side-content > div > p > img {
+.side-content > div > div > img {
     float: left;
+}
+.side-content > div > div > ul {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    padding-left:18px;
+}
+.side-content > div > div > ul > li {
+    font-size: 14px;
 }
 
 /*//========== About ==========//*/
@@ -245,7 +285,6 @@ html, body {
 #about > div > div > div > p {
     font-size: 24px;
     line-height:33px;
-    font-weight:900;
     color: #30cccd;
     margin:0 0 16px 0;
 }
@@ -253,24 +292,40 @@ html, body {
     font-size: 14px;
     color: #333;
 }
+
 #about > div > .contact-us > div > span {
     font-size:18px;
     font-weight: 900;
     color: #30cccd;
 
 }
+#about > div {
+    display: table;
+}
 #about > div > .about-ema {
-    margin:0 auto 20px auto;
-    float: none;
-    max-width:548px;
+    margin:0 0 20px 0;
     width:100%;
 }
 #about > div > .about-ema > div {
     margin-bottom:20px;
+    float: left;
 }
-#about > div > .about-ema > .s1 > p {
-    font-size:18px;
+#about > div > .about-ema > .s1 > small {
+    font-size:14px;
     line-height:26px;
+    float:left;
+}
+
+#about > div > .about-ema > .s1 > ol, .about-ema > .s1 > ul {
+    float: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    padding-left: 18px;
+}
+#about > div > .about-ema > .s1 > ol > li {
+
 }
 #about > div > .contact-us {
     margin:0 auto;
@@ -286,7 +341,6 @@ html, body {
 }
 #about > div > .contact-us > div > div > p {
     font-size: 18px;
-    font-weight: 900;
     color: #30cccd;
     margin:0;
 }
@@ -304,25 +358,50 @@ html, body {
 
 #rules > div > div {
     float: left;
-    max-width:548px;
     margin-bottom:20px;
 }
 #rules > div > div > p {
     font-size: 24px;
-    line-height:33px;
-    font-weight:900;
+    line-height: 33px;
     color: #30cccd;
-    margin:0 0 12px 0;
-}
-#rules > div > div > span {
-    font-size: 14px;
-    color: #333;
-    margin:0 0 15px 0;
+    margin: 0 0 12px 0;
+    float: left;
     display: table;
 }
+#rules > div > div > .margin {
+    margin-top:40PX;
+}
+#rules > div > div > ul {
+    float: left;
+    clear: left;
+    font-size: 14px;
+    font-weight: 300;
+    color: #333;
+    margin: 0;
+    padding:0;
+}
+#rules > div > div > ul > span {
+    font-size: 14px;
+    font-weight:900;
+    color: #333;
+    margin:15px 0 5px 0;
+    display: table;
+}
+#rules > div > div > ul > li {
+    margin-left:20px;
+    line-height: 24px;
+}
+#rules > div > div > ul > ul {
+    margin-bottom: 10px;
+}
+#rules > div > div > ul > ul > li {
+    line-height: 24px;
+}
 #rules > div > .r-r {
-    margin:0 auto;
-    float: none;
+    margin-bottom:40px;
+}
+#rules > div > .hidden {
+    display: none;
 }
 #rules > div > .side-regulation {
     margin:40px auto 0 auto;
@@ -332,17 +411,23 @@ html, body {
     font-size:18px;
     margin-bottom: 7px;
 }
-#rules > .read-more {
+#rules > div > .read-more {
     float: left;
-    display: none;
 }
 
-#rules > .read-more > a > p {
+#rules > div > .read-more > a > p {
     font-size:18px;
-    font-weight:900;
     color: #30cccd;
     margin:0;
     cursor: pointer;
+}
+#rules > div > .cover {
+    height: 133px;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1) );
+    float: left;
+    display: table;
+    margin-top: -159px;
 }
 
 /*//========== Awards ==========//*/
@@ -358,6 +443,7 @@ html, body {
 }
 #awards > .banner {
     margin-bottom:20px;
+    /*width:75%;*/
 }
 #awards > div > div {
     color: #fff;
@@ -385,8 +471,7 @@ html, body {
 }
 .nomi-form > div > p {
     margin:0;
-    font-size:24px;
-    font-weight:900;
+    font-size:18px;
     color: #30cccd;
 }
 .nomi-form > form {
@@ -437,7 +522,7 @@ label {
 .nomi-form > form > div > div > div {
     margin-bottom:10px;
     display: table;
-    width:100%;
+    width:90%;
     height:39px;
 }
 .nomi-form > form > div > .details {
@@ -447,7 +532,7 @@ label {
     background: none;
     padding:0;
     width:100%;
-    margin: 0 0 100px 0;
+    margin: 0;
 }
 .panel > div {
     margin:0 0 30px 0;
@@ -456,17 +541,16 @@ label {
 }
 .panel > div > p {
     margin:0;
-    font-size:24px;
-    font-weight:900;
+    font-size:18px;
     color: #30cccd;
 }
 .panel > .cards > div {
-    width: 200px;
-    height: 365px;
+    width: 275px;
+    height:665px;
     float: none;
-    border-right: 0;
+    border:0;
     padding: 0 10px;
-    margin: 0 auto 40px auto;
+    margin:0 auto 40px auto;
 }
 .panel > .cards > .no-border {
     border:0;
@@ -474,14 +558,27 @@ label {
 .panel > .cards > .no-padding {
     padding:0 20px 0 0;
 }
-.panel > .cards > div > img {
+.panel > .cards > div > a {
+    width: 250px;
+    vertical-align: middle;
+    padding: 40px 0;
+    display: block;
     margin:0 auto;
+}
+.panel > .cards > div > a > img {
+    margin: 0 auto;
+    display: block;
+    vertical-align: middle;
+    width:100%;
+
+}
+.gray {
+    filter: grayscale(100%);
 }
 .panel > .cards > div > p {
     margin: 0 auto;
     height: 30px;
     font-size: 18px;
-    font-weight: 900;
     text-align: center;
     color: #474949;
 }
@@ -516,19 +613,33 @@ label {
 #partners > div > p {
     margin: 0;
     font-size: 24px;
-    font-weight: 900;
     color: #30cccd;
 }
 #partners > div > div {
     float:left;
 }
 #partners > .cards > div {
-    width: 200px;
-    height:365px;
+    width: 275px;
     float: none;
     border:0;
     padding: 0 10px;
-    margin:0 auto 40px auto;
+    margin:0 auto;
+    height:588px;
+}
+#partners > .cards > div > a {
+    width: 100%;
+    vertical-align: middle;
+    padding: 40px 0;
+    text-decoration: none;
+    display: table;
+}
+#partners > .cards > div > a > img {
+    margin: 0 auto;
+    display: block;
+    vertical-align: middle;
+}
+#partners > .cards > div > img {
+    width:100%;
 }
 #partners > .cards > .m1 {
     padding: 0 20px 0 0;
@@ -541,7 +652,6 @@ label {
     margin: 0 auto;
     height: 30px;
     font-size: 18px;
-    font-weight: 900;
     text-align: center;
     color: #474949;
 }
@@ -572,12 +682,26 @@ label {
     width:100%;
     margin:0 0 23px 0;
     overflow: hidden;
+    font-size: 14px;
+    color: #474949;
+}
+#faq > div > .bigger {
+    font-size:24px;
 }
 #faq > div > p {
     margin: 0;
-    font-size: 24px;
-    font-weight: 900;
+    font-size: 18px;
     color: #30cccd;
+}
+#faq > div > strong {
+    float: left;
+    margin: 20px 0 10px 0;
+}
+#faq > div > span {
+    font-size: 14px;
+}
+#faq > div > div > ul > li {
+    list-style-type: lower-alpha;
 }
 #faq > div > .clicked {
     font-size: 18px;
@@ -588,19 +712,69 @@ label {
     float: left;
     cursor: pointer;
 }
+#faq > div > .clicked:hover {
+    text-decoration: underline;
+}
 #faq > div > .mr-details {
     font-size: 14px;
-    color: #333;
+    color: #474949;
     float: left;
     margin-bottom: 20px;
-    cursor: pointer;
     overflow: hidden;
     display: none;
 }
-#faq > div > small {
+#faq > div > span {
     font-size: 14px;
-    color: #333;
+    color: #474949;
 }
+
+/*//========== Merchant ==========//*/
+#main-container > #content > #merchant {
+    margin-bottom: 40px;
+}
+#merchant > div > p {
+    font-size: 24px;
+    line-height: 33px;
+    color: #30cccd;
+    margin: 0 0 16px 0;
+}
+#merchant > div > div > span {
+    font-size:14px;
+    color: #474949;
+    margin-bottom: 10px;
+    float: left;
+}
+#merchant > div > .banners {
+    display: table;
+    width:100%;
+}
+#merchant > div > .banners > div  {
+    float: left;
+    width:50%;
+}
+#merchant > div > .banners > div > a {
+    padding: 20px 15px;
+    margin: 20px 0;
+    display: block;
+    transition: .2s ease;
+}
+#merchant > div > .banners > div > a:hover{
+    border:2px solid #ff6633;
+}
+#merchant > div > .banners > div > a > img {
+    margin: 0 auto;
+    display: block;
+    width:60%;
+}
+#merchant > div > .banners > div > a > small {
+    width: 100%;
+    display: table;
+    text-align: center;
+}
+
+
+
+
 
 /*//========== Footer ==========//*/
 
@@ -628,7 +802,6 @@ label {
 }
 #footer > div > .fo-info1 > div > p {
     font-size: 24px;
-    font-weight: 900;
     color: #30cccd;
     width:100%;
     margin:0;
@@ -656,6 +829,7 @@ label {
 #footer > div > .fo-info2 > div > p {
     font-size: 14px;
     display: table;
+    font-weight: normal;
 }
 #footer > div > .fo-info2 > div > p > strong, #footer > div > .fo-info2 > div > p > small {
     width: 100%;
@@ -667,7 +841,7 @@ label {
     float: left;
     padding: 10px 0;
 }
-#footer > div > .fo-info2 > .co-judges > .sharer > .fb {
+.fb {
     width: 34px;
     height: 34px;
     float: right;
@@ -675,7 +849,7 @@ label {
     background: #3B5998;
     display:block;
 }
-#footer > div > .fo-info2 > .co-judges > .sharer > .tw {
+.tw {
     width: 34px;
     height: 34px;
     float: right;
@@ -692,13 +866,17 @@ label {
     width:100%;
 }
 #footer > div > .fo-info2 > .co-judges > .judges > a {
-    display: block;
+    display: table;
     float: right;
     clear: right;
-    width:65px;
-    padding:10px;
+    width: 120px;
+    height: 50px;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
 }
 .co-judges > .judges > a > img {
+    vertical-align: middle;
     width:100%;
 }
 #footer > div > .license {
@@ -712,9 +890,11 @@ label {
 
 
 @media (min-width: 639px) {
-    #main-container > #header > .head-info > i {
-        background-position: 0;
+
+    #main-container > #header > .nav-menu > .wrapper > .go-top > a {
+        font-size:32px;
     }
+
     #main-container > #header > .nav-menu > .wrapper {
         width:90%;
     }
@@ -722,8 +902,11 @@ label {
         padding: 0 6.6px;
         margin-right:30px;
     }
-    #main-container > #header > .nav-menu > .wrapper > div > a {
-        font-size: 16px;
+    #main-container > #content > #vote > .side-content {
+
+    }
+    #main-container > #header > .nav-menu > .wrapper > .go-top.show {
+        right:10px;
     }
     #about > div > .contact-us > div{
         width:50%;
@@ -734,12 +917,18 @@ label {
     .panel > .cards > div {
         float: left;
         border-right: 1px solid #999;
-        padding: 0 10px;
+        padding:0 40px;
     }
     #partners > .cards > div {
         float: left;
         border-right: 1px solid #999;
         padding: 0 10px;
+    }
+    .nomi-form > form > div > div > div {
+        width:100%;
+    }
+    #merchant > div > .banners > div {
+        height:338px;
     }
     #footer > div > .fo-info1 > .bottom-menu > .wrapper > div {
         clear: none;
@@ -747,15 +936,18 @@ label {
     #footer > div > .fo-info2 > .co-judges > .judges > a {
         clear: none;
     }
-
 }
 
 @media (min-width: 1024px) {
     #main-container > #header > .nav-menu > .wrapper {
         width:100%;
     }
+    #main-container > #header > .nav-menu > .wrapper > .inner {
+        display: table;
+    }
     #main-container > #header > .head-info > i{
-        width:100%;
+        width: 1024px;
+        left:0;
     }
     #main-container > #header > .head-info > .right-color {
         display: block;
@@ -772,6 +964,9 @@ label {
         max-width: 548px;
         float: left;
     }
+    .side-content > div > div {
+        padding:0 0 15px 10px;
+    }
     #about > div > .about-ema {
         margin:0 56px 30px 0;
         width: 548px;
@@ -783,7 +978,7 @@ label {
         margin:50px 0 0 0;
     }
     #rules > div > .r-r {
-        margin:0 56px 0 0;
+        margin:0 56px 40px 0;
         float: left;
     }
     #rules > div > .side-regulation {
@@ -791,13 +986,9 @@ label {
         margin:40px 0 0 0;
         float: left;
     }
-    #rules > .cover {
-        height: 150px;
-        width: 100%;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1) );
-        float: left;
-        display: table;
-        margin-top: -150px;
+    #rules > div > .cover {
+        height: 120px;
+        margin-top: -152px;
     }
     #about > div > .contact-us {
         width:363px;
@@ -815,6 +1006,9 @@ label {
         width:77%;
         margin:0;
     }
+    #awards > .banner {
+        width:100%;
+    }
     .nomi-form > form > div > .co-left {
         width:40%;
         padding-right:10%;
@@ -823,17 +1017,17 @@ label {
         width:50%;
         margin-top:0;
     }
-    #rules > .read-more {
-        display: block;
-    }
     .panel > .cards > .no-padding {
-        padding:0 40px 0 0;
+        padding:0 37px 0 0;
     }
     #partners > .cards > .m1 {
-        padding: 0 40px 0 0;
+        padding: 0 37px 0 0;
     }
     #partners > .cards > div {
         padding: 0 40px;
+    }
+    #partners > .cards > div > a {
+        height:95px;
     }
     #footer > div > div > div {
         width:50%;
