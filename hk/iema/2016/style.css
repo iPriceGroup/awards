@@ -59,7 +59,7 @@ p {
     left: -52px;
     right: 0;
     position: absolute;
-    background: url(header.svg)no-repeat;
+    background: url(header-hk.svg)no-repeat;
 }
 
 #main-container > #header > .head-info > div {
@@ -732,6 +732,9 @@ label {
     overflow: hidden;
     display: none;
 }
+#faq > div > .mr-details > strong {
+    color: #30cccd;
+}
 #faq > div > span {
     font-size: 14px;
     color: #474949;
@@ -803,6 +806,10 @@ label {
     padding: 20px 0 10px 0;
     width:100%;
     display: table;
+}
+#footer > div > .fo-info2 {
+    display: table;
+    width:100%;
 }
 #footer > div > .fo-info1 > .pro-name, #footer > div > .fo-info1 > .bottom-menu {
     width:100%;
@@ -893,6 +900,13 @@ label {
 .co-judges > .judges > a > img {
     vertical-align: middle;
     width:100%;
+}
+.co-judges > .judges > a > .etail-logo {
+    width:70%;
+}
+.co-judges > .judges > a > .tc-logo {
+    width: 145px;
+    padding-top: 15px;
 }
 #footer > div > .license {
     float: left;
