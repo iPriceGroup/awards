@@ -938,9 +938,6 @@ label {
         padding: 0 6.6px;
         margin-right:30px;
     }
-    #main-container > #content > #vote > .side-content {
-
-    }
     #main-container > #header > .nav-menu > .wrapper > .go-top.show {
         right:10px;
     }
@@ -1009,7 +1006,7 @@ label {
     #main-container > #content > #vote > .side-content {
         width: 428px;
         float: left;
-        margin:50px 0 0 0;
+        margin:85px 0 0 0;
     }
     #rules > div > .r-r {
         margin:0 56px 40px 0;
