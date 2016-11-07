@@ -657,9 +657,11 @@ label {
 }
 #partners > .cards > .m1 {
     padding: 0 20px 0 0;
+    height:600px;
 }
 #partners > .cards > .m3 {
     border:0;
+    height:600px;
 }
 
 #partners> .cards > div > p {
@@ -1047,8 +1049,12 @@ label {
     .panel > .cards > .no-padding {
         padding:0 37px 0 0;
     }
+    #partners > .cards > .m3 {
+        height: 810px;
+    }
     #partners > .cards > .m1 {
         padding: 0 37px 0 0;
+        height: 810px;
     }
     #partners > .cards > div {
         padding: 0 40px;
