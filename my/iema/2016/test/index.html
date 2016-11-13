@@ -45,9 +45,11 @@
         <section id="vote">
             <div class="box">
                 <p>Vote for Your Favorite E-Commerce Merchant</p>
+
                 <div class="top" id="ip-iframe-holder">
+                    <iframe src="https://trustedcompany.com/my/profile/330/review"> </iframe>
                     <!--<img src="voting.gif">-->
-                    <div class="tc-form"></div>
+                    <!--<div class="tc-form"></div>-->
                 </div>
             </div>
             <div class="side-content">
@@ -579,18 +581,18 @@
         });
     });
 
-
-//    var iframe = document.createElement('iframe');
-//    var url = window.location.href;
-//    var id = url.lastIndexOf('=');
-//    if(id == -1){
-//        id = 330;  //Default to lazada id=330 -- change line if you don't want default to 0
-//    }else {
-//        id = url.substr(id+1);
-//    }
-//    iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
-//    var frameHolder = document.getElementById('ip-iframe-holder');
-//    frameHolder.appendChild(iframe);
+//iframe parameter link
+    var iframe = document.createElement('iframe');
+    var url = window.location.href;
+    var id = url.lastIndexOf('=');
+    if(id == -1){
+        id = 330;  //Default to lazada id=330 -- change line if you don't want default to 0
+    }else {
+        id = url.substr(id+1);
+    }
+    iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
+    var frameHolder = document.getElementById('ip-iframe-holder');
+    frameHolder.appendChild(iframe);
 
 
 
@@ -607,14 +609,14 @@
             });
         });
     });
-// tc-form
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//trustedcompany.com/statics/scripts/plugins.js";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'tc-plugins'));
+//// tc-form
+//(function(d, s, id) {
+//    var js, fjs = d.getElementsByTagName(s)[0];
+//    if (d.getElementById(id)) return;
+//    js = d.createElement(s); js.id = id;
+//    js.src = "//trustedcompany.com/statics/scripts/plugins.js";
+//    fjs.parentNode.insertBefore(js, fjs);
+//}(document, 'script', 'tc-plugins'));
 </script>
 </body>
 </html>
