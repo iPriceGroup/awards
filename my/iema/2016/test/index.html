@@ -51,8 +51,71 @@
                     <!--<iframe src="https://trustedcompany.com/my/profile/330/review"> </iframe>-->
                     <!--<img src="voting.gif">-->
                     <div class="tc-search">
+                    </div>
 
 
+                    <div class="stars">
+                        <div id="m-logo"></div>
+                        <section class="content">
+
+
+                            <!-- Review Form -->
+                            <div class="rate-review">
+                                <form id="review_form" method="GET" autocomplete="off">
+                                    <!-- Star Rating -->
+                                    <div class="rate-star">
+                                        <!-- note: exellent 5 rating is the first in the code -->
+                                        <fieldset class="rating">
+                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
+                                            <label for="star5-mobile" title="Excellent">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
+                                            <label for="star4-mobile" title="Very Good">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
+                                            <label for="star3-mobile" title="Average">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
+                                            <label for="star2-mobile" title="Poor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off">
+                                            <label for="star1-mobile" title="Bad">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+
+                                        </fieldset>
+                                        <!-- Rating descrition that can change from Poor to Excellent -->
+                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
+                                    </div><!-- Star Rating -->
+                                    <input type="hidden" name="module" value="ef">
+                                </form>
+
+                            </div><!-- Review Form -->
+                        </section>
                     </div>
                 </div>
             </div>
@@ -590,24 +653,48 @@
         });
     });
 
+
+
+////iframe parameter link
+//var iframe = document.createElement('iframe');
+//var arr = document.URL.match(/mid=([0-9]+)/);
+//if(arr !== null){
+//    // Show custom iframe with indivdual store ratings
+//    var id = arr[1];
+//    iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
+//    var frameHolder = document.getElementById('ip-iframe-holder');
+//    frameHolder.appendChild(iframe);
+//    $('.tc-search').css('display', 'none !important');
+//} else {
+//
+//}
+
 //iframe parameter link
 var iframe = document.createElement('iframe');
-var arr = document.URL.match(/mid=([0-9]+)/);
-if(arr !== null){
+
+function getQueryString() {
+    var search = location.search ;
+    if (search !== "") {
+        return search.substr(1).split('&').reduce(function (acc, curr) {
+            var kv = curr.split('=');
+            acc[kv[0]] = kv[1];
+            return acc;
+        }, {});
+    } else {
+        return "";
+    }
+}
+
+var arr = getQueryString();
+
+if(arr !== ""){
     // Show custom iframe with indivdual store ratings
-    var id = arr[1];
-    iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
-    var frameHolder = document.getElementById('ip-iframe-holder');
-    frameHolder.appendChild(iframe);
-    $('.tc-search').css('display', 'none !important');
+    $('.tc-search').css('display', 'none');
+    $('#review_form').prop("action", "https://trustedcompany.com/profile/" + arr.mid + "/review");
+    $('#m-logo').text("" + arr.mname);
 } else {
-(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'tc-plugins'));
+  $(".stars").css('display','none');
+}
 
 //read more and read less button trigger
 $(document).ready(function() {
@@ -623,6 +710,15 @@ $(document).ready(function() {
     });
 });
 
+
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'tc-plugins'));
 
 </script>
 </body>
