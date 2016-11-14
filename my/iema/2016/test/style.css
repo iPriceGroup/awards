@@ -231,14 +231,31 @@ p {
     margin:0 auto;
 }
 .tc-search-label {
-    padding:12px 0 !important;
-    width:40% !important;
+    padding: 12px 0 !important;
+    width: 25% !important;
+    display: table;
+    float: left;
+    clear: none;
 }
 .tc-search-label-text {
     margin: 0 auto;
 }
 .tc-form .tc-container .tc-search>input {
     /*padding:26px 14px !important;*/
+}
+.tc-form .tc-container .tc-search-bar {
+    width: 90%;
+    font-size: 1em;
+    position: relative;
+    display: table;
+    z-index: 11;
+    margin: 0 auto;
+}
+.tc-search-bar>input {
+    width: 70% !important;
+    display: table !important;
+    float: left;
+    clear: none !important;
 }
 @media (max-width: 991px) {
     .tc-form .tc-container .tc-search>.tc-search-label>.tc-search-label-text:before {
