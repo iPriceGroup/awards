@@ -218,10 +218,10 @@ p {
     border: 2px solid #f2f2f2;
     border-radius: 10px;
 }
-.tc-form {
+.tc-search {
     padding:50px 10px;
 }
-.tc-form .tc-container {
+.tc-search .tc-container {
     width:100% !important;
 }
 .tc-search {
@@ -240,10 +240,10 @@ p {
 .tc-search-label-text {
     margin: 0 auto;
 }
-.tc-form .tc-container .tc-search>input {
+.tc-search .tc-container .tc-search>input {
     /*padding:26px 14px !important;*/
 }
-.tc-form .tc-container .tc-search-bar {
+.tc-search .tc-container .tc-search-bar {
     width: 90%;
     font-size: 1em;
     position: relative;
@@ -258,7 +258,7 @@ p {
     clear: none !important;
 }
 @media (max-width: 991px) {
-    .tc-form .tc-container .tc-search>.tc-search-label>.tc-search-label-text:before {
+    .tc-search .tc-container .tc-search>.tc-search-label>.tc-search-label-text:before {
         margin: 13px auto;
     }
 }
