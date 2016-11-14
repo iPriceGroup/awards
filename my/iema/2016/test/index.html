@@ -50,7 +50,10 @@
                 <div class="top" id="ip-iframe-holder">
                     <!--<iframe src="https://trustedcompany.com/my/profile/330/review"> </iframe>-->
                     <!--<img src="voting.gif">-->
-                    <div class="tc-search"></div>
+                    <div class="tc-search">
+
+
+                    </div>
                 </div>
             </div>
             <div class="side-content">
@@ -596,25 +599,13 @@ if(arr !== null){
     iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
     var frameHolder = document.getElementById('ip-iframe-holder');
     frameHolder.appendChild(iframe);
-    $('.tc-search').css('display', 'none');
+    $('.tc-search').css('display', 'none !important');
 } else {
-    // show tc-form
-    (function(d, s, id) {
-        console.log('s', s);
-        console.log('d', d);
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//trustedcompany.com/statics/scripts/plugins.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'tc-plugins'));
-}
 (function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
-    js.src =
-            "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
+    js.src = "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'tc-plugins'));
 
