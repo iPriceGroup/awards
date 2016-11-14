@@ -76,7 +76,7 @@ p {
     left: initial;
     background: #30cccd;
     display: none;
-    height: 130px;
+    height: 100%;
     z-index: 1;
     width: 50%;
 }
@@ -218,6 +218,111 @@ p {
     border: 2px solid #f2f2f2;
     border-radius: 10px;
 }
+
+/*==================TC search================*/
+#ip-iframe-holder > .stars > .content {
+    display: block;
+    box-sizing: border-box;
+}
+#ip-iframe-holder > .stars > section.content .rate-review {
+    margin-top: 20px;
+}
+#ip-iframe-holder > .stars > section.content .rate-review form {
+    margin-bottom: 40px;
+}
+#ip-iframe-holder > .stars > section.content .rate-star {
+    margin-bottom: 23px;
+}
+.rating {
+    display: block;
+    margin: 20px auto 5px;
+    width: 270px;
+}
+#vote > .box > .top > .stars > #m-logo {
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    float: none;
+    text-align: center;
+    margin-top: 20px;
+}
+.content > div > form > div > fieldset {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    min-width: 0;
+}
+.content > div > form > div > fieldset {
+    /*border: 1px solid silver;*/
+    margin: 0 auto;
+    padding: .35em .625em .75em;
+}
+.rating>input {
+    display: none;
+}
+.rating>input[type=checkbox], .rating>input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    line-height: normal;
+}
+.rating>input[type=checkbox], .rating>input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+}
+.rating>label {
+    color: #ddd;
+    float: right;
+    margin-bottom: 0;
+}
+.rating label {
+    cursor: pointer;
+}
+.rating > label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+.rating>label>svg {
+    fill: #ddd;
+    stop-color: #ddd;
+}
+#ip-iframe-holder > .stars >section.content .rate-star .star-tooltip {
+    text-align: center;
+    font-weight: 500;
+    color: #999;
+}
+.rating > input {
+    display: none;
+}
+.rating > label {
+    color: #ddd;
+    float: right;
+    margin-bottom: 0;
+}
+.rating > label > svg {
+    fill: #dddddd;
+    stop-color: #dddddd;
+}
+.rating > input:checked ~ label > svg,
+.rating:not(:checked) > label:hover > svg,
+.rating:not(:checked) > label:hover ~ label > svg {
+    fill: #FFD700;
+    stop-color: #FFD700;
+}
+.rating > input:checked + label:hover,
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label > svg {
+    fill: #FFD700;
+    stop-color: #FFD700;
+}
+
+
 .tc-search {
     padding:50px 10px;
 }
@@ -226,7 +331,7 @@ p {
 }
 .tc-search {
     z-index: 1 !important;
-    display: flex !important;
+    display: flex;
     width:90% !important;
     margin:0 auto;
 }
@@ -622,7 +727,7 @@ label {
     color: #30cccd;
 }
 .panel > .cards > div {
-    width: 275px;
+    width: 330px;
     height:665px;
     float: none;
     border:0;
@@ -696,7 +801,7 @@ label {
     float:left;
 }
 #partners > .cards > div {
-    width: 275px;
+    width: 330px;
     float: none;
     border:0;
     padding: 0 10px;
