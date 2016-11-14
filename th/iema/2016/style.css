@@ -737,6 +737,9 @@ label {
     overflow: hidden;
     display: none;
 }
+#faq > div > .mr-details > img {
+    width:100%;
+}
 #faq > div > .mr-details > strong {
     color: #30cccd;
 }
