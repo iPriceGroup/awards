@@ -44,7 +44,8 @@
     <div id="content">
         <section id="vote">
             <div class="box">
-                <p>Vote for Your Favorite E-Commerce Merchant</p>
+                <p class="hide">Vote for Your Favorite E-Commerce Merchant</p>
+                <p class="show">Vote for Your Favorite <br>E-Commerce Merchant</p>
 
                 <div class="top" id="ip-iframe-holder">
                     <!--<iframe src="https://trustedcompany.com/my/profile/330/review"> </iframe>-->
@@ -254,23 +255,23 @@
                 <div><p>Nomination Form</p></div>
                 <!--<div class="holder"><img src="voting-b.gif"></div>-->
 
-                <!--<form>-->
-                    <!--<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdlmlmIPhFOVZBe8xmXERnpeF_q7Duc0n3lDCVCs4BUV0Ed1w/viewform?embedded=true" width="100%" height="1110px" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>-->
-                <!--</form>-->
+                <div class="form">
+                    <iframe src="https://form.jotform.me/63072103818450"></iframe>
+                </div>
 
-                <FORM action="mailto:award@ipricegroup.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">
-                    <div>
-                        <div class="co-left">
-                            <div><LABEL for="name" >Merchant: </LABEL><INPUT type="text" id="name" placeholder="Name of Merchant"></div>
-                            <div><LABEL for="contact" >Web: </LABEL><INPUT type="text" id="contact" placeholder="Merchant Website"></div>
-                            <div><LABEL for="contact-detail" >Details: </LABEL><INPUT type="text" id="contact-detail" placeholder="Email address (to enter the draw for smartphone)"></div>
-                        </div>
-                        <div class="co-right">
-                            <div class="details"><LABEL for="details" >About ecommerce merchant: </LABEL><textarea type="text" id="details" style="border: 1px solid #999999; float: left; width: 100%; height: 153px;" placeholder="story about nominated merchant"></textarea></div>
-                            <div><INPUT type="submit" value="submit" style="width: 120px; height: 30px; text-align: center; background: #33cccc; color: #fff; border: 0; float: right; font-size: 18px;"></div>
-                        </div>
-                    </div>
-                </FORM>
+                <!--<FORM action="mailto:award@ipricegroup.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">-->
+                    <!--<div>-->
+                        <!--<div class="co-left">-->
+                            <!--<div><LABEL for="name" >Merchant: </LABEL><INPUT type="text" id="name" placeholder="Name of Merchant"></div>-->
+                            <!--<div><LABEL for="contact" >Web: </LABEL><INPUT type="text" id="contact" placeholder="Merchant Website"></div>-->
+                            <!--<div><LABEL for="contact-detail" >Details: </LABEL><INPUT type="text" id="contact-detail" placeholder="Email address (to enter the draw for smartphone)"></div>-->
+                        <!--</div>-->
+                        <!--<div class="co-right">-->
+                            <!--<div class="details"><LABEL for="details" >About ecommerce merchant: </LABEL><textarea type="text" id="details" style="border: 1px solid #999999; float: left; width: 100%; height: 153px;" placeholder="story about nominated merchant"></textarea></div>-->
+                            <!--<div><INPUT type="submit" value="submit" style="width: 120px; height: 30px; text-align: center; background: #33cccc; color: #fff; border: 0; float: right; font-size: 18px;"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</FORM>-->
 
                 <!--<div class="typeform-widget" data-url="https://designkl.typeform.com/to/y6TNpO" data-text="Nomination Form" style="width:100%;height:500px;"></div>-->
                 <!--<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>-->
@@ -368,7 +369,7 @@
                 <div class="clicked">How do I enlist my e-commerce business for the iEMA voting & judging sessions?</div>
 
                 <div class="mr-details">
-                    <img src="schema2.png" >
+                    <img src="schema-my.png" >
                     <!--<span>All valid and legal e-commerce businesses and merchants are automatically enlisted into the awards for the following categories:</span>-->
                     <!--<ul>-->
                         <!--<li>The Most Popular E-Commerce Merchant of the Year 2016.</li>-->
@@ -516,7 +517,7 @@
 </div>
 
 <script>
-//    tag navigation buttons with belong sections
+//tag navigation buttons with belong sections
     var nav = $('#header')
         , nav_height = nav.outerHeight();
 
@@ -608,7 +609,16 @@ if(arr !== null){
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'tc-plugins'));
 }
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src =
+            "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'tc-plugins'));
 
+//read more and read less button trigger
 $(document).ready(function() {
     $('.read-more > a').click(function() {
         var that = $(this);
