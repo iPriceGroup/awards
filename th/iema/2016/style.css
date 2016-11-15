@@ -76,7 +76,7 @@ p {
     left: initial;
     background: #30cccd;
     display: none;
-    height: 130px;
+    height: 100%;
     z-index: 1;
     width: 50%;
 }
