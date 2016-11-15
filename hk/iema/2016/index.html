@@ -47,7 +47,73 @@
                 <p class="hide">Vote for Your Favorite E-Commerce Merchant</p>
                 <p class="show">Vote for Your Favorite <br>E-Commerce Merchant</p>
                 <div class="top" id="ip-iframe-holder">
-                    <img src="voting.gif">
+                    <div class="tc-search">
+                    </div>
+
+
+                    <div class="stars">
+                        <div id="m-logo"></div>
+                        <section class="content">
+
+
+                            <!-- Review Form -->
+                            <div class="rate-review">
+                                <form id="review_form" method="GET" autocomplete="off">
+                                    <!-- Star Rating -->
+                                    <div class="rate-star">
+                                        <!-- note: exellent 5 rating is the first in the code -->
+                                        <fieldset class="rating">
+                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
+                                            <label for="star5-mobile" title="Excellent">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
+                                            <label for="star4-mobile" title="Very Good">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
+                                            <label for="star3-mobile" title="Average">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
+                                            <label for="star2-mobile" title="Poor">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off">
+                                            <label for="star1-mobile" title="Bad">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+
+                                        </fieldset>
+                                        <!-- Rating descrition that can change from Poor to Excellent -->
+                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
+                                    </div><!-- Star Rating -->
+                                    <input type="hidden" name="module" value="ef">
+                                </form>
+
+                            </div><!-- Review Form -->
+                        </section>
+                    </div>
                 </div>
             </div>
             <div class="side-content">
@@ -250,20 +316,9 @@
             </div>
             <div class="nomi-form">
                 <div><p>Nomination Form</p></div>
-                <div class="holder"><img src="voting-b.gif"></div>
-                <!--<FORM action="mailto:award@ipricegroup.com" method="post" enctype="text/plain" onsubmit="location.href='thanks.html';">-->
-                    <!--<div>-->
-                        <!--<div class="co-left">-->
-                            <!--<div><LABEL for="name" >Merchant: </LABEL><INPUT type="text" id="name" placeholder="Name of Merchant"></div>-->
-                            <!--<div><LABEL for="contact" >Web: </LABEL><INPUT type="text" id="contact" placeholder="Merchant Website"></div>-->
-                            <!--<div><LABEL for="contact-detail" >Details: </LABEL><INPUT type="text" id="contact-detail" placeholder="Email address (to enter the draw for smartphone)"></div>-->
-                        <!--</div>-->
-                        <!--<div class="co-right">-->
-                            <!--<div class="details"><LABEL for="details" >About ecommerce merchant: </LABEL><textarea type="text" id="details" style="border: 1px solid #999999; float: left; width: 100%; height: 153px;" placeholder="story about nominated merchant"></textarea></div>-->
-                            <!--<div><INPUT type="submit" value="submit" style="width: 120px; height: 30px; text-align: center; background: #33cccc; color: #fff; border: 0; float: right; font-size: 18px;"></div>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</FORM>-->
+                <div class="form">
+                    <iframe src="https://form.jotform.me/63072103818450"></iframe>
+                </div>
             </div>
             <div class="panel">
                 <div><p id="experts">Expert Panel</p></div>
@@ -505,9 +560,9 @@
 </div>
 
 <script>
-//    tag navigation buttons with belong sections
+    //tag navigation buttons with belong sections
     var nav = $('#header')
-        , nav_height = nav.outerHeight();
+            , nav_height = nav.outerHeight();
 
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
@@ -526,7 +581,7 @@
             }
         });
     });
-//smooth scroll animated
+    //smooth scroll animated
     nav.find('a').on('click', function () {
         var $el = $(this)
                 , id = $el.attr('href');
@@ -537,7 +592,7 @@
 
         return false;
     });
-//fixed sticky navigation menu once start scroll
+    //fixed sticky navigation menu once start scroll
     $(document).ready(function() {
 
         $(window).bind('scroll', function() {
@@ -555,7 +610,7 @@
             }
         });
     });
-//expand accordion once button clicked to show more details
+    //expand accordion once button clicked to show more details
     $(document).ready(function() {
 
         $(document).ready(function(){
@@ -565,7 +620,7 @@
 
         });
     });
-//scroll to top button
+    //scroll to top button
     $( document ).ready(function() {
         $('.go-top').click(function() {
             $('body,html').animate({
@@ -576,22 +631,35 @@
     });
 
 
-//    var iframe = document.createElement('iframe');
-//    var url = window.location.href;
-//    var id = url.lastIndexOf('=');
-//    if(id == -1){
-//        id = 330;  //Default to lazada id=330 -- change line if you don't want default to 0
-//    }else {
-//        id = url.substr(id+1);
-//    }
-//    iframe.src = 'https://trustedcompany.com/my/profile/'+id+'/review';
-//    var frameHolder = document.getElementById('ip-iframe-holder');
-//    frameHolder.appendChild(iframe);
+    //iframe parameter link
+    var iframe = document.createElement('iframe');
 
+    function getQueryString() {
+        var search = location.search ;
+        if (search !== "") {
+            return search.substr(1).split('&').reduce(function (acc, curr) {
+                var kv = curr.split('=');
+                acc[kv[0]] = kv[1];
+                return acc;
+            }, {});
+        } else {
+            return "";
+        }
+    }
 
+    var arr = getQueryString();
 
+    if(arr !== ""){
+        // Show custom iframe with indivdual store ratings
+        $('.tc-search').css('display', 'none');
+        $('#review_form').prop("action", "https://trustedcompany.com/profile/" + arr.mid + "/review");
+        $('#m-logo').text("" + arr.mname);
+    } else {
+        $(".stars").css('display','none');
+    }
+
+    //read more and read less button trigger
     $(document).ready(function() {
-
         $('.read-more > a').click(function() {
             var that = $(this);
             $('.hidden, .cover').slideToggle(function(){
@@ -603,6 +671,16 @@
             });
         });
     });
+
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'tc-plugins'));
 
 </script>
 </body>
