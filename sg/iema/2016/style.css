@@ -353,7 +353,7 @@ p {
     font-size: 1em;
     position: relative;
     display: table;
-    z-index: 11;
+    z-index: 1 !important;
     margin: 0 auto;
 }
 .tc-search-bar>input {
