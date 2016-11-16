@@ -751,6 +751,7 @@ label {
 
 }
 .gray {
+    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
 }
 .panel > .cards > div > p {
