@@ -11,7 +11,7 @@
     <meta property="og:url"           content="https://iprice.sg/iema/2016/" />
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="iPrice E-Commerce Merchants Award (iEMA) 2016 | [Singapore]" />
-    <meta property="og:description"   content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company" />
+    <!--<meta property="og:description"   content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company" />-->
     <meta property="og:image"         content="https://iprice.sg/iema/2016/fb.png" />
 
 </head>
@@ -586,12 +586,13 @@
     //fixed sticky navigation menu once start scroll
     $(document).ready(function() {
 
-//    //facebook description replacement
-//        var meta = document.createElement('meta');
-//        meta.setAttribute("property", "og:description");
+    //facebook description replacement
+        var meta = document.createElement('meta');
+        meta.setAttribute("property", "og:description");
 //        meta.setAttribute("content", "Vote for your store");
-//        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(meta);
-//    //facebook end
+        $('meta[property=og\\:description]').attr('content', "Vote for your favorite store");
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(meta);
+    //facebook end
 
         $(window).bind('scroll', function() {
 
