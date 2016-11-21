@@ -14,14 +14,6 @@
     <!--<meta property="og:description"   content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company" />-->
     <meta property="og:image"         content="https://iprice.sg/iema/2016/fb.png" />
 
-    <script type="text/javascript">
-        // <![CDATA[
-        var meta = document.createElement('meta');
-        meta.setAttribute("property", "og:description");
-        meta.setAttribute("content", "Vote for your store");
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(meta);
-        // ]]>
-    </script>
 </head>
 <body>
 <div id="main-container">
@@ -593,6 +585,12 @@
     });
     //fixed sticky navigation menu once start scroll
     $(document).ready(function() {
+
+//facebook description replacement
+        var meta = document.createElement('meta');
+        meta.setAttribute("property", "og:description");
+        meta.setAttribute("content", "Vote for your store");
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(meta);
 
         $(window).bind('scroll', function() {
 
