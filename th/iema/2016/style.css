@@ -117,7 +117,7 @@ p {
 #main-container > #header > .nav-menu > .wrapper {
     display: flex;
     flex-wrap: nowrap;
-    height:50px;
+    height:45px;
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
@@ -371,6 +371,10 @@ p {
     width:95% !important;
     z-index: 0 !important;
     margin: -4px 1px 0 0 !important;
+}
+.box > .top > img {
+    width: 100%;
+    height:100%;
 }
 #main-container > #content > #vote > .side-content {
     /*max-width: 548px;*/
@@ -778,12 +782,14 @@ label {
     display: table ;
 }
 
-
 /*//========== Partners ==========//*/
 
 #content > #partners {
     width:100%;
     margin:0;
+}
+.size-img {
+    height:91px;
 }
 #partners > div {
     margin: 0 0 30px 0;
@@ -799,13 +805,14 @@ label {
     float:left;
 }
 #partners > .cards > div {
-    width: 340px;
+    width: 330px;
     float: none;
     border:0;
     padding: 0 10px;
-    margin:0 auto;
+    margin: 0 auto 30px 0;
     height:810px;
 }
+
 #partners > .cards > div > a {
     width: 100%;
     vertical-align: middle;
@@ -830,9 +837,10 @@ label {
 }
 #partners > .cards > .m3 {
     border:0;
+}
+#partners > .cards > .m4 {
     height:600px;
 }
-
 #partners> .cards > div > p {
     margin: 0 auto;
     height: 30px;
@@ -1096,12 +1104,16 @@ label {
 
 
 @media (min-width: 639px) {
-    .nomi-form > .form > iframe {
-        height: 550px;
-    }
 
     #main-container > #content > #vote {
         padding:80px 0 0 0;
+    }
+
+    #vote > .box > .hide {
+        display: block;
+    }
+    #vote > .box > .show {
+        display: none;
     }
 
     #main-container > #header > .nav-menu > .wrapper > .go-top > a {
@@ -1135,6 +1147,18 @@ label {
         border-right: 1px solid #999;
         padding: 0 10px;
     }
+    #partners > .cards > .m1 {
+        height:810px;
+    }
+    #partners > .cards > .m3 {
+        border-right: 1px solid #999;
+    }
+    #partners > .cards > .m4 {
+        border:0;
+    }
+    #partners > .cards > .m2 {
+        border:0;
+    }
     .nomi-form > form > div > div > div {
         width:100%;
     }
@@ -1146,6 +1170,9 @@ label {
     }
     #footer > div > .fo-info2 > .co-judges > .judges > a {
         clear: none;
+    }
+    .nomi-form > .form > iframe {
+        height: 550px;
     }
 }
 
@@ -1180,6 +1207,16 @@ label {
     }
     .side-content > div > div {
         padding:0 0 15px 10px;
+    }
+    #partners > .cards > .m3 {
+        border:0;
+    }
+    #partners > .cards > .m2 {
+        border-right: 1px solid #999;
+    }
+    #partners > .cards > .m4 {
+        border-right: 1px solid #999;
+        height:810px;
     }
     #about > div > .about-ema {
         margin:0 56px 30px 0;
@@ -1227,12 +1264,8 @@ label {
     .panel > .cards > .no-padding {
         padding:0 37px 0 0;
     }
-    #partners > .cards > .m3 {
-        height: 810px;
-    }
     #partners > .cards > .m1 {
         padding: 0 37px 0 0;
-        height: 810px;
     }
     #partners > .cards > div {
         padding: 0 40px;
