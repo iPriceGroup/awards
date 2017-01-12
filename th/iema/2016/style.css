@@ -159,6 +159,7 @@ p {
     position: absolute;
     display: none;
     right: 0;
+    margin-right:0;
 }
 
 #main-container > #header > .nav-menu > .wrapper > div > .fb, #main-container > #header > .nav-menu > .wrapper > div > .tw {
