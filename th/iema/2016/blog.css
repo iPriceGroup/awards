@@ -88,7 +88,7 @@ section > div > ul > ul > li > ul > li {
 
 .static {
     position: absolute;
-    top: 2335px;
+    top: 2000px;
     left: 55.5%;
     right: 42.5%;
 }
@@ -107,6 +107,10 @@ section > div > ul > ul > li > ul > li {
 
 .relative {
     position: relative;
+}
+
+.spacing > ul > li > a {
+    color:#ff6633;
 }
 
 section > div > ul > ul > .smaller {

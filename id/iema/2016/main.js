@@ -51,7 +51,7 @@ $(document).ready(function() {
             $('.side-content').removeClass('positioning');
         }
 
-        if ($(window).scrollTop() > 3500){
+        if ($(window).scrollTop() > 2000){
             $('.side-content').addClass('static');
             $('.side-content').removeClass('positioning');
 
