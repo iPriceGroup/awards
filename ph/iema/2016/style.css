@@ -213,8 +213,6 @@ p {
 }
 
 #main-container > #content > #vote > .box {
-    /*margin: 0 auto;*/
-    /*max-width:548px;*/
     width: 100%;
 }
 
@@ -282,7 +280,6 @@ p {
 }
 
 .content > div > form > div > fieldset {
-    /*border: 1px solid silver;*/
     margin: 0 auto;
     padding: .35em .625em .75em;
 }
@@ -391,10 +388,6 @@ p {
     margin: 0 auto;
 }
 
-.tc-search .tc-container .tc-search > input {
-    /*padding:26px 14px !important;*/
-}
-
 .tc-search .tc-container .tc-search-bar {
     width: 90%;
     font-size: 1em;
@@ -429,7 +422,6 @@ p {
 }
 
 #main-container > #content > #vote > .side-content {
-    /*max-width: 548px;*/
     width: 100%;
     margin: 50px 0;
     display: table;
@@ -560,10 +552,6 @@ p {
     color: #333;
     margin: 0;
     padding-left: 18px;
-}
-
-#about > div > .about-ema > .s1 > ol > li {
-
 }
 
 #about > div > .contact-us {
@@ -846,7 +834,6 @@ label {
 }
 
 .panel > .cards > div {
-    /*width: 330px;*/
     height: 665px;
     float: none;
     border: 0;
@@ -1303,10 +1290,6 @@ label {
     #main-container > #header > .nav-menu > .wrapper > div {
         padding: 0 6.6px;
         margin-right: 30px;
-    }
-
-    #main-container > #content > #vote > .side-content {
-
     }
 
     #main-container > #header > .nav-menu > .wrapper > .go-top.show {

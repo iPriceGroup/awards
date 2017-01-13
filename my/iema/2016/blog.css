@@ -88,7 +88,7 @@ section > div > ul > ul > li > ul > li {
 
 .static {
     position: absolute;
-    top: 1677px;
+    top: 2239px;
     left: 55.5%;
     right: 42.5%;
 }
@@ -100,6 +100,21 @@ section > div > ul > ul > li > ul > li {
 #stage {
     background: none !important;
     color: #fff;
+}
+
+.hide {
+    display:none;
+}
+.show {
+    display: block;
+}
+
+section > div > ul > ul > .smaller {
+    font-size:12px;
+}
+
+#content > #vote > .box > ul > div > img {
+    width:100%;
 }
 
 #main-container > #content > #vote > .side-content {
@@ -134,9 +149,15 @@ section > div > ul > ul > li > ul > li {
     #main-container > #content > section > .side-content > .blue-form {
         height: 766px;
     }
-}
 
-@media (max-width: 639px) {
+    .hide {
+        display: block;
+    }
+
+    .show {
+        display: none;
+    }
+
     .form-all .form-submit-button {
         padding: 0 !important;
     }
