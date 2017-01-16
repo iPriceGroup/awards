@@ -58,15 +58,12 @@ $( document ).ready(function() {
             }
         });
     });
-});
 
-//fixed sticky navigation menu once start scroll
-var quart = heightScrollTop = 171; /* the browser height calculation 1800 in pixel start from the top */
-var calc = heightScrollTop = 240; /* the browser height calculation 240 in pixel start from the top */
-var half = heightScrollTop = 1800; /* the browser height calculation 1800 in pixel start from the top */
-var $goToTop = $('#main-container > #header > .nav-menu > .wrapper > .go-top'); /* a variable to determine the long line of calling element */
+    //fixed sticky navigation menu once start scroll
 
-$(document).ready(function() {
+    var quart = heightScrollTop = 171; /* the browser height calculation 1800 in pixel start from the top */
+    var calc = heightScrollTop = 240; /* the browser height calculation 240 in pixel start from the top */
+    var half = heightScrollTop = 1800; /* the browser height calculation 1800 in pixel start from the top */
 
     $(window).bind('scroll', function() {
 
@@ -81,7 +78,8 @@ $(document).ready(function() {
             $('#main-container > #header > .nav-menu > .wrapper > .go-top').removeClass('show');
         }
     });
-// fixed sticky form
+
+    // fixed sticky form
     $(window).bind('scroll', function() {
         if ($(window).scrollTop() > calc){
             $('.side-box').addClass('positioning');
@@ -105,8 +103,6 @@ $(document).ready(function() {
         }
     });
 });
-
-
 
 /** Merchant Award **/
 
