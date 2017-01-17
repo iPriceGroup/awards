@@ -54,11 +54,11 @@ $(document).ready(function () {
 
     //fixed sticky navigation menu once start scroll
 
-    var quart = heightScrollTop = 171;
-    /* the browser height calculation 1800 in pixel start from the top */
-    var calc = heightScrollTop = 240;
+    var quart = 171;
+    /* the browser height calculation 171 in pixel start from the top */
+    var calc = 158;
     /* the browser height calculation 240 in pixel start from the top */
-    var half = heightScrollTop = 1800;
+    var half = 2000;
     /* the browser height calculation 1800 in pixel start from the top */
 
     $(window).bind('scroll', function () {

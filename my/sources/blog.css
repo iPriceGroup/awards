@@ -12,6 +12,7 @@ li, p, span, small, strong, a {
 
 #main-container > #content {
     position: relative;
+    transition: ease 0.5s;
 }
 
 #main-container > #content > section > div > ul {
@@ -83,9 +84,8 @@ section > div > ul > ul > li > ul > li {
 
 .positioning {
     transform: translate(139%, 0);
-    top: 0;
+    top: 45px;
     bottom: 9%;
-    margin-top: 50px !important;
     position: fixed;
 }
 
