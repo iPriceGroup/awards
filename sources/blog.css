@@ -10,6 +10,10 @@ li, p, span, small, strong, a {
     font-size: 14px;
 }
 
+#main-container > #content {
+    position: relative;
+}
+
 #main-container > #content > section > div > ul {
     padding: 0;
     margin-bottom: 15px;
@@ -78,8 +82,9 @@ section > div > ul > ul > li > ul > li {
 }
 
 .positioning {
-    left: 55.5%;
-    right: 42.5%;
+    /*left: 55.5%;*/
+    /*right: 42.5%;*/
+    transform: translate(139%, 0);
     top: 0;
     bottom: 9%;
     margin-top: 50px !important;
@@ -89,8 +94,9 @@ section > div > ul > ul > li > ul > li {
 .static {
     position: absolute;
     top:1800px;
-    left: 55.5%;
-    right: 42.5%;
+    transform: translate(139%, 0);
+    /*left: 55.5%;*/
+    /*right: 42.5%;*/
 }
 
 #stage {

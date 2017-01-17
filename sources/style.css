@@ -223,7 +223,7 @@ p {
 /*//========== Vote ==========//*/
 
 #main-container > #content > #vote {
-    padding: 50px 0 0 0;
+    padding: 0;
 }
 
 #main-container > #content > #vote > .box > p {
@@ -1296,7 +1296,7 @@ label {
 @media (min-width: 639px) {
 
     #main-container > #content > #vote {
-        padding: 80px 0 0 0;
+        padding: 0;
     }
 
     #vote > .box > .hide {
