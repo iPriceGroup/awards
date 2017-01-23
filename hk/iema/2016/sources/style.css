@@ -220,6 +220,37 @@ p {
     width: 100%;
 }
 
+/*//========== CountDown ==========//*/
+
+#main-container > #content > #countdown {
+    background: #f2f2f2;
+    padding: 150px 0;
+    margin-bottom: 50px;
+}
+#main-container > #content > #countdown > .time-parent {
+    margin:0 auto;
+    display: table;
+    width: 50%;
+}
+#main-container > #content > #countdown > .time-parent > div {
+    display: inline-block;
+    width: 98px;
+    margin: 2px;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #30cccd;
+    color:#fff;
+}
+
+.digit{
+    display:block;
+    font-size:50px;
+    background-color:#fff;
+    color:#333;
+}
+
+
 /*//========== Vote ==========//*/
 
 #main-container > #content > #vote {
