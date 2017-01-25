@@ -224,10 +224,6 @@ p {
 
 #content > #countdown > p {
     font-size: 20px;
-    /* position: absolute; */
-    /* transform: translate(60%, 0%); */
-    /* right: 130px; */
-    /* top: 39px; */
     color: #333;
     margin: 5px 0 0 0;
     width: 100%;
