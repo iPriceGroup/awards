@@ -13,7 +13,7 @@
     <meta property="og:type"          content="website" />
     <meta property="og:title"         content="iPrice E-Commerce Merchants Award (iEMA) 2016 | [Singapore]" />
     <meta property="og:description"   content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company" />
-    <meta property="og:image"         content="https://iprice.hk/iema/2016/fb-sg.png" />
+    <meta property="og:image"         content="https://iprice.sg/iema/2016/fb-sg.png" />
 
 </head>
 <body>
@@ -44,6 +44,48 @@
     </div>
 
     <div id="content">
+        <section id="countdown">
+            <p>Search for your favourite merchant and vote now! <br>Voting ends on <span>31 January 2017</span></p>
+            <div class="time-parent">
+                <div id="day"><span class="digit" id="days"></span>Days</div>
+                <div id="hour"><span class="digit" id="hours"></span>Hours</div>
+                <div id="minute"><span class="digit" id="minutes"></span>Minutes</div>
+                <div id="second"><span class="digit" id="seconds"></span>Seconds</div>
+            </div>
+            <script>
+                $(document).ready(function(){
+
+                    var deadline = new Date("2017/01/31");
+
+                    function updateClock(){
+                        var today = Date();
+                        var diff = Date.parse(deadline) - Date.parse(today);
+                        if(diff<=0){
+                            clearInterval(interval);
+                        }
+                        else{
+                            var seconds = Math.floor((diff/1000)%60);
+                            var minutes = Math.floor((diff/1000/60)%60);
+                            var hours = Math.floor((diff/1000/60/60)%24);
+                            var days = Math.floor(diff/(1000*60*60*24)%30.5);
+                            var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
+
+                            $("#months").text(('0'+months).slice(-2));
+                            $("#days").text(('0'+days).slice(-2));
+                            $("#hours").text(('0'+hours).slice(-2));
+                            $("#minutes").text(('0'+minutes).slice(-2));
+                            $("#seconds").text(('0'+seconds).slice(-2));
+
+                        }//EOF ELSE
+
+                    }//EOF FUNCTION
+
+                    var interval = setInterval(updateClock,1000);
+
+                });//EOF DOCUMENT.READY
+            </script>
+        </section>
+
         <section id="vote">
             <div class="box">
                 <p class="hide">Vote for Your Favorite E-Commerce Merchant</p>
