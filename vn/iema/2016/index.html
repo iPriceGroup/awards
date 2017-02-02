@@ -24,13 +24,11 @@
         </div>
         <div class="nav-menu">
             <div class="wrapper">
-                <div><a href="#vote">Bình Chọn</a></div>
                 <div><a href="#about">Giới Thiệu</a></div>
                 <div><a href="#rules">Thể Lệ</a></div>
                 <div><a href="#awards">Special Award</a></div>
                 <div><a href="#partners">Đối Tác</a></div>
                 <div><a href="#faq">Câu hỏi thường gặp</a></div>
-                <div class="padding"><a href="#merchant">Dành cho doanh nghiệp</a></div>
                 <div class="inner">
                     <div class="fb"><a class="fb-btn" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fiprice.vn%2Fiema%2F2016%2F?utm_campaign=foo?t= iPrice E-Commerce Merchants Award (iEMA)  | [Việt Nam]" target="_blank"><img src="http://i.imgur.com/u9gLigk.png"/></a></div>
                     <div class="tw"><a class="tw-btn" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fiprice.vn%2Fiema%2F2016%2F&text=iPrice+E-Commerce+Merchant+Awards=E-Commerce,Awards" target="_blank"><img src="http://i.imgur.com/QzPDsIB.png"/></a></div>
@@ -43,142 +41,6 @@
     </div>
 
     <div id="content">
-        <section id="countdown" onclick="document.location=('#vote');" style="cursor: pointer">
-            <p> Hãy tìm kiếm công ty yêu thích của bạn và bỏ phiếu! <br>Bình chọn kết thúc vào ngày<span> 31 tháng 1 năm 2017</span></p>
-            <div class="time-parent">
-                <div id="day"><span class="digit" id="days"></span>Ngày</div>
-                <div id="hour"><span class="digit" id="hours"></span>Giờ</div>
-                <div id="minute"><span class="digit" id="minutes"></span>Phút</div>
-                <div id="second"><span class="digit" id="seconds"></span>Giây</div>
-            </div>
-            <script>
-                $(document).ready(function(){
-
-                    var deadline = new Date("2017/02/01");
-
-                    function updateClock(){
-                        var today = Date();
-                        var diff = Date.parse(deadline) - Date.parse(today);
-                        if(diff<=0){
-                            clearInterval(interval);
-                        }
-                        else{
-                            var seconds = Math.floor((diff/1000)%60);
-                            var minutes = Math.floor((diff/1000/60)%60);
-                            var hours = Math.floor((diff/1000/60/60)%24);
-                            var days = Math.floor(diff/(1000*60*60*24)%30.5);
-                            var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
-
-                            $("#months").text(('0'+months).slice(-2));
-                            $("#days").text(('0'+days).slice(-2));
-                            $("#hours").text(('0'+hours).slice(-2));
-                            $("#minutes").text(('0'+minutes).slice(-2));
-                            $("#seconds").text(('0'+seconds).slice(-2));
-
-                        }//EOF ELSE
-
-                    }//EOF FUNCTION
-
-                    var interval = setInterval(updateClock,1000);
-
-                });//EOF DOCUMENT.READY
-            </script>
-        </section>
-
-        <section id="vote">
-            <div class="box">
-                <p>Bình chọn Doanh Nghiệp Thương Mại Điện Tử (TMĐT) yêu thích của bạn</p>
-                <div class="top" id="ip-iframe-holder">
-                    <div class="tc-search">
-                    </div>
-                    <div class="stars">
-                        <div id="m-logo"></div>
-                        <section class="content">
-
-
-                            <!-- Review Form -->
-                            <div class="rate-review">
-                                <form id="review_form" method="GET" autocomplete="off">
-                                    <!-- Star Rating -->
-                                    <div class="rate-star">
-                                        <!-- note: exellent 5 rating is the first in the code -->
-                                        <fieldset class="rating">
-                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
-                                            <label for="star5-mobile" title="Excellent">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
-                                            <label for="star4-mobile" title="Very Good">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
-                                            <label for="star3-mobile" title="Average">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
-                                            <label for="star2-mobile" title="Poor">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off">
-                                            <label for="star1-mobile" title="Bad">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-
-                                        </fieldset>
-                                        <!-- Rating descrition that can change from Poor to Excellent -->
-                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
-                                    </div><!-- Star Rating -->
-                                    <input type="hidden" name="module" value="ef">
-                                </form>
-
-                            </div><!-- Review Form -->
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="side-content">
-                <div>
-                    <div>
-                        <p>
-                            <strong>
-                                <small>Bạn có mua hàng trực tuyến không? Bạn có đặc biệt yêu thích một doanh nghiệp TMĐT nào không? Hay <br>chỉ đơn thuần là người mua sắm trực tuyến?</small>
-                            </strong>
-                        </p>
-                        <small>Nếu câu trả lời của bạn là “Có” cho các câu hỏi vừa rồi, chúng tôi muốn mời bạn tham gia bình chọn người thắng cuộc cho giải thưởng danh giá <a href="http://iprice.vn" target="_blank">iPrice</a> E-Commerce Merchant Awards (iEMA) 2016. Hãy bình chọn cho doanh nghiệp TMĐT yêu thích của bạn và nhận lấy cơ hội trở thành một trong ba người may mắn thắng được chiếc điện thoại thông minh Samsung mới! Chương trình iEMA được kết hợp tổ chức cùng eTail Asia, Trusted Company và iPrice Group với mục đích khuyến khích BẠN – người tiêu dùng, lựa chọn và đánh giá doanh nghiệp TMĐT tốt nhất ở khu vực Đông Nam Á!<br><br>Bình chọn cho doanh nghiệp TMĐT bạn yêu thích qua BA bước đơn giản sau:</small>
-                        <ol>
-                            <li>Chọn doanh nghiệp TMĐT bạn yêu thích.</li>
-                            <li>Đánh giá doanh nghiệp bạn đã chọn và chia sẻ súc tích trải nghiệm của bạn.</li>
-                            <li>Xác nhận bình chọn của bạn qua tài khoản Facebook hoặc Google.</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <small>Mỗi người chỉ được một lượt bình chọn. Vì thế hãy cân nhắc sự lựa chọn của bạn và có cơ may trúng được điện thoại thông minh Samsung mới toanh! Cổng bình chọn bắt đầu từ ngày 15/11/2016 và kết thúc vào ngày 31/1/2017.</small>
-                        <small>Tìm hiểu thêm <a href="#about">về iEMA2016 </a> hoặc <a href="#rules">xem các điều lệ tham gia </a>. </small>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="about">
             <div>
@@ -349,16 +211,10 @@
                 <div class="description">
                     Chúng tôi lấy làm phấn khởi khi có cơ hội tìm ra những nhà cung cấp/ tổ chức/ doanh nghiệp trực tuyến danh tiếng nhất và có chất lượng cao nhất, đồng thời chúng tôi muốn thắp sáng những thành tựu đáng
 
-                    ghi nhận đã vô tình bị bỏ quên bởi người tiêu dùng. Vì vậy, <a href="https://iprice.vn/" target="_blank">iPrice</a> Special Award được đề ra để ghi nhận những dự án nhỏ, các doanh nghiệp khởi nghiệp, hoặc những cố gắng đáng chú ý của các doanh nghiệp khác và dành tặng sự tôn vinh cho những thành tựu của họ.<br> <br>
-                    Đăng ký nội dung tham dự của bạn để có cơ hội giành một chiếc điện thoại Samsung*! Nội dung dự thi <a href="https://iprice.vn/" target="_blank">iPrice </a> Special Award sẽ được đánh giá bởi hội đồng chuyên gia để chọn ra danh sách chung kết và người thắng giải. <a href="#experts">Xem danh sách Ban Giám Khảo</a> và <a href="#rules"> Thể Lệ & Quy Định.</a>
+                    ghi nhận đã vô tình bị bỏ quên bởi người tiêu dùng. Vì vậy, <a href="https://iprice.vn/" target="_blank">iPrice</a> Special Award được đề ra để ghi nhận những dự án nhỏ, các doanh nghiệp khởi nghiệp, hoặc những cố gắng đáng chú ý của các doanh nghiệp khác và dành tặng sự tôn vinh cho những thành tựu của họ.
                 </div>
             </div>
-            <div class="nomi-form">
-                <div><p>Nomination Form</p></div>
-                <div class="form">
-                    <iframe src="https://form.jotform.me/63258787111460"></iframe>
-                </div>
-            </div>
+
             <div class="panel">
                 <div><p id="experts">Hội Đồng Chuyên Gia</p></div>
                 <div class="cards">
@@ -516,36 +372,6 @@
             </div>
         </section>
 
-        <section id="merchant">
-            <div>
-                <p>Dành cho doanh nghiệp</p>
-                <div>
-                    <span>Tất cả doanh nghiệp thương mại điện tử (trong khu vực Đông Nam Á) hoạt động hợp pháp đủ điều kiện tham gia iEMA 2016 mà không yêu cầu phải đăng ký.</span>
-                    <span>Hãy cùng khuấy động để thu hút nhiều hơn nữa sự ủng hộ từ fan hâm mộ và người tiêu dùng của doanh nghiệp bạn tại iEMA 2016! Dưới đây là nguồn tài liệu mà bạn có thể tải về để sử dụng cho trang web của mình cũng như các kênh truyền thông xã hội.</span>
-                </div>
-                <div class="banners">
-                    <div class="for-merchant">
-                        <a href="sources/merchant-vn.zip" target="_blank">
-                            <img src="sources/img/merchants-vn.png" >
-                            <small>Download Merchant Banners</small>
-                        </a>
-
-                    </div>
-                    <div class="for-blog">
-                        <a href="sources/blogger-vn.zip" target="_blank">
-                            <img src="sources/img/bloggers-vn.png" >
-                            <small>Download Blog Banners</small>
-                        </a>
-
-                    </div>
-                </div>
-                <div>
-                    <span>
-                        Hơn nữa, chúng ta có thể tạo một đường liên kết riêng để khách hàng của bạn dễ dàng truy cập trực tiếp bình chọn và xếp hạng cho doanh nghiệp mình tại iEMA 2016. Vui lòng gửi yêu cầu vào <a href="mailto:award@ipricegroup.com" target="_blank">award@ipricegroup.com</a> để nhận được sự hỗ trợ kịp thời từ các đại diện của chúng tôi. Khám phá thêm về iEMA 2016 tại trang Câu Hỏi Thường Gặp <a href="#faq">FAQ</a>.
-                    </span>
-                </div>
-            </div>
-        </section>
     </div>
     <div id="footer">
         <div>
@@ -553,13 +379,11 @@
                 <div class="pro-name"><p>iPrice E-Commerce Merchant Awards 2016</p></div>
                 <div class="bottom-menu">
                     <div class="wrapper">
-                        <div><a href="#vote">Bình Chọn</a></div>
                         <div><a href="#about">Giới Thiệu</a></div>
                         <div><a href="#rules">Thể Lệ</a></div>
                         <div><a href="#awards">iPrice Award</a></div>
                         <div><a href="#partners">Đối Tác</a></div>
                         <div><a href="#faq">Câu hỏi thường gặp</a></div>
-                        <div><a href="#merchant">Dành cho doanh nghiệp</a></div>
                     </div>
                 </div>
             </div>

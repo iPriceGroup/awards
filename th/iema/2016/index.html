@@ -25,13 +25,11 @@
         </div>
         <div class="nav-menu">
             <div class="wrapper">
-                <div><a href="#vote">โหวต</a></div>
                 <div><a href="#about">เกี่ยวกับเรา</a></div>
                 <div><a href="#rules">กติกา</a></div>
                 <div><a href="#awards">รางวัลพิเศษ</a></div>
                 <div><a href="#partners">พาร์ทเนอร์</a></div>
                 <div><a href="#faq">คำถามที่พบบ่อย</a></div>
-                <div><a href="#merchant">สำหรับร้านค้า</a></div>
                 <div class="blogger-page"><a href="blogger-competition.html" >การประกวดเขียนบล็อก</a></div>
                 <div class="inner">
                     <div class="fb"><a class="fb-btn" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fipricethailand.com%2Fiema%2F2016%2F?utm_campaign=foo?t= รางวัลร้านค้าอี-คอมเมิร์ซยอดเยี่ยมจาก iPrice ปี พ.ศ. 2559 | [ประเทศไทย]" target="_blank"><img src="http://i.imgur.com/u9gLigk.png"/></a></div>
@@ -45,144 +43,6 @@
     </div>
 
     <div id="content">
-        <section id="countdown" onclick="document.location=('#vote');" style="cursor: pointer">
-            <p>ค้นหาร้านค้าในดวงใจแล้วโหวตเลยตอนนี้!<br> ปิดรับผลโหวต<span> 31 มกราคม 2560</span></p>
-            <div class="time-parent">
-                <div id="day"><span class="digit" id="days"></span>วัน</div>
-                <div id="hour"><span class="digit" id="hours"></span>ชั่วโมง</div>
-                <div id="minute"><span class="digit" id="minutes"></span>นาที</div>
-                <div id="second"><span class="digit" id="seconds"></span>วินาที</div>
-            </div>
-            <script>
-                $(document).ready(function(){
-
-                    var deadline = new Date("2017/02/01");
-
-                    function updateClock(){
-                        var today = Date();
-                        var diff = Date.parse(deadline) - Date.parse(today);
-                        if(diff<=0){
-                            clearInterval(interval);
-                        }
-                        else{
-                            var seconds = Math.floor((diff/1000)%60);
-                            var minutes = Math.floor((diff/1000/60)%60);
-                            var hours = Math.floor((diff/1000/60/60)%24);
-                            var days = Math.floor(diff/(1000*60*60*24)%30.5);
-                            var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
-
-                            $("#months").text(('0'+months).slice(-2));
-                            $("#days").text(('0'+days).slice(-2));
-                            $("#hours").text(('0'+hours).slice(-2));
-                            $("#minutes").text(('0'+minutes).slice(-2));
-                            $("#seconds").text(('0'+seconds).slice(-2));
-
-                        }//EOF ELSE
-
-                    }//EOF FUNCTION
-
-                    var interval = setInterval(updateClock,1000);
-
-                });//EOF DOCUMENT.READY
-            </script>
-        </section>
-
-        <section id="vote">
-            <div class="box">
-                <p>โหวตเลือกร้านค้าอี-คอมเมิร์ซในดวงใจคุณ</p>
-                <div class="top" id="ip-iframe-holder">
-                    <div class="tc-search">
-                    </div>
-                    <div class="stars">
-                        <div id="m-logo"></div>
-                        <section class="content">
-
-
-                            <!-- Review Form -->
-                            <div class="rate-review">
-                                <form id="review_form" method="GET" autocomplete="off">
-                                    <!-- Star Rating -->
-                                    <div class="rate-star">
-                                        <!-- note: exellent 5 rating is the first in the code -->
-                                        <fieldset class="rating">
-                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
-                                            <label for="star5-mobile" title="Excellent">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
-                                            <label for="star4-mobile" title="Very Good">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
-                                            <label for="star3-mobile" title="Average">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
-                                            <label for="star2-mobile" title="Poor">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off">
-                                            <label for="star1-mobile" title="Bad">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-
-                                        </fieldset>
-                                        <!-- Rating descrition that can change from Poor to Excellent -->
-                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
-                                    </div><!-- Star Rating -->
-                                    <input type="hidden" name="module" value="ef">
-                                </form>
-
-                            </div><!-- Review Form -->
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="side-content">
-                <div>
-                    <div>
-                        <p>
-                            <strong>
-                                <small>คุณเองก็ซื้อของออนไลน์เหมือนกันใช่ไหม คุณใช่แฟนตัวยงของร้านค้าออนไลน์ไหนเป็นพิเศษหรือเปล่า หรือคุณเป็นแค่นักซื้อของออนไลน์ทั่วไป</small>
-                            </strong>
-                        </p>
-                        <small>ถ้าคำตอบของคุณคือ ‘ใช่’ แล้วละก็ เราอยากชวนคุณมาร่วมเลือกผู้ชนะสำหรับรางวัลอันทรงเกียรติ <a href="https://ipricethailand.com" target="_blank">iPrice</a> E-Commerce Merchant Awards (iEMA) 2016 (รางวัลร้านค้าอี-คอมเมิร์ซยอดเยี่ยมจาก iPrice ประจำปีพ.ศ. 2559) มาโหวตคะแนนให้กับร้านค้าออนไลน์ร้านโปรด แล้วคุณยังอาจโชคดีได้เป็นหนึ่งในสามผู้โชคดีที่จะได้รับโทรศัพท์สมาร์ทโฟนใหม่ล่าสุดจากซัมซุงไปเลยฟรี ๆ!
-
-                            รางวัล iEMA จัดขึ้นจากความร่วมมือระหว่าง <a href="http://etailasia.wbresearch.com/" target="_blank">eTail Asia</a>, <a href="http://business.trustedcompany.com/" target="_blank">Trusted Company</a> และ iPrice Group ให้คุณซึ่งเป็นผู้บริโภคคนสำคัญได้เป็นผู้ตัดสินเลือกร้านค้าอี-คอมเมิร์ซที่ดีที่สุดในภูมิภาคเอเชียตะวันออกเฉียงใต้!<br><br>โหวตคะแนนให้กับร้านค้าอี-คอมเมิร์ซในดวงใจของคุณได้ง่าย ๆ เพียง 3 ขั้นตอน</small>
-                        <ol>
-                            <li>เลือกร้านค้าอี-คอมเมิร์ซที่คุณชื่นชอบ</li>
-                            <li>ให้คะแนนร้านค้าโปรดของคุณและแบ่งปันความประทับใจ<br>แบบสั้น ๆ</li>
-                            <li>กดโหวตให้ร้านค้าโปรดของคุณผ่านทาง Facebook และ Google account</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <small>หนึ่งคนต่อหนึ่งคะแนนโหวตเท่านั้น ดังนั้นมาร่วมให้คะแนนโหวตกับร้านค้าในดวงใจคุณพร้อมลุ้นรับสมาร์ทโฟนใหม่ล่าสุดจากซัมซุงไปเลยฟรี ๆ! เริ่มรับคะแนนโหวตตั้งแต่วันที่ 15 พฤศจิกายน พ.ศ. 2559 จนถึง 31 มกราคม พ.ศ. 2560 แค่เข้ามาโหวตและจัดอันดับร้านค้าในดวงใจคุณ เท่านี้คุณก็เป็นส่วนสำคัญในการช่วยเราคัดเลือกผู้ชนะในประเภทรางวัล ดังนี้</small>
-                        <small>อ่านรายละเอียดเพิ่มเติม<a href="#about">เกี่ยวกับ iEMA 2016</a> หรือ <a href="#rules">ตรวจสอบกฎและข้อบังคับ</a>.</small>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="about">
             <div>
@@ -353,16 +213,10 @@
                 </div>
 
                 <div class="description">
-                    นอกจากการประกาศผลรางวัลผู้ชนะเลิศร้านค้า/องค์กร/ธุรกิจออนไลน์ยอดนิยมและร้านค้า/องค์กร/ธุรกิจออนไลน์คุณภาพยอดเยี่ยมแล้ว เราก็ยังอยากมอบรางวัลให้กับความสำเร็จที่อาจถูกมองข้ามจากผู้บริโภคทั่วไปด้วยเช่นกัน <a href="https://ipricethailand.com/iema/2016" target="_blank">iPrice </a>Special Award (รางวัลพิเศษจาก iPrice) ซึ่งได้จัดขึ้นเพื่อแสดงให้เห็นว่าเราไม่ได้มองข้ามและ<br>ยังกล่าวชื่นชมความพยายามและความสำเร็จจากโปรเจ็กต์เล็ก ๆ, สตาร์ทอัพ หรือธุรกิจต่าง ๆ<br> <br>
-                    เสนอชื่อผู้เข้าประกวดและลุ้นโชครับสมาร์ทโฟนใหม่ล่าสุดจากซัมซุงไปฟรี ๆ* คณะผู้เชี่ยวชาญจากเราจะเป็นผู้คัดเลือกผู้ได้รับรางวัล <a href="https://ipricegroup.com" target="_blank">iPrice</a> Special Award โดยจะมี<br>การคัดเลือกผู้เข้ารอบสุดท้าย และผู้ได้รับรางวัลชนะเลิศ ดูรายละเอียดเพิ่มเติมเกี่ยว<a href="#experts">กับคณะผู้เชี่ยวชาญ</a> ของเรา <a href="#rules">รวมทั้งกฎและข้อบังคับ</a>
+                    นอกจากการประกาศผลรางวัลผู้ชนะเลิศร้านค้า/องค์กร/ธุรกิจออนไลน์ยอดนิยมและร้านค้า/องค์กร/ธุรกิจออนไลน์คุณภาพยอดเยี่ยมแล้ว เราก็ยังอยากมอบรางวัลให้กับความสำเร็จที่อาจถูกมองข้ามจากผู้บริโภคทั่วไปด้วยเช่นกัน <a href="https://ipricethailand.com/iema/2016" target="_blank">iPrice </a>Special Award (รางวัลพิเศษจาก iPrice) ซึ่งได้จัดขึ้นเพื่อแสดงให้เห็นว่าเราไม่ได้มองข้ามและ<br>ยังกล่าวชื่นชมความพยายามและความสำเร็จจากโปรเจ็กต์เล็ก ๆ, สตาร์ทอัพ หรือธุรกิจต่าง ๆ
                 </div>
             </div>
-            <div class="nomi-form">
-                <div><p>ใบเสนอชื่อผู้เข้าชิงรางวัล</p></div>
-                <div class="form">
-                    <iframe src="https://form.jotform.me/63258787111460"></iframe>
-                </div>
-            </div>
+
             <div class="panel">
                 <div><p id="experts">กรรมการผู้ทรงคุณวุฒิ</p></div>
                 <div class="cards">
@@ -514,36 +368,6 @@
             </div>
         </section>
 
-        <section id="merchant">
-            <div>
-                <p>สำหรับร้านค้า</p>
-                <div>
-                    <span>บรรดาธุรกิจและร้านค้าอีคอมเมิร์ซในเอเชียตะวันออกเฉียงใต้ที่มีการจดทะเบียนร้านค้าถูกต้องตามกฎหมายจะได้เข้าร่วมการพิจารณาใน iEMA 2016 อัตโนมัติ <br>โดยไม่ต้องลงทะเบียนแต่อย่างใด</span>
-                    <span>เราแนะนำให้คุณประชาสัมพันธ์ให้แฟน ๆ และลูกค้าของคุณทราบเพื่อสะสมคะแนนโหวตสำหรับ iEMA 2016 โดยนำลิงค์ด้านล่างนี้ไปโพสต์ในเว็บไซต์หรือโซเชียลมีเดียของคุณ</span>
-                </div>
-                <div class="banners">
-                    <div class="for-merchant">
-                        <a href="sources/merchant-th.zip" target="_blank">
-                            <img src="sources/img/merchants-th.png" >
-                            <small>Download Merchant Banners</small>
-                        </a>
-
-                    </div>
-                    <div class="for-blog">
-                        <a href="sources/blogger-th.zip" target="_blank">
-                            <img src="sources/img/bloggers-th.png" >
-                            <small>Download Blog Banners</small>
-                        </a>
-
-                    </div>
-                </div>
-                <div>
-                    <span>
-                        นอกจากนี้เรายังมีลิงค์ให้แฟน ๆ ของคุณโหวตและจัดอันดับร้านค้าของคุณใน iEMA 2016 ได้อย่างง่ายดาย เพียงส่งรีเควสต์มาที่ <a href="mailto:award@ipricegroup.com" target="_blank">award@ipricegroup.com</a> ทางเรา<br>จะส่งลิงค์ให้คุณทันที ค้นหาข้อมูลเพิ่มเติมเกี่ยวกับ iEMA 2016 ได้ที่หน้า <a href="#faq">FAQ ของเรา</a>
-                    </span>
-                </div>
-            </div>
-        </section>
     </div>
     <div id="footer">
         <div>
@@ -551,13 +375,11 @@
                 <div class="pro-name"><p>รางวัลร้านค้าอี-คอมเมิร์ซยอดเยี่ยมจาก iPrice ประจำปีพ.ศ. 2559</p></div>
                 <div class="bottom-menu">
                     <div class="wrapper">
-                        <div><a href="#vote">โหวต</a></div>
                         <div><a href="#about">เกี่ยวกับเรา</a></div>
                         <div><a href="#rules">กติกา</a></div>
                         <div><a href="#awards">รางวัลพิเศษ</a></div>
                         <div><a href="#partners">พาร์ทเนอร์</a></div>
                         <div><a href="#faq">คำถามที่พบบ่อย</a></div>
-                        <div><a href="#merchant">สำหรับร้านค้า</a></div>
                     </div>
                 </div>
             </div>
