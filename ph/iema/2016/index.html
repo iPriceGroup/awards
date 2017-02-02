@@ -25,13 +25,11 @@
         </div>
         <div class="nav-menu">
             <div class="wrapper">
-                <div><a href="#vote">Vote</a></div>
                 <div><a href="#about">About</a></div>
                 <div><a href="#rules">Rules</a></div>
                 <div><a href="#awards">Special Award</a></div>
                 <div><a href="#partners">Partners</a></div>
                 <div><a href="#faq">FAQ</a></div>
-                <div><a href="#merchant">For Merchants</a></div>
                 <div class="blogger-page"><a href="blogger-competition.html" >Blogging Competition</a></div>
                 <div class="inner">
                     <div class="fb"><a class="fb-btn" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fiprice.ph%2Fiema%2F2016%2F?utm_campaign=foo?t= iPrice E-Commerce Merchant Awards" target="_blank"><img src="http://i.imgur.com/u9gLigk.png"/></a></div>
@@ -45,145 +43,6 @@
     </div>
 
     <div id="content">
-        <section id="countdown" onclick="document.location=('#vote');" style="cursor: pointer">
-            <p>Search for your favourite merchant and vote now! <br>Voting ends on <span>31 January 2017</span></p>
-            <div class="time-parent">
-                <div id="day"><span class="digit" id="days"></span>Days</div>
-                <div id="hour"><span class="digit" id="hours"></span>Hours</div>
-                <div id="minute"><span class="digit" id="minutes"></span>Minutes</div>
-                <div id="second"><span class="digit" id="seconds"></span>Seconds</div>
-            </div>
-            <script>
-                $(document).ready(function(){
-
-                    var deadline = new Date("2017/02/01");
-
-                    function updateClock(){
-                        var today = Date();
-                        var diff = Date.parse(deadline) - Date.parse(today);
-                        if(diff<=0){
-                            clearInterval(interval);
-                        }
-                        else{
-                            var seconds = Math.floor((diff/1000)%60);
-                            var minutes = Math.floor((diff/1000/60)%60);
-                            var hours = Math.floor((diff/1000/60/60)%24);
-                            var days = Math.floor(diff/(1000*60*60*24)%30.5);
-                            var months = Math.floor(diff/(1000*60*60*24*30.5)%12);
-
-                            $("#months").text(('0'+months).slice(-2));
-                            $("#days").text(('0'+days).slice(-2));
-                            $("#hours").text(('0'+hours).slice(-2));
-                            $("#minutes").text(('0'+minutes).slice(-2));
-                            $("#seconds").text(('0'+seconds).slice(-2));
-
-                        }//EOF ELSE
-
-                    }//EOF FUNCTION
-
-                    var interval = setInterval(updateClock,1000);
-
-                });//EOF DOCUMENT.READY
-            </script>
-        </section>
-
-        <section id="vote">
-            <div class="box">
-                <p class="hide">Vote for Your Favorite E-Commerce Merchant</p>
-                <p class="show">Vote for Your Favorite <br>E-Commerce Merchant</p>
-                <div class="top" id="ip-iframe-holder">
-                    <div class="tc-search">
-                    </div>
-
-
-                    <div class="stars">
-                        <div id="m-logo"></div>
-                        <section class="content">
-
-
-                            <!-- Review Form -->
-                            <div class="rate-review">
-                                <form id="review_form" method="GET" autocomplete="off">
-                                    <!-- Star Rating -->
-                                    <div class="rate-star">
-                                        <!-- note: exellent 5 rating is the first in the code -->
-                                        <fieldset class="rating">
-                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
-                                            <label for="star5-mobile" title="Excellent">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
-                                            <label for="star4-mobile" title="Very Good">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
-                                            <label for="star3-mobile" title="Average">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
-                                            <label for="star2-mobile" title="Poor">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off">
-                                            <label for="star1-mobile" title="Bad">
-                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
-                                                    <path d="M0 0h24v24H0z" fill="none"></path>
-                                                </svg>
-                                            </label>
-
-                                        </fieldset>
-                                        <!-- Rating descrition that can change from Poor to Excellent -->
-                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
-                                    </div><!-- Star Rating -->
-                                    <input type="hidden" name="module" value="ef">
-                                </form>
-
-                            </div><!-- Review Form -->
-                        </section>
-                    </div>
-                </div>
-            </div>
-            <div class="side-content">
-                <div>
-                    <div>
-                        <p>
-                            <strong>
-                                <small>Do you shop online? An avid fan of a specific online merchant? Or just a casual online shopper?</small>
-                            </strong>
-                        </p>
-                        <small>If your answer is ‘Yes’ in any of these questions, we would like you to join us in selecting winners for the prestigious <br> <a href="https://iprice.ph" target="_blank">iPrice</a>  E-Commerce Merchant Awards (iEMA) 2016. Support your favorite online merchant and you might be one of the lucky three to win a brand new Samsung smartphone!<br><br>Support Your Favorite E-Commerce Merchant in THREE Simple Steps:</small>
-                        <ol>
-                            <li>Select Favorite E-Commerce Merchant.</li>
-                            <li>Rate Your Favorite Merchant and Share Your Experience In A Few Words.</li>
-                            <li>Validate Your Vote Via Facebook or Google Account.</li>
-                        </ol>
-                    </div>
-                    <div>
-                        <small>Voting begins on 15th November 2016 and ends on 31st January 2017.</small>
-                        <small>Read more <a href="#about">about iEMA 2016</a> or check the <a href="#rules">rules.</a> </small>
-
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <section id="about">
             <div>
@@ -355,16 +214,10 @@
                 </div>
 
                 <div class="description">
-                    As we are delighted to recognize the most popular and highest quality online merchants/organization/businesses, we would also like to recognize notable achievements that might not have been noted by general consumers. As such, the <a href="https://iprice.ph/" target="_blank">iPrice</a> Special Award was set up to recognize small projects, startups, or other notable business efforts and to provide an honorable mention for their achievements.<br> <br>
-                    Submit your entry and stand a chance to win a brand new Samsung smartphone! Entries to the <a href="https://iprice.ph/" target="_blank">iPrice</a> Special Award will be judged by expert panel who will select finalists and an overall winner. See our <a href="#experts">expert panel</a> and <a href="#rules">Rules and Regulations.</a>
+                    As we are delighted to recognize the most popular and highest quality online merchants/organization/businesses, we would also like to recognize notable achievements that might not have been noted by general consumers. As such, the <a href="https://iprice.ph/" target="_blank">iPrice</a> Special Award was set up to recognize small projects, startups, or other notable business efforts and to provide an honorable mention for their achievements.
                 </div>
             </div>
-            <div class="nomi-form">
-                <div><p>Nomination Form</p></div>
-                <div class="form">
-                    <iframe src="https://form.jotform.me/63258787111460"></iframe>
-                </div>
-            </div>
+
             <div class="panel">
                 <div><p id="experts">Expert Panel</p></div>
                 <div class="cards">
@@ -520,36 +373,6 @@
             </div>
         </section>
 
-        <section id="merchant">
-            <div>
-                <p>For Merchants</p>
-                <div>
-                    <span>No registration is required to participate in iEMA 2016 as all valid and legal e-commerce merchants (within Southeast Asia) automatically qualifies.</span>
-                    <span>We highly encourage you to shout out and garner as much support from your fan base and consumers for iEMA 2016! Below are downloadable materials you can utilize at your website and social media assets.</span>
-                </div>
-                <div class="banners">
-                    <div class="for-merchant">
-                        <a href="sources/merchant-ph.zip" target="_blank">
-                            <img src="sources/img/merchants-ph.png" >
-                            <small>Download Merchant Banners</small>
-                        </a>
-
-                    </div>
-                    <div class="for-blog">
-                        <a href="sources/blogger-ph.zip" target="_blank">
-                            <img src="sources/img/bloggers-ph.png" >
-                            <small>Download Blog Banners</small>
-                        </a>
-
-                    </div>
-                </div>
-                <div>
-                    <span>
-                        Additionally, we can create a dedicated link you may utilize to direct your customers to easily vote and rank your business for iEMA 2016. Kindly send your request to <a href="mailto:award@ipricegroup.com" target="_blank">award@ipricegroup.com</a> and our representatives will assist you accordingly. Find out more on the iEMA 2016 at our <a href="#faq">FAQ</a> page.
-                    </span>
-                </div>
-            </div>
-        </section>
     </div>
     <div id="footer">
         <div>
@@ -557,13 +380,11 @@
                 <div class="pro-name"><p>iPrice E-Commerce Merchant Awards 2016</p></div>
                 <div class="bottom-menu">
                     <div class="wrapper">
-                        <div><a href="#vote">Vote</a></div>
                         <div><a href="#about">About</a></div>
                         <div><a href="#rules">Rules</a></div>
                         <div><a href="#awards">iPrice Award</a></div>
                         <div><a href="#partners">Partners</a></div>
                         <div><a href="#faq">FAQ</a></div>
-                        <div><a href="#merchant">For Merchants</a></div>
                     </div>
                 </div>
             </div>

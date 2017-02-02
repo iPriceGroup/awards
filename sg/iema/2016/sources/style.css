@@ -214,90 +214,10 @@ p {
 }
 
 #main-container > #content > section {
-    padding: 80px 0 0 0;
+    padding: 40px 0 0 0;
     display: table;
     margin: 0 auto;
     width: 100%;
-}
-
-/*//========== CountDown ==========//*/
-
-#content > #countdown > p {
-    font-size: 20px;
-    color: #333;
-    margin: 5px 0 0 0;
-    width: 100%;
-    text-align: center;
-}
-#countdown > p > span {
-    color:#ff6633;
-    font-weight:900;
-    font-size: 20px;
-}
-
-#main-container > #content > #countdown {
-    position: relative;
-    padding: 75px 0 0 0;
-    height: 277px;
-    margin-bottom: 30px;
-    background: #f2f2f2 url(img/iema-bg.png) no-repeat;
-    background-size: 100%;
-    background-position: center;
-}
-#main-container > #content > #countdown > .time-parent {
-    margin: 10px auto 0 auto;
-    display: table;
-    width: 40%;
-    border-top:2px solid #fff;
-}
-#main-container > #content > #countdown > .time-parent > div {
-    display: inline-block;
-    width: 98px;
-    margin: 2px;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    color: #ff6633;
-}
-
-.digit{
-    display:block;
-    font-size:40px;
-    color:#ff6633;
-}
-
-@media (max-width: 796px) {
-    #main-container > #content > #countdown {
-        padding: 12px 0 0 0;
-        height: 170px;
-    }
-    #main-container > #content > #countdown > .time-parent {
-        width: 68%;
-    }
-}
-@media (max-width: 378px) {
-    #content > #countdown > p {
-        font-size: 9px;
-        padding: 0 10px;
-    }
-    #countdown > p > span {
-        font-size: 9px;
-    }
-    #main-container > #content > #countdown > .time-parent > div {
-        font-size: 9px;
-        width: 38px;
-    }
-    .digit {
-        font-size: 9px;
-    }
-    #main-container > #content > #countdown {
-        background: #f2f2f2 url(img/iema-bg-mobile.png) no-repeat;
-        background-size: 100%;
-        background-position: center;
-        height: 100px;
-        padding: 15px 0 0 0;
-    }
 }
 
 /*//========== Vote ==========//*/
