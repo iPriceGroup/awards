@@ -220,6 +220,114 @@ p {
     width: 100%;
 }
 
+/*Winners*/
+
+#winners .banner .title{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #30cccd;
+}
+
+#winners .winner-container {
+
+}
+
+#winners .winner-container .blocks {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
+#winners .winner-container .blocks.block-l {
+    padding-right: 30px;
+}
+
+#winners .winner-container .blocks.block-r {
+    padding-left: 30px;
+}
+
+@media(max-width: 767px) {
+
+    #winners .winner-container .blocks {
+        display: inline-block;
+        width: 100%;
+        float: none;
+    }
+
+    #winners .winner-container .blocks.block-l {
+        padding-right: 0;
+    }
+
+    #winners .winner-container .blocks.block-r {
+        padding-left: 0;
+    }
+}
+
+#winners .winner-container .blocks h4 {
+    color: #33CCCC;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+#winners .winner-container .blocks ul {
+    margin: 0;
+    padding: 0;
+}
+
+#winners .winner-container .blocks ul li {
+    list-style-type: none;
+    margin: 0;
+}
+
+#winners .winner-container .blocks ul li.winner {
+    font-weight: bold;
+}
+
+/*Press release */
+
+#release .banner .title {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #30cccd;
+}
+
+#release .content_detail h2 {
+    color: #30cccd;
+    font-size: 21px;
+}
+
+#release .content_detail img {
+    max-width: 100%;
+}
+
+#release .content_detail .caption_container .caption {
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#release .description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+#release .description h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+#release .downloadlink {
+    color: #ff6633;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
 /*//========== Vote ==========//*/
 
 #main-container > #content > #vote {
