@@ -328,6 +328,10 @@ p {
     margin-bottom: 40px;
     font-size: 18px;
 }
+#release .italic {
+    font-style: italic;
+    color: #504d4d;
+}
 /*//========== Vote ==========//*/
 
 #main-container > #content > #vote {
