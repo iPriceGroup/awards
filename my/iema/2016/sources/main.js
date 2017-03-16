@@ -149,6 +149,32 @@ $(document).ready(function () {
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'tc-plugins'));
 
+    $('.row .thumbnail').each(function(i) {
+
+        var item = $('<div class="item"></div>');
+        var itemDiv = $(this).parents('div');
+        var title = $(this).parent('a').attr("title");
+
+        item.attr("title",title);
+        $(itemDiv.html()).appendTo(item);
+        item.appendTo('.carousel-inner'); 
+        if (i==0){
+            item.addClass('active');
+        }
+    });
+
+    
+    $('#modalCarousel').carousel({interval:false});
+
+    $('#modalCarousel').on('slid.bs.carousel', function () {
+        $('.modal-title').html($(this).find('.active').attr("title"));
+    });
+
+    $('.row .thumbnail').click(function(){
+        var idx = $(this).parents('div').index();
+        var id = parseInt(idx);
+        $('#modal-gallery').modal('show');
+        $('#modalCarousel').carousel(id);
+    });
 
 });
-
