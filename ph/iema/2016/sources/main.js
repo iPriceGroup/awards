@@ -16,7 +16,7 @@ $(document).ready(function () {
     var nav = $('#header')
     nav.find('a').on('click', function () {
         var $el = $(this)
-            , id = $el.attr('href');
+        , id = $el.attr('href');
 
         $('html, body').animate({
             scrollTop: $(id).offset().top
@@ -32,14 +32,14 @@ $(document).ready(function () {
 
     //tag navigation buttons with belong sections
     var nav = $('#header')
-        , nav_height = nav.outerHeight();
+    , nav_height = nav.outerHeight();
 
     $(window).on('scroll', function () {
         var cur_pos = $(this).scrollTop();
 
         $("#content > section").each(function () {
             var top = $(this).offset().top - nav_height,
-                bottom = top + $(this).outerHeight();
+            bottom = top + $(this).outerHeight();
 
             if (cur_pos >= top && cur_pos <= bottom) {
 
@@ -100,55 +100,46 @@ $(document).ready(function () {
     });
 
 //read more and read less button trigger
-    $('.read-more > a').click(function () {
-        var that = $(this);
-        $('.hidden, .cover').slideToggle(function () {
-            if ($('.hidden').is(':visible')) {
-                that.find('p').text('Read Less')
-            } else {
-                that.find('p').text('Read More')
-            }
-        });
-    });
-
-    /** Merchant Award **/
-
-//iframe parameter link
-    var iframe = document.createElement('iframe');
-
-    function getQueryString() {
-        var search = location.search;
-        if (search !== "") {
-            return search.substr(1).split('&').reduce(function (acc, curr) {
-                var kv = curr.split('=');
-                acc[kv[0]] = kv[1];
-                return acc;
-            }, {});
+$('.read-more > a').click(function () {
+    var that = $(this);
+    $('.hidden, .cover').slideToggle(function () {
+        if ($('.hidden').is(':visible')) {
+            that.find('p').text('Read Less')
         } else {
-            return "";
+            that.find('p').text('Read More')
         }
-    }
-
-    var arr = getQueryString();
-
-    if (arr !== "") {
-        // Show custom iframe with indivdual store ratings
-        $('.tc-search').css('display', 'none');
-        $('#review_form').prop("action", "https://trustedcompany.com/profile/" + arr.mid + "/review");
-        $('#m-logo').text("" + arr.mname);
-    } else {
-        $(".stars").css('display', 'none');
-    }
-
-    (function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//trustedcompany.com/statics/scripts/plugins.js?locale=en";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'tc-plugins'));
-
-
+    });
 });
 
+// photos event
+    if($('.iema-page').length > 0) {
+        $('.row .thumbnail').each(function(i) {
+
+            var item = $('<div class="item"></div>');
+            var itemDiv = $(this).parents('div');
+            var title = $(this).parent('a').attr("title");
+
+            item.attr("title",title);
+            $(itemDiv.html()).appendTo(item);
+            item.appendTo('.carousel-inner'); 
+            if (i==0){
+                item.addClass('active');
+                $('.modal-title').html(title);
+            }
+        });
+
+        
+        $('#modalCarousel').carousel({interval:false});
+
+        $('#modalCarousel').on('slid.bs.carousel', function () {
+            $('.modal-title').html($(this).find('.active').attr("title"));
+        });
+
+        $('.row .thumbnail').click(function(){
+            var idx = $(this).parents('div').index();
+            var id = parseInt(idx);
+            $('#modal-gallery').modal('show');
+            $('#modalCarousel').carousel(id);
+        });
+    }
+});
