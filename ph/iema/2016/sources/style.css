@@ -1654,6 +1654,16 @@ section .title {
     background-image: none;
 }
 
+#gallery .thumbnail {
+    border: none;
+    border-radius: 0;
+}
+
+#gallery .content_detail {
+    height: 380px;
+    overflow-y: scroll;
+}
+
 @media(min-width: 767px) {
     .glyphicon.glyphicon-chevron-right {
         right: 25%;
@@ -1662,9 +1672,8 @@ section .title {
     .glyphicon.glyphicon-chevron-left{
         left: 25%;
     }
-}
 
-#gallery .thumbnail {
-    border: none;
-    border-radius: 0;
+    #gallery .content_detail {
+        height: 500px;
+    }
 }
