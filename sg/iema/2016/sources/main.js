@@ -102,8 +102,8 @@ $(document).ready(function () {
 //read more and read less button trigger
 $('.read-more > a').click(function () {
     var that = $(this);
-    $('.hided, .cover').slideToggle(function () {
-        if ($('.hided').is(':visible')) {
+    $('.hid, .cover').slideToggle(function () {
+        if ($('.hid').is(':visible')) {
             that.find('p').text('Read Less')
         } else {
             that.find('p').text('Read More')
