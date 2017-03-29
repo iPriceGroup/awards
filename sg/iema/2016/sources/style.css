@@ -767,7 +767,7 @@ p {
 }
 
 #rules > div > .r-r {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 #rules > div > .hid {
@@ -800,7 +800,7 @@ p {
 }
 
 #rules > div > .cover {
-    height: 133px;
+    height: 140px;
     width: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1));
     float: left;
@@ -1554,7 +1554,7 @@ label {
     }
 
     #rules > div > .r-r {
-        margin: 0 56px 40px 0;
+        margin: 0 56px 15px 0;
         float: left;
     }
 
@@ -1565,8 +1565,8 @@ label {
     }
 
     #rules > div > .cover {
-        height: 120px;
-        margin-top: -152px;
+        height: 99px;
+        margin-top: -115px;
     }
 
     #about > div > .contact-us {
