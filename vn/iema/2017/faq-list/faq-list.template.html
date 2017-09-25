@@ -1,0 +1,17 @@
+<div class="content-block" id="faq">
+	<h3>{{ faq.title }}</h3>
+	<div class="faq-customer">
+		<h4>{{ faq.consumer.title }}</h4>
+		<div class="faq-item" ng-repeat="question in faq.consumer.questions">
+			<a class="faq-button" href="javascript:void(0)" ng-click="collapse($event)" >{{ question.title }}</a>
+			<span class="collapse-content collapse" ng-bind-html="question.content"></span>
+		</div>
+	</div>
+	<div class="faq-merchants" role="tablist">
+		<h4>{{ faq.merchants.title }}</h4>
+		<div class="faq-item" ng-repeat="question in faq.merchants.questions">
+			<a class="faq-button" href="javascript:void(0)" ng-click="collapse($event)" >{{ question.title }}</a>
+			<span class="collapse-content collapse" ng-bind-html="question.content"></span>
+		</div>
+	</div>
+</div>

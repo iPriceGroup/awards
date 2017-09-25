@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="myApp" lang="en" amp>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script src="assets/js/angular.js"></script>
+	<script src="assets/js/sanitize.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.11/angular-route.js"></script>
+	<script src="app.js"></script>
+	<script src="menu-list/menu-list.component.js"></script>
+	<script src="section-list/section-list.component.js"></script>
+	<script src="faq-list/faq-list.component.js"></script>
+	<script src="footer-section/footer-section.component.js"></script>
+	<script src="assets/js/modernizr-2.8.3.min.js"></script>
+	<link rel="canonical" href="">
+	<base href="http://10.10.10.31/iema-website/">
+</head>
+<body >
+	<div id="main-container">
+		<header id="main-header">
+			<div class="header-image" header-image>
+				<div class="vote-countdown" id="countdown">
+					<div class='time-parent'><div class='months'></div><div class='days'></div><div class='hours'></div><div class='minutes'></div><!-- <div class='seconds'></div> --></div>
+					<p>Voting Period 15th November 2017 - 31st January 2018</span></p>
+				</div>
+			</div>
+			<menu-list></menu-list>
+		</header>
+		<section id="main-section" ng-view id="scroll-container">
+
+		</section>
+		<faq-list></faq-list>
+		<footer id="main-footer">
+			<footer-section></footer-section>
+		</footer>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="assets/js/transition.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0faca089d4d5d"></script> 
+	<script>
+		$(document).ready(function(){
+
+			var yourNavigation = $(".navbar");
+			stickyDiv = "sticky";
+			yourHeader = $('#main-header').height();
+
+			$(window).scroll(function() {
+				if( $(this).scrollTop() > yourHeader ) {
+					yourNavigation.addClass(stickyDiv);
+				} else {
+					yourNavigation.removeClass(stickyDiv);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
