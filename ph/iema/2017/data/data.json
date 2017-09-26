@@ -28,10 +28,6 @@
                 {
                     "url":"#faq",
                     "title": "FAQ"
-                },
-                {
-                    "url":"",
-                    "title" : "Blogging Competition"
                 }
             ],
         "footer" : {
@@ -54,7 +50,7 @@
                         "title": "Partners"
                     },
                     {
-                        "url":"/faq",
+                        "url":"#faq",
                         "title": "FAQ"
                     }
                 ],
@@ -109,7 +105,7 @@
                                 },
                                 {
                                     "title" : "When and where will the iEMA finalists be announced?",
-                                    "content" : "<p>Winners and finalists of the awards will be announced at the eTail Asia 2018’s awards ceremony in Sheraton Towers, Singapore on 6th and 8th March 2018.</p>"
+                                    "content" : "<p>Winners and finalists of the awards will be announced at the eTail Asia 2018’s awards ceremony in Sheraton Towers, Singapore on 6th - 8th March 2018.</p>"
                                 },
                                 {
                                     "title" : "Where will the votes, reviews, & rankings be displayed, and where is it stored?",

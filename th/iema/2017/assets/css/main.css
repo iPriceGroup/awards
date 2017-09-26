@@ -62,6 +62,14 @@ amp-img{
     padding: 0px 15px;
 }
 
+.form-label small{
+    color: #e74c3c;
+    font-size: 11px;
+    text-align:right;
+    float:right;
+    margin-left: 10px;
+}
+
 .form-control{
     border:none;
     border-radius: 0px;
@@ -177,6 +185,11 @@ a.more-button{
     margin: 0px auto;
     vertical-align: middle;
 }
+
+.expert-item amp-img {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
 .expert-item figcaption h4,
 .partner-item figcaption h4 {
     margin-top: 15px;
@@ -203,12 +216,14 @@ a.more-button{
     width: 100%;
     max-width: 430px;
     margin: 15px auto;
+
     
 }
-
-.banners .col-md-6 a img{
-    border: 1px solid #ddd;
-    padding: 10px;
+.banners .col-md-6 a amp-img{
+    border: 1px solid #efefef;
+}
+.banners .col-md-6 a amp-img img{
+    padding: 10px !important;
 }
 .container-fluid > h3 {
     padding-left: 15px;
@@ -689,5 +704,9 @@ span.menu-wording {
 
     #countdown .time-parent {
         max-width: 560px;
+    }
+
+    #faq{
+        padding: 0px 30px;
     }
 }

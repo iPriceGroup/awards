@@ -2,10 +2,11 @@ var open = false;
 a.
   component('sectionList', {
     templateUrl: 'section-list/section-list.template.html',
-    controller: function sectionListController( $scope, $http, $location, $window, $sce) {
+    controller: function sectionListController( $scope, $http, $location, $window, $sce, $routeParams) {
+      
       $http({
       	method: "GET",
-      	url: "data/section.data.json"
+      	url: "data/section.data.json" 
       }).then(function mySuccess(response){
 
           $scope.testtext = "<strong>this is html</strong>";
@@ -50,6 +51,51 @@ a.
                   }
                   
                 });
+
+                $('.form-btn').on('click', function(){
+                  var submit = true;
+                  var mname = '', mwebsite='', memail='', mreason='';
+                  $('.form-control').each(function(){
+                    if( $(this).val() == ''){
+                      $(this).css('border', '1px solid #e74c3c');
+                      submit = false;
+                    }else{
+                      $(this).css('border', 'none');
+                      $(this).css('border-bottom', '1px solid #efefef');
+                    }
+                  });
+
+                  if( submit ){
+                    mname    = $('.merchant-name').val();
+                    mwebsite = $('.merchant-website').val();
+                    memail   = $('.email-address').val();
+                    mreason  = $('.merchant-story').html();
+
+                    emailjs.send("mailjet","iema_email_template",{name: mname, website: mwebsite, email: memail, reason: mreason})
+                    .then(function(response) {
+                      $('form :input').val('');
+                      $('.merchant-story').html('');
+                       console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                       alert('Thanks for your submission');
+                    }, function(err) {
+                       console.log("FAILED. error=", err);
+                    });;
+
+                  }
+                });
+
+                $('.moveTo').on('click', function(e){
+                    var target = $(e.currentTarget).attr('data-attr');
+
+                    var $target = $( target );
+                    if ($target.length) {
+                      $('html,body').animate({
+                             scrollTop: $target.offset().top - 120
+                        }, 1000);
+                        return false;
+                    }
+                });
+              
           };
       });
     }

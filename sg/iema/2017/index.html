@@ -1,9 +1,9 @@
 <!doctype html>
 <html ng-app="myApp" lang="en" amp>
 <head>
-	<meta charset="utf-8">
+	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title></title>
+	<title>iEMA Website</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -19,8 +19,26 @@
 	<script src="faq-list/faq-list.component.js"></script>
 	<script src="footer-section/footer-section.component.js"></script>
 	<script src="assets/js/modernizr-2.8.3.min.js"></script>
-	<link rel="canonical" href="">
-	<base href="https://iprice.sg/iema/2017/">
+	<link rel="canonical" href="https://iprice.sg/iema/">
+	
+	<base href="https://iprice.ph/iema/2017/">
+
+	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+	<script type="text/javascript">
+	   (function(){
+	      emailjs.init("user_uHFJS35Sb2Hz4F3rTjATt");
+	   })();
+	</script>
+
+	<meta name="twitter:card" content="{{ twitter_card }}" />
+	<meta name="twitter:site" content="{{ twitter_site }}" />
+	<meta name="twitter:creator" content="{{ twitter_creator }}" />
+	
+	<meta property="og:url"        	content="{{ fb_url }}" />
+	<meta property="og:type"       	content="{{ fb_type }}" />
+	<meta property="og:title"       content="{{ fb_title }}" />
+	<meta property="og:description" content="{{ fb_desc }}" />
+	<meta property="og:image"       content="{{ fb_image }}" />
 </head>
 <body >
 	<div id="main-container">
@@ -43,6 +61,7 @@
 	</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 	<script src="assets/js/transition.min.js"></script>
+	<script src="assets/js/umd/popper.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0faca089d4d5d"></script> 
 	<script>
