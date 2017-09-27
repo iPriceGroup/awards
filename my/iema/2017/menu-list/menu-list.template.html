@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default navbar-static-top">
+	<div class="nav-header">
+		<span class="menu-wording">Menu</span>
+		<a href="#" class="brand">iEMA 2017</a>
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+	</div>
+	<div class="collapse navbar-collapse" id="main-menu">
+		<ul class="nav navbar-nav content-block">
+			<li class="nav-item" ng-repeat="menu in menus">
+				<a href="javascript:void(0);" ng-click="scroll(menu.url)" class="nav-item">{{menu.title}}</a>
+			</li>
+		</ul> 
+	</div>
+</nav>

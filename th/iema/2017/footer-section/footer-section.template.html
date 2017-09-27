@@ -1,0 +1,31 @@
+<div class="container-footer content-block">
+	<h3>{{ footer.title }}</h3>
+	<nav class="footer-nav">
+		<ul class="nav navbar-nav content-block">
+			<li class="nav-item" ng-repeat="menu in footer.menus">
+				<a href="{{menu.url}}" class="nav-item">{{menu.title}}</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="row footer-note">
+		<div class="col-md-6">
+			<div class="contact-footer" ng-bind-html="footer.content"></div>
+		</div>
+		<div class="col-md-6">
+			<ul class="footer-list">
+				<li class="footer-item">
+					<img src="assets/img/partner-iprice.png" alt="">
+				</li>
+				<li class="footer-item">
+					<img src="assets/img/partner-etail.png" alt="">
+				</li>
+				<li class="footer-item">
+					<img src="assets/img/partner-trusted-company.png" alt="">
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="copyright">
+		<p ng-bind-html="footer.copyright"></p>
+	</div>
+</div>
