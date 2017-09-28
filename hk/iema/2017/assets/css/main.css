@@ -629,6 +629,7 @@ span.menu-wording {
     
     #main-footer{
         padding: 25px 0px 50px 0px !important;
+        clear:both;
     }
     #main-footer .content-block{
         padding: 0px 25px;
@@ -708,5 +709,9 @@ span.menu-wording {
 
     #faq{
         padding: 0px 30px;
+    }
+
+    .faq-item:last-child .collapse-content{
+        margin-bottom: 50px;
     }
 }
