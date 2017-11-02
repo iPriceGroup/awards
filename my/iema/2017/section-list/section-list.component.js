@@ -148,7 +148,7 @@ a.
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
-                 js.src = "https://assets.trustedcompany.com/statics/javascripts/plugins.js";
+                 js.src = "https://trustedcompany.com/statics/javascripts/plugins.js";
                   fjs.parentNode.insertBefore(js, fjs);
               }(document, 'script', 'tc-plugins'));
                 $()
