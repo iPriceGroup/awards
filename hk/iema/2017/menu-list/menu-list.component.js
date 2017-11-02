@@ -6,7 +6,9 @@ a.component('menuList', {
       	url: "data/data.json"
       }).then(function mySuccess(response){
       	 $scope.menus = response.data.menus;
-
+         $scope.$on('$viewContentLoaded', function(){
+            $('#main-menu').collapse('hide');
+          });
          $scope.scroll = function( _target ){
 
                 var $target = $(_target );

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>iEMA Website</title>
-	<meta name="description" content="">
+	<title>iEMA 2017 | Hong Kong</title>
+	<meta name="description" content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -20,7 +20,6 @@
 	<script src="footer-section/footer-section.component.js"></script>
 	<script src="assets/js/modernizr-2.8.3.min.js"></script>
 	<link rel="canonical" href="https://iprice.hk/iema/">
-	
 	<base href="https://iprice.hk/iema/2017/">
 
 	<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
@@ -29,29 +28,25 @@
 	      emailjs.init("user_uHFJS35Sb2Hz4F3rTjATt");
 	   })();
 	</script>
-
-	<meta name="twitter:card" content="{{ twitter_card }}" />
-	<meta name="twitter:site" content="{{ twitter_site }}" />
-	<meta name="twitter:creator" content="{{ twitter_creator }}" />
-	
-	<meta property="og:url"        	content="{{ fb_url }}" />
-	<meta property="og:type"       	content="{{ fb_type }}" />
-	<meta property="og:title"       content="{{ fb_title }}" />
-	<meta property="og:description" content="{{ fb_desc }}" />
-	<meta property="og:image"       content="{{ fb_image }}" />
+	<meta name="theme-color" content="#33cccc">
+	<meta property="og:url" content="https://iprice.hk/iema/2017/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="iPrice E-Commerce Merchants Award (iEMA) 2017 | Hong Kong">
+    <meta property="og:description" content="The iEMA is SouthEast Asia’s preeminent awards voted and judged by online consumers organized by iPrice in partnership with eTail Asia and Trusted Company">
+    <meta property="og:image" content="https://iprice.hk/iema/2017/assets/img/fb-share.jpg">
 </head>
 <body >
-	<div id="main-container">
+	<div id="main-container" >
 		<header id="main-header">
 			<div class="header-image" header-image>
 				<div class="vote-countdown" id="countdown">
-					<div class='time-parent'><div class='months'></div><div class='days'></div><div class='hours'></div><div class='minutes'></div><!-- <div class='seconds'></div> --></div>
+					<div class='time-parent'><!-- <div class='months'></div> --><div class='days'></div><div class='hours'></div><div class='minutes'></div><div class='seconds'></div></div>
 					<p>Voting Period 15th November 2017 - 31st January 2018</span></p>
 				</div>
 			</div>
 			<menu-list></menu-list>
 		</header>
-		<section id="main-section" ng-view id="scroll-container">
+		<section id="main-section" class="main-content" id="scroll-container">
 
 		</section>
 		<faq-list></faq-list>
@@ -63,7 +58,8 @@
 	<script src="assets/js/transition.min.js"></script>
 	<script src="assets/js/umd/popper.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
-	<!-- Go to www.addthis.com/dashboard to customize your tools --> <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0faca089d4d5d"></script> 
+	<!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59b0faca089d4d5d"></script> 
 	<script>
 		$(document).ready(function(){
 
@@ -78,6 +74,7 @@
 					yourNavigation.removeClass(stickyDiv);
 				}
 			});
+
 		});
 	</script>
 </body>

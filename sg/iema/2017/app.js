@@ -1,21 +1,14 @@
 
 var prev= '';
+var data = 'data.json';
+var data_section = 'section.data.json';
 var a = angular.module("myApp", ['ngSanitize', 'ngRoute']);
 
-a.config(function($routeProvider, $locationProvider){
-	$locationProvider.html5Mode(true);
-	$routeProvider
-	.otherwise({
-		templateUrl : "home.html",
-		controller : function($scope, $location, $routeParams){
-			console.log($routeParams);
-			$scope.$on('$viewContentLoaded', function(){
-	          $('#main-menu').collapse('hide');
-	        });
-		}
-	});
-
-	
+a.directive('mainContent', function() {
+  return {
+  	restrict: 'C',
+    templateUrl: 'home.html'
+  };
 })
 .directive('headerImage', function(){
 	return{
