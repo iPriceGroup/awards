@@ -10,9 +10,71 @@
 	<div ng-switch-when="vote" class="container-fluid" >
 		<h3>{{section.title}}</h3>
 		<div class="row">
-			<div class="col-lg-6 col-md-6 widget-tc">
-				<div class="description" ng-bind-html="trustAsHtml(section.content.widget.content)">
-				</div>
+			<div class="col-lg-6 col-md-6 widget-tc" id="ip-iframe-holder">
+				<div class="tc-search"></div>
+				<div class="stars">
+                        <div id="m-logo"></div>
+                        <section class="content">
+
+
+                            <!-- Review Form -->
+                            <div class="rate-review">
+                                <form id="review_form" method="GET" autocomplete="off">
+                                    <!-- Star Rating -->
+                                    <div class="rate-star">
+                                        <!-- note: exellent 5 rating is the first in the code -->
+                                        <fieldset class="rating">
+                                            <input type="submit" id="star5-mobile" name="rating" value="5" autocomplete="off">
+                                            <label for="star5-mobile" title="Excellent" data-rating="5">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star4-mobile" name="rating" value="4" autocomplete="off">
+                                            <label for="star4-mobile" title="Very Good" data-rating="4">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star3-mobile" name="rating" value="3" autocomplete="off">
+                                            <label for="star3-mobile" title="Average" data-rating="3">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star2-mobile" name="rating" value="2" autocomplete="off">
+                                            <label for="star2-mobile" title="Poor" data-rating="2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+                                            <input type="submit" id="star1-mobile" name="rating" value="1" autocomplete="off" >
+                                            <label for="star1-mobile" title="Bad" data-rating="1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 24 24" style="display: inline; height: 50px; width: 50px;">
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                    <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+                                                    <path d="M0 0h24v24H0z" fill="none"></path>
+                                                </svg>
+                                            </label>
+
+                                        </fieldset>
+                                        <!-- Rating descrition that can change from Poor to Excellent -->
+                                        <div class="star-tooltip">Roll over stars, then click to rate</div>
+                                    </div><!-- Star Rating -->
+                                    <input type="hidden" name="module" value="ef">
+                                </form>
+
+                            </div><!-- Review Form -->
+                        </section>
+                    </div>
 			</div>
 			<div class="col-lg-6 col-md-6 side-content-vote">
 				<div class="description" ng-bind-html="trustAsHtml(section.content.side_content.content)">
@@ -66,13 +128,13 @@
 				</div>
 				<div class="form-group">
 					<label for="" class="form-label">Details <small>* required</small></label>
-					<input type="text" placeholder="Your email address" class="email-address form-control">
+					<input type="text" placeholder="Your Email Address" class="email-address form-control">
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6">
 				<div class="form-group">
-					<label for="" class="form-label">About ecommerce merchant</label>
-					<textarea class="form-control merchant-story">Story about nominated merchant</textarea>
+					<label for="" class="form-label">About your nomination</label>
+					<textarea class="form-control merchant-story">Tell us why you want to nominate this merchant</textarea>
 				</div>
 				<div class="form-action">
 					<button type="button" class="form-btn">Submit</button>
@@ -84,7 +146,7 @@
 	<div ng-switch-when="experts" class="container-fluid">
 		<h3>{{section.title}}</h3>
 		<div class="row">
-			<figure ng-repeat="expert in section.content.experts" class="col-md-4 expert-item">
+			<figure ng-repeat="expert in section.content.experts" class="col-md-6 expert-item">
 				<amp-img ng-src="{{expert.image}}" alt="" layout="fixed" width="250" height="250"></amp-img>
 				<figcaption>
 					<h4>{{expert.name}}</h4>
@@ -97,7 +159,7 @@
 	<div ng-switch-when="partners" class="container-fluid">
 		<h3>{{section.title}}</h3>
 		<div class="row">
-			<figure ng-repeat="partner in section.content.partners" class="col-md-4 partner-item">
+			<figure ng-repeat="partner in section.content.partners" class="col-md-6 partner-item">
 				<a href="{{ partner.link}}" target="_blank">
 					<amp-img src="{{partner.image}}" layout="responsive" width="250" height="141"  alt=""></amp-img>
 				</a>
