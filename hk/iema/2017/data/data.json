@@ -10,10 +10,6 @@
                     "title" : "About"
                 },
                 {
-                    "url":"#regulations",
-                    "title": "Rules"
-                },
-                {
                     "url":"#special-award",
                     "title": "Special Award"
                 },
@@ -24,6 +20,10 @@
                 {
                     "url":"#merchants",
                     "title" : "For Merchants"
+                },
+                {
+                    "url":"#regulations",
+                    "title": "Rules"
                 },
                 {
                     "url":"#faq",
@@ -81,7 +81,7 @@
                         "questions" : [
                                 {
                                     "title" : "How do I enlist my e-commerce business for the iEMA voting & judging sessions?",
-                                    "content" : "<img src='assets/img/iEMA-schema-2017.png' >"
+                                    "content" : "<p>The awards are open to all e-commerce merchants in the Southeast Asia region. If your business does not automatically show up on the TrustedCompany voting form, email <a href='mailto:award@ipricegroup.com'>award@ipricegroup.com</a> to enter the competition.</p>"
                                 },
                                 {
                                     "title" : "When is the voting & judging period?",
@@ -97,15 +97,11 @@
                                 },
                                 {
                                     "title" : "What would I gain by participating in iEMA?",
-                                    "content" : "<p>Winners and finalists will receive a digital certificate and an e-badget that can be placed on their e-commerce websites. Winners will also receive a trophy that will be given out at eTail Asia conference in Singapore. There will also be strong PR coverage throughout the entire period of the iEMA by iPrice to garner more publicity; should your business be one of the winners or finalists of the iEMA, you will receive mentions in the press materials and other publicity activities.</p>"
+                                    "content" : "<p>Winners and finalists will receive a digital certificate and an e-badget that can be placed on their e-commerce websites. There will also be strong PR coverage throughout the entire period of the iEMA by iPrice to garner more publicity; should your business be one of the winners or finalists of the iEMA, you will receive mentions in the press materials and other publicity activities.</p>"
                                 },
                                 {
                                     "title" : "Is my e-commerce business allowed to participate in all three (Most Popular Merchant, High Quality Merchant and iPrice Special Award) categories?",
                                     "content" : "<p>Yes. After receiving the first vote, you will automatically enter both the popularity and quality awards. However, your entry into the iPrice Special Awards is only active when somebody nominates your company.</p>"
-                                },
-                                {
-                                    "title" : "When and where will the iEMA finalists be announced?",
-                                    "content" : "<p>Winners and finalists of the awards will be announced at the eTail Asia 2018’s awards ceremony in Sheraton Towers, Singapore on 6th - 8th March 2018.</p>"
                                 },
                                 {
                                     "title" : "Where will the votes, reviews, & rankings be displayed, and where is it stored?",
