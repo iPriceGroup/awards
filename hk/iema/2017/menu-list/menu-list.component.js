@@ -2,10 +2,10 @@ a.component('menuList', {
     templateUrl: 'menu-list/menu-list.template.html',
     controller: function menuListController( $scope, $http, $document) {
       $http({
-      	method: "GET",
-      	url: "data/data.json"
+        method: "GET",
+        url: "data/data.json"
       }).then(function mySuccess(response){
-      	 $scope.menus = response.data.menus;
+         $scope.menus = response.data.menus;
          $scope.$on('$viewContentLoaded', function(){
             $('#main-menu').collapse('hide');
           });

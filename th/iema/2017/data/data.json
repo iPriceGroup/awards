@@ -1,135 +1,121 @@
-[
-    {
-        "id" : "vote",
-        "slug" : "vote-section",
-        "title" : "Vote for Your Favorite E-Commerce Merchant",
-        "content" : {
-                        "widget" : {
-                            "title" : false,
-                            "content" : "<amp-img src='assets/img/voting.gif' alt='' width='437' height='437' layout='responsive'></amp-img>"
-                        },
-                        "side_content" : {
-                            "title" : false,
-                            "content" : "<p><strong>Do you shop online? An avid fan of a specific online merchant? Or just a casual online shopper?</strong></p><p>If your answer is &lsquo;Yes&rsquo; in any of these questions, we would like you to join us in selecting winners for the prestigious <a href='https://iprice.my/' target='_blank'>iPrice</a> E-Commerce Merchant Awards (iEMA) 2017. Support your favorite online merchant and you might be one of the lucky three to win a brand new Samsung smartphone! Support Your Favorite E-Commerce Merchant in THREE Simple Steps:</p><ol><li>Select Favorite E-Commerce Merchant.</li><li>Rate Your Favorite Merchant and Share Your Experience In A Few Words.</li><li>Validate Your Vote Via Facebook or Google Account.</li></ol><p>Voting begins on 15th November 2017 and ends on 31st January 2018. Read more <a href='javascript:void(0);' class='moveTo' data-attr='#about'>about iEMA 2017 </a>&nbsp;or check the <a href='javascript:void(0);' class='moveTo' data-attr='#regulations'>rules</a>.</p>"
-                        }
-                    }
-    },
-    {
-        "id" : "about",
-        "slug" : "about-section",
-        "title" : "about",
-        "content" : {
-                        "about_iema" : {
-                            "title" : "About iEMA 2017",
-                            "content" : "<p>Recognizing and upholding excellence in the e-commerce sector,&nbsp;<br/>the&nbsp;<a href='https://iprice.my/' target='_blank'>iPrice</a>&nbsp;E-Commerce Merchants Award (iEMA) 2017 is South East Asia&rsquo;s preeminent awards voted and judged by online consumers. The awards were organized in partnership with&nbsp;<a href='http://etailasia.wbresearch.com/' target='_blank'>eTail Asia</a>&nbsp;and&nbsp;<a href='http://trustedcompany.com/my' target='_blank'>Trusted Company</a>&nbsp;.</p><p>The award finalists and winners are chosen by consumers in three simple steps:</p><ol><li>Select Favorite E-Commerce Merchant.</li><li>Rate &amp; Share Preferred Merchant</li><li>Validate Your Vote Via Facebook or Google Account.</li></ol><p>Only one vote per-user is allowed. Voting begins on 15th November 2017 and ends on&nbsp;<strong>31st January 2018.</strong>&nbsp;Voting begins on 15th November 2017 and ends on 31st January 2018.&nbsp;Winners will be chosen based on:</p><ul><li>Merchant with the highest number of votes will win&nbsp;<br/><strong>\"The Most Popular E-Commerce Merchant of the Year 2017\"</strong>&nbsp;award.</li><li>Merchant with the highest average ranking will be awarded \"<strong>The Highest Quality E-Commerce Merchant of the Year 2017\"</strong>.</li></ul><p>There will be country winners as well as a pan-regional winner for best overall merchant. Winners will be announced at the eTail Asia conference in Sheraton Towers, Singapore on&nbsp;<strong>6th - 8th March 2018.</strong></p><p>All voters stand a chance to win a brand new Samsung smartphone*. Three lucky winners will be chosen and announced on the&nbsp;<strong>7th March 2018&nbsp;</strong>with the iEMA Winners. Read more about the&nbsp;<a href='javascript:void(0);' class='moveTo' data-attr='#regulations'>rules and regulations.</a></p><p>&nbsp;</p>"
-                        },
-                        "contact_us" : {
-                            "title" : "Contact Us",
-                            "content" : "<h4>Location</h4><strong>iPrice Group Sdn Bhd</strong><br><small> Unit A-22-1, 22nd Floor<br>Northpoint Offices Suites<br>Mid Valley City,<br>No. 1, Medan Syed Putra<br>59200 Kuala Lumpur, Malaysia </small><h4>Email</h4><a href='mailto:award@ipricegroup.com'>award@ipricegroup.com</a>"
-                        }
-                    }
 
-                    
-    },
     {
-        "id" : "regulations",
-        "slug" : "regulations-section",
-        "title" : "Rules & Regulations",
-        "content" : "<p><strong>E-Commerce Merchant Awards Year 2017</strong></p><strong>General: </strong><br><ul><li>iPrice E-commerce Merchant Awards (&ldquo;iEMA&rdquo;) 2017 is organized by iPrice Group Sdn Bhd.</li></ul><strong>Eligibility Criteria: </strong><br><ul><li>iEMA 2017 is open to all e-commerce merchants from Southeast Asia region (Malaysia, Singapore, Indonesia, Vietnam, Thailand, Hong Kong and the Philippines) and no registration of merchant is required.</li></ul><strong>Voting Process:</strong><br><ul><li>Voting shall be conducted by filling out a form available at (&ldquo;iEMA Microsite&rdquo;).</li><li>Consumers shall be able to vote for their preferred e-commerce merchants between 15 November 2017 to 31 January 2018 (&ldquo;Voting Duration&rdquo;), and each consumer is entitled to one vote.</li><li>Voters are required to validate their selection through their Facebook or Google account.</li><li>Votes and/or entries received outside of the voting duration will not be entertained or accepted.</li><li>iPrice shall not be liable in any way for any costs, expenses, damages or liability arising out of or in any way in connection with the iEMA.</li><li>The counting of votes shall proceed by the end of the voting duration (early February 2018).</li><li>iPrice will select the winner and finalists of the award for the following categories:<ul><li>Popularity: e-commerce merchant with the highest number of votes with a minimum of 3 out of 5-star rating.</li><li>Quality: e-commerce merchant with the highest average star rating.</li></ul></li><li>Winners and finalists will be selected for each country in each category.</li><li>In addition to this, an overall winner will be announced and selected for each category.</li><li>iPrice shall reserve the right at its absolute discretion to review and vary the selection process or to withdraw an award at any time without prior notice and without any liability in respect thereof. The decision of iPrice is final and conclusive in all circumstances.</li></ul></div><div id='more-content' class='more-content hidden'><strong>Announcements: </strong><br><ul><li>Winners and finalists of the awards will be announced at the eTail Asia 2018 conference, awards ceremony in Sheraton Towers, Singapore on 7th March 2018.</li><li>Winners will be notified via email and at the iEMA Microsite.</li><li>A digital certificate and an e-badge will be awarded to all iEMA winners and finalists, of which they are encouraged display on their online assets (website) at no charge on the condition that the same (including &ldquo;Powered by iPrice&rdquo; badge which must be configured as an active link back to iPrice webpage) must be used solely as designed, displayed, intended and promoted by iPrice with no modification, distortion or changes to the same.</li><li>iPrice allows the winners and finalists the right to use the badge &ldquo;as is&rdquo; without any warranty and shall not be responsible or liable for any cost or liabilities arising from the use or installation of the badge on their websites.</li><li>The winners and finalists agree to the usage of their company&rsquo;s name/s and/or logo in any publicity material and to participate in any promotional activity relating iEMA.</li><li>iPrice accepts no responsibility for, and gives no assurance or warranty in relation to, the authenticity or credibility of iEMA winners and finalists, nor their quality or fitness for any particular purpose or otherwise.</li></ul><strong>Lucky draw </strong><br><ul><li>All valid voters qualify for the Samsung smartphone lucky draw.</li><li>Only three lucky winners will be selected from all voters of iEMA 2017 and those nominating merchants for iPrice Special Awards.</li><li>Winners will be announced together with iEMA winners on 7th March 2018 at the microsite.</li></ul><strong>Others </strong><br><ul><li>These terms and conditions will be governed under Malaysian law and any disputes will be subject to the exclusive jurisdiction of the courts of Malaysia.</li></ul><h3>Rules and Regulations</h3><p><strong>iPrice Special Award Year 2017</strong></p><strong>General: </strong><br><ul><li>iPrice Special Award 2017 is organized by iPrice Group Sdn Bhd.</li></ul><strong>Eligibility Criteria and Registration: </strong><br><ul><li>iPrice Special Award 2017 is open to all e-commerce merchants from Southeast Asia region (Malaysia, Singapore, Indonesia, Vietnam, Thailand, Hong Kong and the Philippines).</li><li>Any individual, be it by merchant owners/staff or any other person, can register merchant/s by completing and submitting all required fields in the online form (merchant/organization name, website and rationale why the mentioned merchant should qualify &amp; win the iPrice Award).</li><li>iPrice Special Award 2017 entries can be submitted at iprice.my/awards2017/ between 15 November 2017 to 31 January 2018 (&ldquo;Contest Period&rdquo;).</li></ul><strong>Submitting Entries: </strong><br><ul><li>Individuals (be it the merchant owners/staff or other individual) submitting their entries are<ul><li>required to write a compelling story/rationale within 1,500 characters based on either:&nbsp;</li><li>What is special about the organization/its business.</li><li>How consumers/the e-commerce industry has benefited from the mentioned merchant/business.</li><li>Describe the special project undertaken by the store/business in support of social or non-profit organization.</li></ul></li><li>All entries must be submitted online at iprice.my/awards2017/ together with the entry form within the Contest Period.</li><li>Entries received out of the contest period will not be entertained or accepted.</li><li>iPrice shall not be responsible or liable for any delay or failure in receiving the entries for whatever reason.</li><li>iPrice shall not be liable in any way for any costs, expenses, damages or liability arising out of or in any way in connection with the iPrice award.</li><li>The &lsquo;email&rsquo; column is a non-mandatory field for individuals (be it the merchant owners/staff or other individual) submitting their entries. However not filling up this column will disqualify individual from the Samsung smartphone lucky draw.</li></ul><strong>Judging: </strong><br><ul><li>All entries received by the end of the Contest Period will be evaluated by an expert panel of judges designated by iPrice.</li><li>The judges will shortlist 10 finalists and one overall winner from the shortlisted entries.</li><li>A digital certificate and an e-badge will be awarded to all iEMA winners and finalists, of which they are encouraged display on their online assets (website) at no charge on the condition that the same (including &ldquo;Powered by iPrice&rdquo; badge which must be configured as an active link back to iPrice webpage) must be used solely as designed, displayed, intended and promoted by iPrice with no modification, distortion or changes to the same.</li><li>iPrice shall reserve the right at its absolute discretion to review and vary the process or to withdraw an award at any time without prior notice and without any liability in respect thereof. The decision of iPrice is final and conclusive in all circumstances.</li></ul>Announcement:<br><ul><li>Winners and finalists of the iPrice Special Award will be announced at the eTail Asia 2018 conference, awards ceremony in Sheraton Towers, Singapore on 6th and 8th March 2018.</li><li>Winners will be notified via email and at the iEMA microsite.</li><li>A digital certificate and an e-badge will be awarded to iPrice Special Award winner and finalists, of which they are encouraged display on their online assets (website) at no charge on the condition that the same (including &ldquo;Powered by iPrice&rdquo; badge which must be configured as an active link back to iPrice webpage) must be used solely as designed, displayed, intended and promoted by iPrice with no modification, distortion or changes to the same.</li><li>iPrice allows the winners and finalists the right to use the badge &ldquo;as is&rdquo; without any warranty and shall not be responsible or liable for any cost or liabilities arising from the use or installation of the badge on their websites.</li><li>The winners and finalists agree to the usage of their company&rsquo;s name/s and/or logo in any publicity material and to participate in any promotional activity relating iEMA.</li><li>iPrice accepts no responsibility for, and gives no assurance or warranty in relation to, the authenticity or credibility of iPrice Special Award winners and finalists, nor their quality or fitness for any purpose or otherwise.</li></ul><strong>Lucky draw </strong><br><ul><li>All valid voters qualify for the Samsung smartphone lucky draw.</li><li>Only three lucky winners will be selected from all voters of iEMA 2017 and those nominating merchants for iPrice Special Awards.</li><li>Winners will be announced together with iEMA winners on 7th March 2018 at the microsite.</li></ul><strong>Others </strong><br><ul><li>These terms and conditions will be governed under Malaysian law and any disputes will be subject to the exclusive jurisdiction of the courts of Malaysia.</li></ul></div><a class='more-button'>Read More</button>"
-    },
-    {
-        "id" : "special-award",
-        "slug": "iema-special-award",
-        "title" : "iPrice Special Award 2017",
-        "content" : "<p>As we are delighted to recognize the most popular and highest quality online merchants/organization/businesses, we would also like to recognize notable achievements that might not have been noted by general consumers. As such, the <a href='https://iprice.my/' target='_blank'>iPrice</a> Special Award was set up to recognize small projects, startups, or other notable business efforts and to provide an honorable mention for their achievements.</p>"
-    },
-    {
-        "id" : "nomination-form",
-        "slug": "iema-special-award-nomination",
-        "title" : "Nomination Form",
-        "content" : false
-    },
-    {
-        "id" : "experts",
-        "slug" : "expert-panel",
-        "title" : "Expert Panel",
-        "content" : {
-                        "experts" : [
+        "menus" : [
+                {
+                    "url" : "#vote",
+                    "title" : "โหวต"
+                },
+                {
+                    "url" : "#about",
+                    "title" : "เกี่ยวกับเรา"
+                },
+                {
+                    "url":"#special-award",
+                    "title": "รางวัลพิเศษ"
+                },
+                {
+                    "url":"#partners",
+                    "title": "พาร์ทเนอร์"
+                },
+                {
+                    "url":"#merchants",
+                    "title" : "สำหรับร้านค้า"
+                },
+                {
+                    "url":"#regulations",
+                    "title": "กติกา"
+                },
+                {
+                    "url":"#faq",
+                    "title": "คำถามที่พบบ่อย"
+                }
+            ],
+        "footer" : {
+            "title" : "iPrice E-Commerce Merchant Awards 2017",
+            "menus" : [
+                    {
+                        "url" : "#about",
+                        "title" : "เกี่ยวกับเรา"
+                    },
+                    {
+                        "url":"#regulations",
+                        "title": "กติกา"
+                    },
+                    {
+                        "url":"#special-award",
+                        "title": "รางวัลพิเศษ"
+                    },
+                    {
+                        "url":"#partners",
+                        "title": "พาร์ทเนอร์"
+                    },
+                    {
+                        "url":"#faq",
+                        "title": "คำถามที่พบบ่อย"
+                    }
+                ],
+            "content" : "<strong>iPrice Group Sdn Bhd</strong><p>Unit A-22-1, 22nd Floor, Northpoint Offices Suites,<br>Mid Valley City, No. 1, Medan Syed Putra,<br>59200 Kuala Lumpur, Malaysia</p><strong>ข้อมูลและคำถาม</strong><a href='mailto:award@ipricegroup.com' target='_blank'>award@ipricegroup.com</a>",
+            "copyright" : "&copy; 2017 iPrice Group Sdn Bhd (1113954 - D). All rights reserved." 
+        },
+        "faq" : {
+                "title" : "คำถามที่พบบ่อย",
+                "consumer" : {
+                        "title" : "สำหรับผู้บริโภค",
+                        "questions" : [
                                 {
-                                    "image" : "assets/img/david.png",
-                                    "name" : "David Chmelar",
-                                    "title" : "Co-Founder and CEO of iPrice",
-                                    "description" : "Management consultant and banker in his past life, David made a radical change and decided to build iPrice Group, leading retail shopping metasearch engine in Southeast Asia. With his Co-founder Heinrich Wendel they aim high - to bring transparency, convenience and trust to whole SEA market and move local consumers to online shopping. Excitement he gained on the journey so far generates only more excitement from realizing how much more can be achieved on this market."
+                                    "title" : "ทำไมฉันจึงควรโหวต?",
+                                    "content" : "<p>ถ้าคุณกำลังอ่านข้อมูลนี้อยู่ ก็แสดงว่าคุณนั้นพอใจกับความสะดวกในการช้อปปิ้งแบบออนไลน์กับร้านค้าอี-คอมเมิร์ซแล้ว และคุณก็สามารถให้กับสนับสนุนร้านค้าอี-คอมเมิร์ซโปรดในดวงใจของคุณได้ด้วยการโหวตให้กับพวกเขาในการประกวดรางวัล iPrice E-Commerce Award 2017 (รางวัลร้านค้าอี-คอมเมิร์ซยอดเยี่ยมจาก iPrice ประจำปีพ.ศ. 2560) และในขณะเดียวกันก็ยังได้สิทธิ์ร่วมลุ้นโชครับรางวัลสมาร์ทโฟนจากซัมซุงไปครองได้อีกด้วย!</p>"
                                 },
                                 {
-                                    "image" : "assets/img/danny.png",
-                                    "name" : "Danny Levy",
-                                    "title" : "General Manager at Worldwide Business Research",
-                                    "description" : "He has an extensive background in general management, research, strategic partnership, business development, and specializes in helping businesses get their message out clearly, concisely, and accurately. With his vast experience across many different industrial sectors in Southeast Asia, he’s been successful in leading Worldwide Business Research to hold top-class events."
+                                    "title" : "ฉันอยากโหวต ต้องทำอย่างไร?",
+                                    "content" : "<p>เข้าไปที่เว็บไซต์ของ iEMA 2017 เท่านี้คุณก็สามารถโหวตคะแนนให้กับร้านค้าอี-คอมเมิร์ซในดวงใจของคุณได้แล้ว นอกจากนี้ยังสามารถเสนอชื่อผู้เข้าประกวดในรางวัล iPrice Special Award (รางวัลพิเศษจาก iPrice) ได้ด้วยเช่นกัน</p>"
                                 },
                                 {
-                                    "image" : "assets/img/frederick.png",
-                                    "name" : "Frederick Krass",
-                                    "title" : "Co-Founder and Managing Director at Trusted Company",
-                                    "description" : "An expert in maneuvering fast moving and emerging e-commerce markets around the globe. With his expertise, he aims to drive his company’s noble intention to protect e-commerce consumers from falling prey to online frauds through the use of third-party reviews on his platform."
+                                    "title" : "ฉันจะเข้าร่วมลุ้นสิทธิ์ชิงโชครับรางวัลสมาร์ทโฟนจากซัมซุงอย่างไร?",
+                                    "content" : "<p>ผู้ใดก็ตามที่เข้าไปโหวตคะแนนให้กับรางวัล iEMA 2016 มีสิทธิ์ลุ้นชิงโชคได้ทั้งสิ้น และสำหรับรางวัล iPrice Special Award ผู้ที่จะได้รับสิทธิ์ลุ้น้ชิงโชคนั้นจะต้องกรอกที่อยู่อีเมลในช่องสำหรับกรอกอีเมลเมื่อได้เข้าไปเสนอชื่อผู้เข้าประกวดเท่านั้น</p>"
+                                }
+                        ]
+                    },
+                    "merchants" : {
+                        "title" : "สำหรับร้านค้าอี-คอมเมิร์ซ",
+                        "questions" : [
+                                {
+                                    "title" : "ธุรกิจอี-คอมเมิร์ซของฉันจะได้เข้าไปอยู่ที่รายชื่อผู้ได้รับเลือกและเข้ารับการตัดสินในรางวัล iEMA ได้อย่างไร?",
+                                    "content" : "<img src='assets/img/iEMA-schema-2017.png' >"
                                 },
                                 {
-                                    "image" : "assets/img/khailee.png",
-                                    "name" : "Khailee Ng",
-                                    "title" : "Tech startup investor and founder. Managing Partner, 500 Startups",
-                                    "description" : "He loves creating tech startups and is responsible for e-commerce site Groupsmore and media company Says.com. Khailee founded those two companies which were both acquired. He is also the managing partner of Silicon Valley’s most active speed venture capital firm with over 100 investments in Southeast Asian startups. He is always looking for patterns in startups to come up with disruptive patterns."
+                                    "title" : "ระยะเวลาการโหวตและการตัดสินคือเมื่อไร?",
+                                    "content" : "<p>วันที่ 15 พฤศจิกายน พ.ศ. 2560 จนถึงวันที่ 31 มกราคม พ.ศ. 2561</p>"
                                 },
                                 {
-                                    "image" : "assets/img/tim.png",
-                                    "name" : "Tim Marbach",
-                                    "title" : "CEO and Founder at Asia Venture Group",
-                                    "description" : "Tim is a successful and active investor in many startups across the globe. His road to success began when he started his first business venture called Bonial (Kaufda). Following the acquisition of Bonial.com by German media conglomerate Axel Springer SE in 2011, he has since moved to Southeast Asia and established Asia Venture Group, an angel investor company of many startups, including the iPrice Group."
+                                    "title" : "ฉันสามารถเชิญชวนให้ลูกค้าโหวตให้กับร้านค้าของฉันได้ไหม?",
+                                    "content" : "<p>เราแนะนำให้คุณเชิญชวนลูกค้าของคุณให้เข้ามามีส่วนร่วมในการสนับสนุนร้านของคุณด้วยวิธีต่าง ๆ เช่น ผ่านทางการใช้จดหมายข่าว, โซเชียลมีเดีย และแบนเนอร์ เป็นต้น นอกจากนี้คุณยังสามารถเชิญชวนลูกค้าของคุณให้โหวตให้คุณได้เช่นกัน อาจด้วยการแจ้งเรื่องการลุ้นโชครับรางวัล แต่ไม่อณุญาตให้บังคับให้ลูกค้าโหวตให้คุณ</p>"
+                                },
+                                {
+                                    "title" : "ใช้วิธีใดในการคัดเลือกผู้เข้ารอบสุดท้ายและผู้ชนะ?",
+                                    "content" : "<ul> <li>ร้านค้าที่มีผู้ให้คะแนนโหวตสูงสุดจะได้รับรางวัล “The Most Popular E-Commerce Merchant of the Year 2016” (ร้านค้าอี-คอมเมิร์ซยอดนิยมประจำปีพ.ศ. 2560) ประจำแต่ละประเทศ</li><li>ร้านค้าที่ได้รับการจัดอันดับสูงสุดจะได้รับรางวัล “The Highest Quality E-Commerce Merchant of the Year 2017” (ร้านค้าอี-คอมเมิร์ซคุณภาพยอดเยี่ยมประจำปีพ.ศ. 2560) ประจำแต่ละประเทศ</li></ul>"
+                                },
+                                {
+                                    "title" : "ฉันจะได้อะไรจากการเข้าร่วมใน iEMA?",
+                                    "content" : "<p>ผู้ชนะและผู้เข้ารอบสุดท้ายจะได้รับใบประกาศแบบดิจิตอลและตราสัญลักษณ์รางวัลแบบอิเล็กทรอนิกส์ซึ่งสามารถนำไปติดไว้ที่หน้าเพจของตนได้ นอกจากนี้ยังจะมีการประชาสัมพันธ์เผยแพร่อย่างกว้างขวางและต่อเนื่องตลอดระยะเวลาของการประกวด iEMA โดย iPrice เพื่อดึงความสนใจจากผู้คนให้มากที่สุด หากธุรกิจของคุณเป็นหนึ่งในผู้ชนะเลิศ หรือผู้เข้ารอบสุดท้ายของ iEMA แล้วละก็ ชื่อธุรกิจของคุณยังจะได้รับการกล่าวถึงในข้อมูลข่าวต่าง ๆ และในกิจกรรมประชาสัมพันธ์อื่น ๆ อีกด้วย</p>"
+                                },
+                                {
+                                    "title" : "ธุรกิจอี-คอมเมิร์ซของฉันสามารถเข้าร่วมประกวดในรางวัลทั้งสามรางวัลหรือไม่ (Most Popular Merchant, High Quality Merchant and iPrice Special Award)?",
+                                    "content" : "<p>ได้ หลังจากที่คุณได้รับคะแนนโหวตแรกแล้ว คุณก็จะถูกจัดเข้าไปอยู่ในรายชื่อผู้เข้าประกวดรรับร้านค้าอี-คอมเมิร์ซยอดนิยมและร้านค้าอี-คอมเมิร์ซคุณภาพยอดเยี่ยม แต่สำหรับรางวัล iPrice Special Award นั้นคุณจะได้อยู่ในรายชื่อผู้เข้าประกวดก็ต่อเมื่อมีผู้เสนอชื่อคุณเข้าไปY.</p>"
+                                },
+                                {
+                                    "title" : "คะแนนโหวต, รีวิว และการจัดอันดับจะแสดงอยู่ที่ใด และข้อมูลเหล่านี้จะถูกจัดเก็บไว้ที่ไหน?",
+                                    "content" : "<p>คะแนนโหวตและรีวิวจะถูกจัดเก็บไว้อย่างปลอดภัยที่ TrustedCompany.com ข้อมูลเหล่านี้จะได้รับการจัดเก็บอยู่ในเซิร์ฟเวอร์ที่มีความปลอดภัย และได้รับการอัพเดตซอฟต์แวร์ล่าสุดอยู่เป็นประจำเพื่อป้องกันการขโมยข้อมูล แต่จะไม่มีการแสดงการจัดอันดับธุรกิจอี-คอมเมิร์ซบนเว็บไซต์ของ iEMA</p>"
+                                },
+                                {
+                                    "title" : "ฉันจะมั่นใจได้อย่างไรว่าชื่อเสียงในธุรกิจของฉันจะไม่เสียหายจากการเข้าร่วมประกวดรางวัล iEMA 2017?",
+                                    "content" : "TrustedCompany.com จะเป็นผู้รวบรวมคะแนนโหวตและรีวิวตลอดช่วงระยะเวลาการโหวต iEMA 2017 ด้วยทีมงานที่เฝ้าจับตาดูทุกคะแนนโหวตและรีวิวที่ถูกส่งเข้ามา และป้องกันรีวิวที่ไม่ตรงกับข้อกำหนดบังคับเข้ามาปรากฏอยู่ในฐานข้อมูล"
+                                },
+                                {
+                                    "title" : "จะเกิดอะไรขึ้นถ้าฉันได้คะแนนไม่ดีในการประกวดรางวัล iEMA?",
+                                    "content" : "เราแนะนำให้ผู้เข้าร่วมการประกวดรางวัลนั้นประชาสัมพันธ์และเผยแพร่ข้อมูลเกี่ยวกับรางวัล iEMA ให้มากที่สุด เพื่อรวบรวมคะแนนโหวตและการสนับสนุนจากลูกค้าของคุณ เพื่อให้ได้รับการรีวิวที่ดีจากประสบการณ์การช้อปปิ้งที่ลูกค้าได้รับจากคุณ โดยธุรกิจอี-คอมเมิร์ซที่ได้รับการจัดอันดับอยู่ในระดับต่ำจะไม่ถูกแสดงชื่ออยู่ในการประชาสัมพันธ์ใด ๆ"
                                 }
                         ]
                     }
-    },
-    {
-        "id" : "partners",
-        "slug" : "iema-partners",
-        "title" : "Partners",
-        "content" : {
-            "partners" : [
-                    {
-                        "image" : "assets/img/partner-iprice.png",
-                        "name" : "iPrice Group",
-                        "link" : "https://iprice.my/",
-                        "title" : "E-Commerce Aggregator and Price Comparison Website",
-                        "description" : "<p>Southeast Asia is seen as the e-commerce haven, where new online stores are popping up every day. As such, shoppers are faced with more and more websites in their search for what they want and engage with retailers online. All this can get a little confusing.With this in mind, iPrice was set up to offer shoppers the widest selection of products and brands, provided by hundreds of partners in Southeast Asia – all made available on one shopping website. Founded since 2014, iPrice Group is present in seven major South East Asian countries.</p>"
-                    },
-                    {
-                        "image" : "assets/img/partner-etail.png",
-                        "name" : "Etail",
-                        "link" : "http://etailasia.wbresearch.com/",
-                        "title" : "E-Commerce & Multi-Channel Retail Innovators",
-                        "description" : "<p>eTail Asia is Asia&rsquo;s premier e-commerce event bringing together 400+ retailers. It is a one-stop shop for everything multichannel and eCommerce; an event where business owners and entrepreneurs have opportunities to learn, be inspired, find innovative solutions for their businesses and build lasting professional relationships. With 80+ keynotes, panels, workshops and social gatherings, 20 hours of networking and around 500 expected attendees, this event is poised to be the meeting place for Asia&rsquo;s top retailers. <a href='https://register.wbresearch.com/SRSPricing.aspx?eventid=1003384' target='_blank'>Register</a> for eTail Asia 2017 using the exclusive code &ldquo;WSG_21897.005_iPrice&rdquo; &amp; get a 10% discount!</p>"
-                    },
-                    {
-                        "image" : "assets/img/partner-trusted-company.png",
-                        "name" : "Trusted Company",
-                        "link" : "http://business.trustedcompany.com/",
-                        "title" : "E-Commerce Review Platform",
-                        "description" : "<p>Trusted Company is a review platform for e-commerce businesses in emerging markets like Southeast Asia and India. Trusted Company aims to be the most transparent go-to-place for company reviews, spiced up with a goal of educating both businesses and consumers in positive ways of facilitating good e-commerce practice.As the current state of emerging e-commerce in the South East Asia Region holds tremendous opportunities for solutions that tackle scam, fraud, and other types of abuse, Trusted Company strongly believes that creating trust through third-party verified reviews is the best manner to overcome these issue.</p>"
-                    },
-                    {
-                        "image" : "assets/img/partner-insider-logo.png",
-                        "name" : "Useinsider",
-                        "link" : "http://useinsider.com/",
-                        "title" : "A Digital Experience Delivery Platform",
-                        "description" : "UseInsider is a digital experience delivery platform for marketers with several local offices in APAC. UseInsider allows you to optimize and personalize the user journey across all your digital touch points with true 1:1 messaging without additional investment in technology resources or project managers. In particular, UseInsider enables marketers to leverage personalization, predictive segmentation and many out-of-the-box and custom widgets to boost loyalty and digital growth; examples are web push notifications, product recommendation, A/B testing, lead generation, and more. UseInsider is trusted by >200 partners, including reputable organizations such as Uniqlo, Singapore Airlines, CNN, Toyota, McDonalds, AVIS, MasterCard."
-                    }
-            ]
-        }
-    },
-    {
-        "id" : "merchants",
-        "slug" : "iema-merchants",
-        "title" : "For Merchants",
-        "content" : "<p>No registration is required to participate in iEMA 2017 as all valid and legal e-commerce merchants (within Southeast Asia) automatically qualifies.</p><p>We highly encourage you to shout out and garner as much support from your fan base and consumers for iEMA 2017! Below are downloadable materials you can utilize at your website and social media assets.</p><div class='banners row'><div class='col-md-6'><a href='assets/public/merchant.zip' target='_blank' download='merchant.zip'><amp-img src='assets/img/merchantbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Merchant Banners</small></a></div><div class='col-md-6'><a href='assets/public/blogger.zip' download='blogger.zip' target='_blank'><amp-img src='assets/img/bloggerbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Blog Banners</small></a></div></div><p>Additionally, we can create a dedicated link you may utilize to direct your customers to easily vote and rank your business for iEMA 2017. Kindly send your request to <a href='mailto:award@ipricegroup.com' target='_blank'>award@ipricegroup.com</a> and our representatives will assist you accordingly. Find out more on the iEMA 2017 at our <a href='javascript:void(0);' class='moveTo' data-attr='#faq'>FAQ</a> page. </p>"
+                }
     }
-
-]
