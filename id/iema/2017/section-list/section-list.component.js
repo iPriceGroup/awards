@@ -6,7 +6,7 @@ a.
       
       $http({
         method: "GET",
-        url: "data/section.data.id.json"  
+        url: "data/section.data.json"  
       }).then(function mySuccess(response){
 
           $scope.testtext = "<strong>this is html</strong>";
