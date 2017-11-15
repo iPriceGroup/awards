@@ -49,7 +49,7 @@ amp-img{
     background: #086a87 url(../img/iema_header_.svg) top center no-repeat;
     background-size: 1280px;
     width: 100%;
-    min-height: 360px;
+    min-height: 274px;
     position: relative;
 }
 
@@ -343,7 +343,7 @@ a.more-button{
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex;
+    display: none;
     flex-wrap: wrap;
 }
 #countdown .time-parent div.months,
@@ -423,7 +423,7 @@ span.menu-wording {
 @media (max-width: 796px) {
     #countdown {
         padding: 12px 0 0 0;
-        height: 170px;
+        height: 15px;
     }
     #countdown .time-parent {
         width: 100%;
@@ -435,7 +435,7 @@ span.menu-wording {
         background: url(../img/iema_header_mobile.svg) no-repeat;
         background-size: 100%;
         width: 100%;
-        min-height: 560px;
+        min-height: 410px;
         position: relative;
     }
     
@@ -512,7 +512,7 @@ span.menu-wording {
     }
 
     #countdown {
-        bottom: 70px;
+        bottom: 35px;
     }
 
     #countdown .col-lg-12.col-md-12 {
@@ -709,6 +709,7 @@ span.menu-wording {
 
     #countdown .time-parent {
         max-width: 560px;
+        display: none;
     }
 
     #faq{

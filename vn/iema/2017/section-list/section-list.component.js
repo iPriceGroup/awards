@@ -35,7 +35,7 @@ a.
                 if (arr !== "") {
                     // Show custom iframe with indivdual store ratings
                     $('.tc-search').css('display', 'none');
-                    $('#review_form').prop("action", "https://trustedcompany.com/profile/" + arr.mid + "/review");
+                    $('#review_form').prop("action", "https://trustedcompany.com/vn/profile/" + arr.mid + "/review");
                     $('#m-logo').text("" + arr.mname);
                 } else {
                     $(".stars").css('display', 'none');
