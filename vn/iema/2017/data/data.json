@@ -2,10 +2,6 @@
     {
         "menus" : [
                 {
-                    "url" : "#vote",
-                    "title" : "Bình Chọn"
-                },
-                {
                     "url" : "#about",
                     "title" : "Giới Thiệu"
                 },
@@ -16,10 +12,6 @@
                 {
                     "url":"#partners",
                     "title": "Đối Tác"
-                },
-                {
-                    "url":"#merchants",
-                    "title" : "Dành cho doanh nghiệp"
                 },
                 {
                     "url":"#regulations",

@@ -2,10 +2,6 @@
     {
         "menus" : [
                 {
-                    "url" : "#vote",
-                    "title" : "โหวต"
-                },
-                {
                     "url" : "#about",
                     "title" : "เกี่ยวกับเรา"
                 },
@@ -16,10 +12,6 @@
                 {
                     "url":"#partners",
                     "title": "พาร์ทเนอร์"
-                },
-                {
-                    "url":"#merchants",
-                    "title" : "สำหรับร้านค้า"
                 },
                 {
                     "url":"#regulations",

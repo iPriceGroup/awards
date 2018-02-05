@@ -1,20 +1,5 @@
 [
 	{
-		"id" : "vote",
-		"slug" : "vote-section",
-		"title" : "",
-		"content" : {
-						"widget" : {
-							"title" : false,
-							"content" : "<amp-img src='assets/img/voting.gif' alt='' width='437' height='437' layout='responsive'></amp-img>"
-						},
-						"side_content" : {
-							"title" : false,
-							"content" : "<h3>Dukung Toko Online Favorit Anda Sebagai Pemenang iPrice E-Commerce Merchant Awards (iEMA) 2017!</h3><p>Mari berpartisipasi melalui <em>voting online&nbsp;</em>dengan tiga langkah mudah berikut:</p><ol><li>Pilih toko <em>online</em>/<em>e-commerce&nbsp;</em>favorit Anda.</li><li>Jelaskan pengalaman Anda saat berbelanja dalam satu paragraf.</li><li>Lakukan proses <em>voting&nbsp;</em>melalui akun Facebook atau Google Anda dan dapatkan kesempatan <em>lucky draw&nbsp;</em>tiga buah <em>smartphone&nbsp;</em>Samsung!</li></ol><p>Proses <em>voting&nbsp;</em>ini berlaku dari tanggal 15 November 2017 hingga 31 Januari 2018.</p>"
-						}
-					}
-	},
-	{
 		"id" : "about",
 		"slug" : "about-section",
 		"title" : "about",
@@ -36,12 +21,6 @@
 		"slug": "iema-special-award",
 		"title" : "iPrice Special Award 2017",
 		"content" : "<p>Bersamaan dengan kebahagiaan kami mempersembahkan merchant / perusahaan / bisnis online yang terpopuler dan berkualitas paling tinggi, kami juga ingin menonjolkan prestasi-prestasi penting yang mungkin terlewatkan oleh para konsumen. Dengan demikian, <a href='https://iprice.co.id/iema/2017' target='_blank'>iPrice</a> Special Award bertujuan untuk mengakui projek-projek kecil, startups, dan upaya bisnis penting lainnya yang layak diakui atas prestasi mereka.</p><p>Kirim formulir penyertaan Anda dan Anda akan memiliki peluang untuk memenangi smartphone Samsung terbaru! Penyertaan pada <a href='https://iprice.co.id/' target='_blank'>iPrice</a> Special Award akan dinilai oleh panel juri yang akan memilih para finaslis dan satu pemenang. Lihat lebih lanjut <a href='#experts'>panel juri kami</a> beserta <a href='#rules'>Syarat dan Ketentuan.</a></p>"
-	},
-	{
-		"id" : "nomination-form",
-		"slug": "iema-special-award-nomination",
-		"title" : "Nomination Form",
-		"content" : false
 	},
 	{
 		"id" : "experts",
@@ -98,12 +77,6 @@
 					}
 			]
 		}
-	},
-	{
-		"id" : "merchants",
-		"slug" : "iema-merchants",
-		"title" : "Untuk Merchants",
-		"content" : "<p>Tidak diwajibkan untuk registrasi sebelumnya to mengikuti iEMA 2017 karena seluruh toko online yang valid dan resmi (di kawasan Asia Tenggara) sudah memenuhi syarat.</p><p>Kami sangat menghimbau untuk berpartisipasi dan mengumpulkan banyak pendukung dari para penggemar dan pelanggan Anda untuk iEMA 2017! Di bawah ini merupakan beberapa materi yang dapat Anda unduh dan dapat Anda sebarkan di website dan aset media sosial Anda.</p><div class='banners row'><div class='col-md-6'><a href='assets/public/merchants.zip' target='_blank'><amp-img src='assets/img/merchantbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Merchant Banners</small></a></div><div class='col-md-6'><a href='assets/public/bloggers.zip' target='_blank'><amp-img src='assets/img/bloggerbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Blog Banners</small></a></div></div><p>Selain itu, kami dapat membuat link khusus yang bisa Anda gunakan untuk mengarahkan konsumen Anda untuk dengan mudah memilih dan memberikan rating pada bisnis Anda untuk iEMA 2017. Silakan untuk email permintaan Anda ke <a href='mailto:award@ipricegroup.com' target='_blank'>award@ipricegroup.com</a> dan perwakilan kami akan membantu Anda. Untuk informasi lebih lanjut mengenai iEMA 2017, silakan kunjungi laman pertanyaan di <a href='#faq'>FAQ</a></p>"
 	},
 	{
 		"id" : "regulations",
