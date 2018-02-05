@@ -1,20 +1,5 @@
 [
 	{
-		"id" : "vote",
-		"slug" : "vote-section",
-		"title" : "",
-		"content" : {
-						"widget" : {
-							"title" : false,
-							"content" : "<amp-img src='assets/img/voting.gif' alt='' width='437' height='437' layout='responsive'></amp-img>"
-						},
-						"side_content" : {
-							"title" : false,
-							"content" : "<h3>ร่วมเป็นส่วนหนึ่งในการคัดเลือกผู้ชนะรางวัล iPrice E-Commerce Merchant Awards (iEMA) 2017!</h3><p>มาสนับสนุนร้านค้าออนไลน์ร้านโปรดของคุณด้วย 3 ขั้นตอนง่าย ๆ ดังนี้</p><ol><li>เลือกร้านค้าอีคอมเมิร์ซที่คุณชื่นชอบ</li><li>แบ่งปันประสบการณ์การซื้อกับร้านค้านั้น ๆ แบบสั้น ๆ</li><li>ทำการโหวตคะแนนให้กับร้านค้าในดวงใจของคุณผ่านทาง Facebook หรือ Google เพื่อร่วมลุ้นการจับฉลากชิงรางวัลสมาร์ทโฟนจากซัมซุงจำนวน 3 รางวัล</li></ol><p>เริ่มโหวตคะแนนได้ตั้งแต่วันที่ 15 พฤศจิกายน 2560 ไปจนถึง 31 มกราคา 2561</p>"
-						}
-					}
-	},
-	{
 		"id" : "about",
 		"slug" : "about-section",
 		"title" : "about",
@@ -36,12 +21,6 @@
 		"slug": "iema-special-award",
 		"title" : "iPrice Special Award 2017 (รางวัลพิเศษจาก iPrice ประจำปีพ.ศ. 2560)",
 		"content" : "<p>ธุรกิจอีคอมเมิร์ซของฉันจะเข้าร่วมแข่งขันเพื่อรับการโหวตและตัดสินเพื่อรับรางวัล iEMA ได้อย่างไร</p>"
-	},
-	{
-		"id" : "nomination-form",
-		"slug": "iema-special-award-nomination",
-		"title" : "ใบเสนอชื่อผู้เข้าชิงรางวัล",
-		"content" : false
 	},
 	{
 		"id" : "experts",
@@ -98,12 +77,6 @@
 					}
 			]
 		}
-	},
-	{
-		"id" : "merchants",
-		"slug" : "iema-merchants",
-		"title" : "สำหรับร้านค้า",
-		"content" : "<p>บรรดาธุรกิจและร้านค้าอีคอมเมิร์ซในเอเชียตะวันออกเฉียงใต้ที่มีการจดทะเบียนร้านค้าถูกต้องตามกฎหมายจะได้เข้าร่วมการพิจารณาใน iEMA 2017 อัตโนมัติ <br>โดยไม่ต้องลงทะเบียนแต่อย่างใด</p><p>เราแนะนำให้คุณประชาสัมพันธ์ให้แฟน ๆ และลูกค้าของคุณทราบเพื่อสะสมคะแนนโหวตสำหรับ iEMA 2017 โดยนำลิงค์ด้านล่างนี้ไปโพสต์ในเว็บไซต์หรือโซเชียลมีเดียของคุณ</p><div class='banners row'><div class='col-md-6'><a href='assets/public/merchants.zip' target='_blank'><amp-img src='assets/img/merchantbanners.png' layout='responsive' width='364' height='123'></amp-img><small>ดาวน์โหลดแบนเนอร์ของร้านค้า</small></a></div><div class='col-md-6'><a href='assets/public/bloggers.zip' target='_blank'><amp-img src='assets/img/bloggerbanners.png' layout='responsive' width='364' height='123'></amp-img><small>ดาวน์โหลดแบนเนอร์ของบล็อก</small></a></div></div><p>รางวัลนี้เปิดกว้างให้กับร้านค้าอีคอมเมิร์ซในภูมิภาคเอเชียตะวันออกเฉียงใต้ทั้งหมด หากร้านค้าของคุณไม่ปรากฏอยู่บนฟอร์มการโหวตของ TrustedCompany กรุณาอีเมลไปที่ <a href='mailto:award@ipricegroup.com'>award@ipricegroup.com</a> เพื่อเข้าร่วมการแข่งขัน</p>"
 	},
 	{
 		"id" : "regulations",

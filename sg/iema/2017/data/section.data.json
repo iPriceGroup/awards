@@ -1,20 +1,5 @@
 [
 	{
-		"id" : "vote",
-		"slug" : "vote-section",
-		"title" : "",
-		"content" : {
-						"widget" : {
-							"title" : false,
-							"content" : "<amp-img src='assets/img/voting.gif' alt='' width='437' height='437' layout='responsive'></amp-img>"
-						},
-						"side_content" : {
-							"title" : false,
-							"content" : "<h3>Join us in selecting winners for the iPrice E-Commerce Merchant Awards (iEMA) 2017!</h3><p>Support your favorite online merchant in THREE simple steps:</p><ol><li>Select your favorite e-Commerce merchant.</li><li>Share your experience in a few words.</li><li>Validate your vote via Facebook or Google to enroll for lucky draw of three Samsung smartphones!</li></ol><p>Vote between November 15th, 2017 and January 31st, 2018.</p>"
-						}
-					}
-	},
-	{
 		"id" : "about",
 		"slug" : "about-section",
 		"title" : "about",
@@ -36,12 +21,6 @@
 		"slug": "iema-special-award",
 		"title" : "iPrice Special Award 2017",
 		"content" : "<p>As we are delighted to recognize the most popular and highest quality online merchants/organization/businesses, we would also like to recognize notable achievements that might not have been noted by general consumers. As such, the <a href='https://iprice.my/' target='_blank'>iPrice</a> Special Award was set up to recognize small projects, startups, or other notable business efforts and to provide an honorable mention for their achievements.</p>"
-	},
-	{
-		"id" : "nomination-form",
-		"slug": "iema-special-award-nomination",
-		"title" : "Nomination Form",
-		"content" : false
 	},
 	{
 		"id" : "experts",
@@ -98,12 +77,6 @@
 					}
 			]
 		}
-	},
-	{
-		"id" : "merchants",
-		"slug" : "iema-merchants",
-		"title" : "For Merchants",
-		"content" : "<p>No registration is required to participate in iEMA 2017 as all valid and legal e-commerce merchants (within Southeast Asia) automatically qualifies.</p><p>We highly encourage you to shout out and garner as much support from your fan base and consumers for iEMA 2017! Below are downloadable materials you can utilize at your website and social media assets.</p><div class='banners row'><div class='col-md-6'><a href='assets/public/merchants.zip' target='_blank' download='merchants.zip'><amp-img src='assets/img/merchantbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Merchant Banners</small></a></div><div class='col-md-6'><a href='assets/public/bloggers.zip' download='bloggers.zip' target='_blank'><amp-img src='assets/img/bloggerbanners.png' layout='responsive' width='364' height='123'></amp-img><small>Download Blog Banners</small></a></div></div><p>Additionally, we can create a dedicated link you may utilize to direct your customers to easily vote and rank your business for iEMA 2017. Kindly send your request to <a href='mailto:award@ipricegroup.com' target='_blank'>award@ipricegroup.com</a> and our representatives will assist you accordingly. Find out more on the iEMA 2017 at our <a href='javascript:void(0);' class='moveTo' data-attr='#faq'>FAQ</a> page. </p>"
 	},
 	{
 		"id" : "regulations",

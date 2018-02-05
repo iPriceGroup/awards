@@ -2,10 +2,6 @@
     {
         "menus" : [
                 {
-                    "url" : "#vote",
-                    "title" : "Vote"
-                },
-                {
                     "url" : "#about",
                     "title" : "About"
                 },
@@ -16,10 +12,6 @@
                 {
                     "url":"#partners",
                     "title": "Partners"
-                },
-                {
-                    "url":"#merchants",
-                    "title" : "Untuk Merchants"
                 },
                 {
                     "url":"#regulations",
